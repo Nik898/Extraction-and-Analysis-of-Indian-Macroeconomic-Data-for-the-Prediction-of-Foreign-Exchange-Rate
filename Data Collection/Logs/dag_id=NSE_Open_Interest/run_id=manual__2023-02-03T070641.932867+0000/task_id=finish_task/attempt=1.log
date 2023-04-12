@@ -1,0 +1,29 @@
+[2023-02-03T12:52:44.165+0530] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: NSE_Open_Interest.finish_task manual__2023-02-03T07:06:41.932867+00:00 [queued]>
+[2023-02-03T12:52:44.178+0530] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: NSE_Open_Interest.finish_task manual__2023-02-03T07:06:41.932867+00:00 [queued]>
+[2023-02-03T12:52:44.179+0530] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-02-03T12:52:44.179+0530] {taskinstance.py:1284} INFO - Starting attempt 1 of 4
+[2023-02-03T12:52:44.179+0530] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-02-03T12:52:44.201+0530] {taskinstance.py:1304} INFO - Executing <Task(BashOperator): finish_task> on 2023-02-03 07:06:41.932867+00:00
+[2023-02-03T12:52:44.209+0530] {standard_task_runner.py:55} INFO - Started process 26361 to run task
+[2023-02-03T12:52:44.213+0530] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'NSE_Open_Interest', 'finish_task', 'manual__2023-02-03T07:06:41.932867+00:00', '--job-id', '3953', '--raw', '--subdir', 'DAGS_FOLDER/NSE_Open_Interest.py', '--cfg-path', '/tmp/tmpcsq7v6mb']
+[2023-02-03T12:52:44.214+0530] {standard_task_runner.py:83} INFO - Job 3953: Subtask finish_task
+[2023-02-03T12:52:44.405+0530] {task_command.py:389} INFO - Running <TaskInstance: NSE_Open_Interest.finish_task manual__2023-02-03T07:06:41.932867+00:00 [running]> on host DESKTOP-SQIOQPD.
+[2023-02-03T12:52:44.655+0530] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=nikheleshbhattacharyya@gmail.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=NSE_Open_Interest
+AIRFLOW_CTX_TASK_ID=finish_task
+AIRFLOW_CTX_EXECUTION_DATE=2023-02-03T07:06:41.932867+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-02-03T07:06:41.932867+00:00
+[2023-02-03T12:52:44.658+0530] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2023-02-03T12:52:44.659+0530] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'echo finish']
+[2023-02-03T12:52:44.674+0530] {subprocess.py:86} INFO - Output:
+[2023-02-03T12:52:44.679+0530] {subprocess.py:93} INFO - finish
+[2023-02-03T12:52:44.680+0530] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-02-03T12:52:44.706+0530] {taskinstance.py:1322} INFO - Marking task as SUCCESS. dag_id=NSE_Open_Interest, task_id=finish_task, execution_date=20230203T070641, start_date=20230203T072244, end_date=20230203T072244
+[2023-02-03T12:52:44.748+0530] {local_task_job.py:159} INFO - Task exited with return code 0
+[2023-02-03T12:52:44.761+0530] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

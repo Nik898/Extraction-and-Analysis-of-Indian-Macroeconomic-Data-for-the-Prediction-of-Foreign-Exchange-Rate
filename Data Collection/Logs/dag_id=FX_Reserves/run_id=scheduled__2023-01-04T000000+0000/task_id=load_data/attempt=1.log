@@ -1,0 +1,2313 @@
+[2023-01-05T23:40:59.976+0530] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: FX_Reserves.load_data scheduled__2023-01-04T00:00:00+00:00 [queued]>
+[2023-01-05T23:40:59.984+0530] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: FX_Reserves.load_data scheduled__2023-01-04T00:00:00+00:00 [queued]>
+[2023-01-05T23:40:59.984+0530] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-05T23:40:59.984+0530] {taskinstance.py:1284} INFO - Starting attempt 1 of 4
+[2023-01-05T23:40:59.985+0530] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-05T23:41:00.016+0530] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): load_data> on 2023-01-04 00:00:00+00:00
+[2023-01-05T23:41:00.026+0530] {standard_task_runner.py:55} INFO - Started process 28341 to run task
+[2023-01-05T23:41:00.044+0530] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'FX_Reserves', 'load_data', 'scheduled__2023-01-04T00:00:00+00:00', '--job-id', '2876', '--raw', '--subdir', 'DAGS_FOLDER/FX_Reserves_Data.py', '--cfg-path', '/tmp/tmpqszddacy']
+[2023-01-05T23:41:00.049+0530] {standard_task_runner.py:83} INFO - Job 2876: Subtask load_data
+[2023-01-05T23:41:00.161+0530] {task_command.py:389} INFO - Running <TaskInstance: FX_Reserves.load_data scheduled__2023-01-04T00:00:00+00:00 [running]> on host DESKTOP-SQIOQPD.
+[2023-01-05T23:41:00.251+0530] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=nikheleshbhattacharyya@gmail.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=FX_Reserves
+AIRFLOW_CTX_TASK_ID=load_data
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-04T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-01-04T00:00:00+00:00
+[2023-01-05T23:41:01.519+0530] {logging_mixin.py:137} INFO - Start = 2022-12-09 00:00:00
+[2023-01-05T23:41:01.519+0530] {logging_mixin.py:137} INFO - End = 2022-12-16 00:00:00
+[2023-01-05T23:41:01.519+0530] {logging_mixin.py:137} INFO - Current =09-12-2022
+[2023-01-05T23:41:01.526+0530] {logging_mixin.py:137} INFO - Current =10-12-2022
+[2023-01-05T23:41:01.529+0530] {logging_mixin.py:137} INFO - 10-12-2022
+[2023-01-05T23:41:01.529+0530] {logging_mixin.py:137} INFO - 564.07
+[2023-01-05T23:41:01.529+0530] {logging_mixin.py:137} INFO - 500.125
+[2023-01-05T23:41:01.529+0530] {logging_mixin.py:137} INFO - 40.729
+[2023-01-05T23:41:01.529+0530] {logging_mixin.py:137} INFO - Current =11-12-2022
+[2023-01-05T23:41:01.533+0530] {logging_mixin.py:137} INFO - Current =12-12-2022
+[2023-01-05T23:41:01.541+0530] {logging_mixin.py:137} INFO - Current =13-12-2022
+[2023-01-05T23:41:01.546+0530] {logging_mixin.py:137} INFO - Current =14-12-2022
+[2023-01-05T23:41:01.551+0530] {logging_mixin.py:137} INFO - Current =15-12-2022
+[2023-01-05T23:41:01.562+0530] {logging_mixin.py:137} INFO - Current =16-12-2022
+[2023-01-05T23:41:03.380+0530] {logging_mixin.py:137} INFO - Start = 2022-12-02 00:00:00
+[2023-01-05T23:41:03.380+0530] {logging_mixin.py:137} INFO - End = 2022-12-09 00:00:00
+[2023-01-05T23:41:03.380+0530] {logging_mixin.py:137} INFO - Current =02-12-2022
+[2023-01-05T23:41:03.383+0530] {logging_mixin.py:137} INFO - Current =03-12-2022
+[2023-01-05T23:41:03.387+0530] {logging_mixin.py:137} INFO - Current =04-12-2022
+[2023-01-05T23:41:03.394+0530] {logging_mixin.py:137} INFO - Current =05-12-2022
+[2023-01-05T23:41:03.397+0530] {logging_mixin.py:137} INFO - Current =06-12-2022
+[2023-01-05T23:41:03.401+0530] {logging_mixin.py:137} INFO - Current =07-12-2022
+[2023-01-05T23:41:03.409+0530] {logging_mixin.py:137} INFO - Current =08-12-2022
+[2023-01-05T23:41:03.412+0530] {logging_mixin.py:137} INFO - Current =09-12-2022
+[2023-01-05T23:41:04.943+0530] {logging_mixin.py:137} INFO - Start = 2022-11-25 00:00:00
+[2023-01-05T23:41:04.944+0530] {logging_mixin.py:137} INFO - End = 2022-12-02 00:00:00
+[2023-01-05T23:41:04.944+0530] {logging_mixin.py:137} INFO - Current =25-11-2022
+[2023-01-05T23:41:04.948+0530] {logging_mixin.py:137} INFO - Current =26-11-2022
+[2023-01-05T23:41:04.951+0530] {logging_mixin.py:137} INFO - 26-11-2022
+[2023-01-05T23:41:04.952+0530] {logging_mixin.py:137} INFO - 550.142
+[2023-01-05T23:41:04.952+0530] {logging_mixin.py:137} INFO - 487.289
+[2023-01-05T23:41:04.952+0530] {logging_mixin.py:137} INFO - 39.938
+[2023-01-05T23:41:04.952+0530] {logging_mixin.py:137} INFO - Current =27-11-2022
+[2023-01-05T23:41:04.961+0530] {logging_mixin.py:137} INFO - Current =28-11-2022
+[2023-01-05T23:41:04.966+0530] {logging_mixin.py:137} INFO - Current =29-11-2022
+[2023-01-05T23:41:04.970+0530] {logging_mixin.py:137} INFO - Current =30-11-2022
+[2023-01-05T23:41:04.977+0530] {logging_mixin.py:137} INFO - Current =01-12-2022
+[2023-01-05T23:41:04.982+0530] {logging_mixin.py:137} INFO - Current =02-12-2022
+[2023-01-05T23:41:06.914+0530] {logging_mixin.py:137} INFO - Start = 2022-11-18 00:00:00
+[2023-01-05T23:41:06.914+0530] {logging_mixin.py:137} INFO - End = 2022-11-25 00:00:00
+[2023-01-05T23:41:06.914+0530] {logging_mixin.py:137} INFO - Current =18-11-2022
+[2023-01-05T23:41:06.918+0530] {logging_mixin.py:137} INFO - Current =19-11-2022
+[2023-01-05T23:41:06.921+0530] {logging_mixin.py:137} INFO - Current =20-11-2022
+[2023-01-05T23:41:06.929+0530] {logging_mixin.py:137} INFO - Current =21-11-2022
+[2023-01-05T23:41:06.933+0530] {logging_mixin.py:137} INFO - Current =22-11-2022
+[2023-01-05T23:41:06.936+0530] {logging_mixin.py:137} INFO - Current =23-11-2022
+[2023-01-05T23:41:06.944+0530] {logging_mixin.py:137} INFO - Current =24-11-2022
+[2023-01-05T23:41:06.949+0530] {logging_mixin.py:137} INFO - Current =25-11-2022
+[2023-01-05T23:41:08.760+0530] {logging_mixin.py:137} INFO - Start = 2022-11-11 00:00:00
+[2023-01-05T23:41:08.761+0530] {logging_mixin.py:137} INFO - End = 2022-11-18 00:00:00
+[2023-01-05T23:41:08.761+0530] {logging_mixin.py:137} INFO - Current =11-11-2022
+[2023-01-05T23:41:08.765+0530] {logging_mixin.py:137} INFO - Current =12-11-2022
+[2023-01-05T23:41:08.768+0530] {logging_mixin.py:137} INFO - 12-11-2022
+[2023-01-05T23:41:08.769+0530] {logging_mixin.py:137} INFO - 544.715
+[2023-01-05T23:41:08.769+0530] {logging_mixin.py:137} INFO - 482.527
+[2023-01-05T23:41:08.769+0530] {logging_mixin.py:137} INFO - 39.696
+[2023-01-05T23:41:08.769+0530] {logging_mixin.py:137} INFO - Current =13-11-2022
+[2023-01-05T23:41:08.772+0530] {logging_mixin.py:137} INFO - Current =14-11-2022
+[2023-01-05T23:41:08.780+0530] {logging_mixin.py:137} INFO - Current =15-11-2022
+[2023-01-05T23:41:08.784+0530] {logging_mixin.py:137} INFO - Current =16-11-2022
+[2023-01-05T23:41:08.787+0530] {logging_mixin.py:137} INFO - Current =17-11-2022
+[2023-01-05T23:41:08.795+0530] {logging_mixin.py:137} INFO - Current =18-11-2022
+[2023-01-05T23:41:10.467+0530] {logging_mixin.py:137} INFO - Start = 2022-11-04 00:00:00
+[2023-01-05T23:41:10.467+0530] {logging_mixin.py:137} INFO - End = 2022-11-11 00:00:00
+[2023-01-05T23:41:10.467+0530] {logging_mixin.py:137} INFO - Current =04-11-2022
+[2023-01-05T23:41:10.471+0530] {logging_mixin.py:137} INFO - Current =05-11-2022
+[2023-01-05T23:41:10.479+0530] {logging_mixin.py:137} INFO - Current =06-11-2022
+[2023-01-05T23:41:10.485+0530] {logging_mixin.py:137} INFO - Current =07-11-2022
+[2023-01-05T23:41:10.489+0530] {logging_mixin.py:137} INFO - Current =08-11-2022
+[2023-01-05T23:41:10.497+0530] {logging_mixin.py:137} INFO - Current =09-11-2022
+[2023-01-05T23:41:10.501+0530] {logging_mixin.py:137} INFO - Current =10-11-2022
+[2023-01-05T23:41:10.504+0530] {logging_mixin.py:137} INFO - Current =11-11-2022
+[2023-01-05T23:41:12.414+0530] {logging_mixin.py:137} INFO - Start = 2022-10-28 00:00:00
+[2023-01-05T23:41:12.414+0530] {logging_mixin.py:137} INFO - End = 2022-11-04 00:00:00
+[2023-01-05T23:41:12.414+0530] {logging_mixin.py:137} INFO - Current =28-10-2022
+[2023-01-05T23:41:12.421+0530] {logging_mixin.py:137} INFO - Current =29-10-2022
+[2023-01-05T23:41:12.427+0530] {logging_mixin.py:137} INFO - Current =30-10-2022
+[2023-01-05T23:41:12.433+0530] {logging_mixin.py:137} INFO - Current =31-10-2022
+[2023-01-05T23:41:12.437+0530] {logging_mixin.py:137} INFO - Current =01-11-2022
+[2023-01-05T23:41:12.444+0530] {logging_mixin.py:137} INFO - Current =02-11-2022
+[2023-01-05T23:41:12.450+0530] {logging_mixin.py:137} INFO - Current =03-11-2022
+[2023-01-05T23:41:12.454+0530] {logging_mixin.py:137} INFO - Current =04-11-2022
+[2023-01-05T23:41:14.247+0530] {logging_mixin.py:137} INFO - Start = 2022-10-21 00:00:00
+[2023-01-05T23:41:14.247+0530] {logging_mixin.py:137} INFO - End = 2022-10-28 00:00:00
+[2023-01-05T23:41:14.247+0530] {logging_mixin.py:137} INFO - Current =21-10-2022
+[2023-01-05T23:41:14.253+0530] {logging_mixin.py:137} INFO - Current =22-10-2022
+[2023-01-05T23:41:14.257+0530] {logging_mixin.py:137} INFO - 22-10-2022
+[2023-01-05T23:41:14.258+0530] {logging_mixin.py:137} INFO - 524.52
+[2023-01-05T23:41:14.258+0530] {logging_mixin.py:137} INFO - 465.075
+[2023-01-05T23:41:14.258+0530] {logging_mixin.py:137} INFO - 37.206
+[2023-01-05T23:41:14.258+0530] {logging_mixin.py:137} INFO - Current =23-10-2022
+[2023-01-05T23:41:14.266+0530] {logging_mixin.py:137} INFO - 23-10-2022
+[2023-01-05T23:41:14.266+0530] {logging_mixin.py:137} INFO - 524.52
+[2023-01-05T23:41:14.266+0530] {logging_mixin.py:137} INFO - 465.075
+[2023-01-05T23:41:14.266+0530] {logging_mixin.py:137} INFO - 37.206
+[2023-01-05T23:41:14.266+0530] {logging_mixin.py:137} INFO - Current =24-10-2022
+[2023-01-05T23:41:14.271+0530] {logging_mixin.py:137} INFO - Current =25-10-2022
+[2023-01-05T23:41:14.275+0530] {logging_mixin.py:137} INFO - Current =26-10-2022
+[2023-01-05T23:41:14.282+0530] {logging_mixin.py:137} INFO - Current =27-10-2022
+[2023-01-05T23:41:14.287+0530] {logging_mixin.py:137} INFO - Current =28-10-2022
+[2023-01-05T23:41:16.122+0530] {logging_mixin.py:137} INFO - Start = 2022-10-14 00:00:00
+[2023-01-05T23:41:16.123+0530] {logging_mixin.py:137} INFO - End = 2022-10-21 00:00:00
+[2023-01-05T23:41:16.123+0530] {logging_mixin.py:137} INFO - Current =14-10-2022
+[2023-01-05T23:41:16.130+0530] {logging_mixin.py:137} INFO - Current =15-10-2022
+[2023-01-05T23:41:16.137+0530] {logging_mixin.py:137} INFO - Current =16-10-2022
+[2023-01-05T23:41:16.143+0530] {logging_mixin.py:137} INFO - Current =17-10-2022
+[2023-01-05T23:41:16.153+0530] {logging_mixin.py:137} INFO - Current =18-10-2022
+[2023-01-05T23:41:16.161+0530] {logging_mixin.py:137} INFO - Current =19-10-2022
+[2023-01-05T23:41:16.167+0530] {logging_mixin.py:137} INFO - Current =20-10-2022
+[2023-01-05T23:41:16.173+0530] {logging_mixin.py:137} INFO - Current =21-10-2022
+[2023-01-05T23:41:18.191+0530] {logging_mixin.py:137} INFO - Start = 2022-10-07 00:00:00
+[2023-01-05T23:41:18.191+0530] {logging_mixin.py:137} INFO - End = 2022-10-14 00:00:00
+[2023-01-05T23:41:18.192+0530] {logging_mixin.py:137} INFO - Current =07-10-2022
+[2023-01-05T23:41:18.198+0530] {logging_mixin.py:137} INFO - Current =08-10-2022
+[2023-01-05T23:41:18.201+0530] {logging_mixin.py:137} INFO - 08-10-2022
+[2023-01-05T23:41:18.201+0530] {logging_mixin.py:137} INFO - 532.868
+[2023-01-05T23:41:18.201+0530] {logging_mixin.py:137} INFO - 471.496
+[2023-01-05T23:41:18.201+0530] {logging_mixin.py:137} INFO - 38.955
+[2023-01-05T23:41:18.202+0530] {logging_mixin.py:137} INFO - Current =09-10-2022
+[2023-01-05T23:41:18.205+0530] {logging_mixin.py:137} INFO - Current =10-10-2022
+[2023-01-05T23:41:18.209+0530] {logging_mixin.py:137} INFO - Current =11-10-2022
+[2023-01-05T23:41:18.216+0530] {logging_mixin.py:137} INFO - Current =12-10-2022
+[2023-01-05T23:41:18.220+0530] {logging_mixin.py:137} INFO - Current =13-10-2022
+[2023-01-05T23:41:18.224+0530] {logging_mixin.py:137} INFO - Current =14-10-2022
+[2023-01-05T23:41:19.805+0530] {logging_mixin.py:137} INFO - Start = 2022-09-30 00:00:00
+[2023-01-05T23:41:19.805+0530] {logging_mixin.py:137} INFO - End = 2022-10-07 00:00:00
+[2023-01-05T23:41:19.805+0530] {logging_mixin.py:137} INFO - Current =30-09-2022
+[2023-01-05T23:41:19.809+0530] {logging_mixin.py:137} INFO - Current =01-10-2022
+[2023-01-05T23:41:19.819+0530] {logging_mixin.py:137} INFO - Current =02-10-2022
+[2023-01-05T23:41:19.827+0530] {logging_mixin.py:137} INFO - Current =03-10-2022
+[2023-01-05T23:41:19.833+0530] {logging_mixin.py:137} INFO - Current =04-10-2022
+[2023-01-05T23:41:19.837+0530] {logging_mixin.py:137} INFO - Current =05-10-2022
+[2023-01-05T23:41:19.841+0530] {logging_mixin.py:137} INFO - Current =06-10-2022
+[2023-01-05T23:41:19.847+0530] {logging_mixin.py:137} INFO - Current =07-10-2022
+[2023-01-05T23:41:21.861+0530] {logging_mixin.py:137} INFO - Start = 2022-09-23 00:00:00
+[2023-01-05T23:41:21.862+0530] {logging_mixin.py:137} INFO - End = 2022-09-30 00:00:00
+[2023-01-05T23:41:21.862+0530] {logging_mixin.py:137} INFO - Current =23-09-2022
+[2023-01-05T23:41:21.869+0530] {logging_mixin.py:137} INFO - Current =24-09-2022
+[2023-01-05T23:41:21.872+0530] {logging_mixin.py:137} INFO - 24-09-2022
+[2023-01-05T23:41:21.872+0530] {logging_mixin.py:137} INFO - 537.518
+[2023-01-05T23:41:21.872+0530] {logging_mixin.py:137} INFO - 477.212
+[2023-01-05T23:41:21.872+0530] {logging_mixin.py:137} INFO - 37.886
+[2023-01-05T23:41:21.872+0530] {logging_mixin.py:137} INFO - Current =25-09-2022
+[2023-01-05T23:41:21.876+0530] {logging_mixin.py:137} INFO - Current =26-09-2022
+[2023-01-05T23:41:21.882+0530] {logging_mixin.py:137} INFO - Current =27-09-2022
+[2023-01-05T23:41:21.886+0530] {logging_mixin.py:137} INFO - Current =28-09-2022
+[2023-01-05T23:41:21.890+0530] {logging_mixin.py:137} INFO - Current =29-09-2022
+[2023-01-05T23:41:21.894+0530] {logging_mixin.py:137} INFO - Current =30-09-2022
+[2023-01-05T23:41:23.668+0530] {logging_mixin.py:137} INFO - Start = 2022-09-16 00:00:00
+[2023-01-05T23:41:23.668+0530] {logging_mixin.py:137} INFO - End = 2022-09-23 00:00:00
+[2023-01-05T23:41:23.669+0530] {logging_mixin.py:137} INFO - Current =16-09-2022
+[2023-01-05T23:41:23.674+0530] {logging_mixin.py:137} INFO - Current =17-09-2022
+[2023-01-05T23:41:23.678+0530] {logging_mixin.py:137} INFO - Current =18-09-2022
+[2023-01-05T23:41:23.687+0530] {logging_mixin.py:137} INFO - Current =19-09-2022
+[2023-01-05T23:41:23.691+0530] {logging_mixin.py:137} INFO - Current =20-09-2022
+[2023-01-05T23:41:23.699+0530] {logging_mixin.py:137} INFO - Current =21-09-2022
+[2023-01-05T23:41:23.704+0530] {logging_mixin.py:137} INFO - Current =22-09-2022
+[2023-01-05T23:41:23.708+0530] {logging_mixin.py:137} INFO - Current =23-09-2022
+[2023-01-05T23:41:25.451+0530] {logging_mixin.py:137} INFO - Start = 2022-09-09 00:00:00
+[2023-01-05T23:41:25.451+0530] {logging_mixin.py:137} INFO - End = 2022-09-16 00:00:00
+[2023-01-05T23:41:25.452+0530] {logging_mixin.py:137} INFO - Current =09-09-2022
+[2023-01-05T23:41:25.456+0530] {logging_mixin.py:137} INFO - Current =10-09-2022
+[2023-01-05T23:41:25.460+0530] {logging_mixin.py:137} INFO - 10-09-2022
+[2023-01-05T23:41:25.460+0530] {logging_mixin.py:137} INFO - 550.871
+[2023-01-05T23:41:25.460+0530] {logging_mixin.py:137} INFO - 489.598
+[2023-01-05T23:41:25.460+0530] {logging_mixin.py:137} INFO - 38.644
+[2023-01-05T23:41:25.460+0530] {logging_mixin.py:137} INFO - Current =11-09-2022
+[2023-01-05T23:41:25.469+0530] {logging_mixin.py:137} INFO - Current =12-09-2022
+[2023-01-05T23:41:25.474+0530] {logging_mixin.py:137} INFO - Current =13-09-2022
+[2023-01-05T23:41:25.478+0530] {logging_mixin.py:137} INFO - Current =14-09-2022
+[2023-01-05T23:41:25.486+0530] {logging_mixin.py:137} INFO - Current =15-09-2022
+[2023-01-05T23:41:25.491+0530] {logging_mixin.py:137} INFO - Current =16-09-2022
+[2023-01-05T23:41:27.497+0530] {logging_mixin.py:137} INFO - Start = 2022-09-02 00:00:00
+[2023-01-05T23:41:27.497+0530] {logging_mixin.py:137} INFO - End = 2022-09-09 00:00:00
+[2023-01-05T23:41:27.497+0530] {logging_mixin.py:137} INFO - Current =02-09-2022
+[2023-01-05T23:41:27.505+0530] {logging_mixin.py:137} INFO - Current =03-09-2022
+[2023-01-05T23:41:27.510+0530] {logging_mixin.py:137} INFO - Current =04-09-2022
+[2023-01-05T23:41:27.513+0530] {logging_mixin.py:137} INFO - Current =05-09-2022
+[2023-01-05T23:41:27.521+0530] {logging_mixin.py:137} INFO - Current =06-09-2022
+[2023-01-05T23:41:27.525+0530] {logging_mixin.py:137} INFO - Current =07-09-2022
+[2023-01-05T23:41:27.529+0530] {logging_mixin.py:137} INFO - Current =08-09-2022
+[2023-01-05T23:41:27.536+0530] {logging_mixin.py:137} INFO - Current =09-09-2022
+[2023-01-05T23:41:29.279+0530] {logging_mixin.py:137} INFO - Start = 2022-08-26 00:00:00
+[2023-01-05T23:41:29.279+0530] {logging_mixin.py:137} INFO - End = 2022-09-02 00:00:00
+[2023-01-05T23:41:29.279+0530] {logging_mixin.py:137} INFO - Current =26-08-2022
+[2023-01-05T23:41:29.289+0530] {logging_mixin.py:137} INFO - Current =27-08-2022
+[2023-01-05T23:41:29.295+0530] {logging_mixin.py:137} INFO - 27-08-2022
+[2023-01-05T23:41:29.296+0530] {logging_mixin.py:137} INFO - 561.046
+[2023-01-05T23:41:29.296+0530] {logging_mixin.py:137} INFO - 498.645
+[2023-01-05T23:41:29.297+0530] {logging_mixin.py:137} INFO - 39.643
+[2023-01-05T23:41:29.297+0530] {logging_mixin.py:137} INFO - Current =28-08-2022
+[2023-01-05T23:41:29.310+0530] {logging_mixin.py:137} INFO - Current =29-08-2022
+[2023-01-05T23:41:29.324+0530] {logging_mixin.py:137} INFO - Current =30-08-2022
+[2023-01-05T23:41:29.334+0530] {logging_mixin.py:137} INFO - Current =31-08-2022
+[2023-01-05T23:41:29.345+0530] {logging_mixin.py:137} INFO - Current =01-09-2022
+[2023-01-05T23:41:29.353+0530] {logging_mixin.py:137} INFO - Current =02-09-2022
+[2023-01-05T23:41:31.222+0530] {logging_mixin.py:137} INFO - Start = 2022-08-19 00:00:00
+[2023-01-05T23:41:31.223+0530] {logging_mixin.py:137} INFO - End = 2022-08-26 00:00:00
+[2023-01-05T23:41:31.223+0530] {logging_mixin.py:137} INFO - Current =19-08-2022
+[2023-01-05T23:41:31.228+0530] {logging_mixin.py:137} INFO - Current =20-08-2022
+[2023-01-05T23:41:31.239+0530] {logging_mixin.py:137} INFO - Current =21-08-2022
+[2023-01-05T23:41:31.245+0530] {logging_mixin.py:137} INFO - Current =22-08-2022
+[2023-01-05T23:41:31.254+0530] {logging_mixin.py:137} INFO - Current =23-08-2022
+[2023-01-05T23:41:31.260+0530] {logging_mixin.py:137} INFO - Current =24-08-2022
+[2023-01-05T23:41:31.266+0530] {logging_mixin.py:137} INFO - Current =25-08-2022
+[2023-01-05T23:41:31.273+0530] {logging_mixin.py:137} INFO - Current =26-08-2022
+[2023-01-05T23:41:33.349+0530] {logging_mixin.py:137} INFO - Start = 2022-08-12 00:00:00
+[2023-01-05T23:41:33.349+0530] {logging_mixin.py:137} INFO - End = 2022-08-19 00:00:00
+[2023-01-05T23:41:33.350+0530] {logging_mixin.py:137} INFO - Current =12-08-2022
+[2023-01-05T23:41:33.358+0530] {logging_mixin.py:137} INFO - Current =13-08-2022
+[2023-01-05T23:41:33.362+0530] {logging_mixin.py:137} INFO - 13-08-2022
+[2023-01-05T23:41:33.362+0530] {logging_mixin.py:137} INFO - 570.74
+[2023-01-05T23:41:33.362+0530] {logging_mixin.py:137} INFO - 506.994
+[2023-01-05T23:41:33.363+0530] {logging_mixin.py:137} INFO - 40.618
+[2023-01-05T23:41:33.363+0530] {logging_mixin.py:137} INFO - Current =14-08-2022
+[2023-01-05T23:41:33.367+0530] {logging_mixin.py:137} INFO - 14-08-2022
+[2023-01-05T23:41:33.369+0530] {logging_mixin.py:137} INFO - 570.74
+[2023-01-05T23:41:33.369+0530] {logging_mixin.py:137} INFO - 506.994
+[2023-01-05T23:41:33.370+0530] {logging_mixin.py:137} INFO - 40.618
+[2023-01-05T23:41:33.370+0530] {logging_mixin.py:137} INFO - Current =15-08-2022
+[2023-01-05T23:41:33.374+0530] {logging_mixin.py:137} INFO - 15-08-2022
+[2023-01-05T23:41:33.374+0530] {logging_mixin.py:137} INFO - 570.74
+[2023-01-05T23:41:33.374+0530] {logging_mixin.py:137} INFO - 506.994
+[2023-01-05T23:41:33.374+0530] {logging_mixin.py:137} INFO - 40.618
+[2023-01-05T23:41:33.374+0530] {logging_mixin.py:137} INFO - Current =16-08-2022
+[2023-01-05T23:41:33.380+0530] {logging_mixin.py:137} INFO - Current =17-08-2022
+[2023-01-05T23:41:33.388+0530] {logging_mixin.py:137} INFO - Current =18-08-2022
+[2023-01-05T23:41:33.392+0530] {logging_mixin.py:137} INFO - Current =19-08-2022
+[2023-01-05T23:41:35.156+0530] {logging_mixin.py:137} INFO - Start = 2022-08-05 00:00:00
+[2023-01-05T23:41:35.157+0530] {logging_mixin.py:137} INFO - End = 2022-08-12 00:00:00
+[2023-01-05T23:41:35.157+0530] {logging_mixin.py:137} INFO - Current =05-08-2022
+[2023-01-05T23:41:35.161+0530] {logging_mixin.py:137} INFO - Current =06-08-2022
+[2023-01-05T23:41:35.165+0530] {logging_mixin.py:137} INFO - Current =07-08-2022
+[2023-01-05T23:41:35.170+0530] {logging_mixin.py:137} INFO - Current =08-08-2022
+[2023-01-05T23:41:35.176+0530] {logging_mixin.py:137} INFO - Current =09-08-2022
+[2023-01-05T23:41:35.180+0530] {logging_mixin.py:137} INFO - Current =10-08-2022
+[2023-01-05T23:41:35.188+0530] {logging_mixin.py:137} INFO - Current =11-08-2022
+[2023-01-05T23:41:35.192+0530] {logging_mixin.py:137} INFO - Current =12-08-2022
+[2023-01-05T23:41:37.095+0530] {logging_mixin.py:137} INFO - Start = 2022-07-29 00:00:00
+[2023-01-05T23:41:37.095+0530] {logging_mixin.py:137} INFO - End = 2022-08-05 00:00:00
+[2023-01-05T23:41:37.095+0530] {logging_mixin.py:137} INFO - Current =29-07-2022
+[2023-01-05T23:41:37.100+0530] {logging_mixin.py:137} INFO - Current =30-07-2022
+[2023-01-05T23:41:37.109+0530] {logging_mixin.py:137} INFO - Current =31-07-2022
+[2023-01-05T23:41:37.115+0530] {logging_mixin.py:137} INFO - Current =01-08-2022
+[2023-01-05T23:41:37.122+0530] {logging_mixin.py:137} INFO - Current =02-08-2022
+[2023-01-05T23:41:37.127+0530] {logging_mixin.py:137} INFO - Current =03-08-2022
+[2023-01-05T23:41:37.131+0530] {logging_mixin.py:137} INFO - Current =04-08-2022
+[2023-01-05T23:41:37.138+0530] {logging_mixin.py:137} INFO - Current =05-08-2022
+[2023-01-05T23:41:39.014+0530] {logging_mixin.py:137} INFO - Start = 2022-07-22 00:00:00
+[2023-01-05T23:41:39.015+0530] {logging_mixin.py:137} INFO - End = 2022-07-29 00:00:00
+[2023-01-05T23:41:39.015+0530] {logging_mixin.py:137} INFO - Current =22-07-2022
+[2023-01-05T23:41:39.018+0530] {logging_mixin.py:137} INFO - Current =23-07-2022
+[2023-01-05T23:41:39.025+0530] {logging_mixin.py:137} INFO - 23-07-2022
+[2023-01-05T23:41:39.025+0530] {logging_mixin.py:137} INFO - 571.56
+[2023-01-05T23:41:39.025+0530] {logging_mixin.py:137} INFO - 510.136
+[2023-01-05T23:41:39.025+0530] {logging_mixin.py:137} INFO - 38.502
+[2023-01-05T23:41:39.026+0530] {logging_mixin.py:137} INFO - Current =24-07-2022
+[2023-01-05T23:41:39.030+0530] {logging_mixin.py:137} INFO - Current =25-07-2022
+[2023-01-05T23:41:39.033+0530] {logging_mixin.py:137} INFO - Current =26-07-2022
+[2023-01-05T23:41:39.041+0530] {logging_mixin.py:137} INFO - Current =27-07-2022
+[2023-01-05T23:41:39.046+0530] {logging_mixin.py:137} INFO - Current =28-07-2022
+[2023-01-05T23:41:39.050+0530] {logging_mixin.py:137} INFO - Current =29-07-2022
+[2023-01-05T23:41:40.984+0530] {logging_mixin.py:137} INFO - Start = 2022-07-15 00:00:00
+[2023-01-05T23:41:40.984+0530] {logging_mixin.py:137} INFO - End = 2022-07-22 00:00:00
+[2023-01-05T23:41:40.984+0530] {logging_mixin.py:137} INFO - Current =15-07-2022
+[2023-01-05T23:41:40.993+0530] {logging_mixin.py:137} INFO - Current =16-07-2022
+[2023-01-05T23:41:41.000+0530] {logging_mixin.py:137} INFO - Current =17-07-2022
+[2023-01-05T23:41:41.008+0530] {logging_mixin.py:137} INFO - Current =18-07-2022
+[2023-01-05T23:41:41.015+0530] {logging_mixin.py:137} INFO - Current =19-07-2022
+[2023-01-05T23:41:41.024+0530] {logging_mixin.py:137} INFO - Current =20-07-2022
+[2023-01-05T23:41:41.033+0530] {logging_mixin.py:137} INFO - Current =21-07-2022
+[2023-01-05T23:41:41.046+0530] {logging_mixin.py:137} INFO - Current =22-07-2022
+[2023-01-05T23:41:43.244+0530] {logging_mixin.py:137} INFO - Start = 2022-07-08 00:00:00
+[2023-01-05T23:41:43.244+0530] {logging_mixin.py:137} INFO - End = 2022-07-15 00:00:00
+[2023-01-05T23:41:43.244+0530] {logging_mixin.py:137} INFO - Current =08-07-2022
+[2023-01-05T23:41:43.250+0530] {logging_mixin.py:137} INFO - Current =09-07-2022
+[2023-01-05T23:41:43.259+0530] {logging_mixin.py:137} INFO - 09-07-2022
+[2023-01-05T23:41:43.259+0530] {logging_mixin.py:137} INFO - 580.252
+[2023-01-05T23:41:43.259+0530] {logging_mixin.py:137} INFO - 518.089
+[2023-01-05T23:41:43.259+0530] {logging_mixin.py:137} INFO - 39.186
+[2023-01-05T23:41:43.260+0530] {logging_mixin.py:137} INFO - Current =10-07-2022
+[2023-01-05T23:41:43.265+0530] {logging_mixin.py:137} INFO - Current =11-07-2022
+[2023-01-05T23:41:43.276+0530] {logging_mixin.py:137} INFO - Current =12-07-2022
+[2023-01-05T23:41:43.282+0530] {logging_mixin.py:137} INFO - Current =13-07-2022
+[2023-01-05T23:41:43.295+0530] {logging_mixin.py:137} INFO - Current =14-07-2022
+[2023-01-05T23:41:43.300+0530] {logging_mixin.py:137} INFO - Current =15-07-2022
+[2023-01-05T23:41:45.857+0530] {logging_mixin.py:137} INFO - Start = 2022-07-01 00:00:00
+[2023-01-05T23:41:45.857+0530] {logging_mixin.py:137} INFO - End = 2022-07-08 00:00:00
+[2023-01-05T23:41:45.858+0530] {logging_mixin.py:137} INFO - Current =01-07-2022
+[2023-01-05T23:41:45.865+0530] {logging_mixin.py:137} INFO - Current =02-07-2022
+[2023-01-05T23:41:45.870+0530] {logging_mixin.py:137} INFO - Current =03-07-2022
+[2023-01-05T23:41:45.881+0530] {logging_mixin.py:137} INFO - Current =04-07-2022
+[2023-01-05T23:41:45.893+0530] {logging_mixin.py:137} INFO - Current =05-07-2022
+[2023-01-05T23:41:45.902+0530] {logging_mixin.py:137} INFO - Current =06-07-2022
+[2023-01-05T23:41:45.914+0530] {logging_mixin.py:137} INFO - Current =07-07-2022
+[2023-01-05T23:41:45.928+0530] {logging_mixin.py:137} INFO - Current =08-07-2022
+[2023-01-05T23:41:48.412+0530] {logging_mixin.py:137} INFO - Start = 2022-06-24 00:00:00
+[2023-01-05T23:41:48.413+0530] {logging_mixin.py:137} INFO - End = 2022-07-01 00:00:00
+[2023-01-05T23:41:48.413+0530] {logging_mixin.py:137} INFO - Current =24-06-2022
+[2023-01-05T23:41:48.417+0530] {logging_mixin.py:137} INFO - Current =25-06-2022
+[2023-01-05T23:41:48.420+0530] {logging_mixin.py:137} INFO - 25-06-2022
+[2023-01-05T23:41:48.420+0530] {logging_mixin.py:137} INFO - 593.323
+[2023-01-05T23:41:48.421+0530] {logging_mixin.py:137} INFO - 529.216
+[2023-01-05T23:41:48.421+0530] {logging_mixin.py:137} INFO - 40.926
+[2023-01-05T23:41:48.421+0530] {logging_mixin.py:137} INFO - Current =26-06-2022
+[2023-01-05T23:41:48.430+0530] {logging_mixin.py:137} INFO - Current =27-06-2022
+[2023-01-05T23:41:48.434+0530] {logging_mixin.py:137} INFO - Current =28-06-2022
+[2023-01-05T23:41:48.438+0530] {logging_mixin.py:137} INFO - Current =29-06-2022
+[2023-01-05T23:41:48.446+0530] {logging_mixin.py:137} INFO - Current =30-06-2022
+[2023-01-05T23:41:48.451+0530] {logging_mixin.py:137} INFO - Current =01-07-2022
+[2023-01-05T23:41:50.114+0530] {logging_mixin.py:137} INFO - Start = 2022-06-17 00:00:00
+[2023-01-05T23:41:50.114+0530] {logging_mixin.py:137} INFO - End = 2022-06-24 00:00:00
+[2023-01-05T23:41:50.114+0530] {logging_mixin.py:137} INFO - Current =17-06-2022
+[2023-01-05T23:41:50.119+0530] {logging_mixin.py:137} INFO - Current =18-06-2022
+[2023-01-05T23:41:50.123+0530] {logging_mixin.py:137} INFO - Current =19-06-2022
+[2023-01-05T23:41:50.130+0530] {logging_mixin.py:137} INFO - Current =20-06-2022
+[2023-01-05T23:41:50.134+0530] {logging_mixin.py:137} INFO - Current =21-06-2022
+[2023-01-05T23:41:50.138+0530] {logging_mixin.py:137} INFO - Current =22-06-2022
+[2023-01-05T23:41:50.146+0530] {logging_mixin.py:137} INFO - Current =23-06-2022
+[2023-01-05T23:41:50.152+0530] {logging_mixin.py:137} INFO - Current =24-06-2022
+[2023-01-05T23:41:52.208+0530] {logging_mixin.py:137} INFO - Start = 2022-06-10 00:00:00
+[2023-01-05T23:41:52.211+0530] {logging_mixin.py:137} INFO - End = 2022-06-17 00:00:00
+[2023-01-05T23:41:52.212+0530] {logging_mixin.py:137} INFO - Current =10-06-2022
+[2023-01-05T23:41:52.217+0530] {logging_mixin.py:137} INFO - Current =11-06-2022
+[2023-01-05T23:41:52.221+0530] {logging_mixin.py:137} INFO - 11-06-2022
+[2023-01-05T23:41:52.221+0530] {logging_mixin.py:137} INFO - 596.458
+[2023-01-05T23:41:52.222+0530] {logging_mixin.py:137} INFO - 532.244
+[2023-01-05T23:41:52.222+0530] {logging_mixin.py:137} INFO - 40.842
+[2023-01-05T23:41:52.222+0530] {logging_mixin.py:137} INFO - Current =12-06-2022
+[2023-01-05T23:41:52.229+0530] {logging_mixin.py:137} INFO - Current =13-06-2022
+[2023-01-05T23:41:52.237+0530] {logging_mixin.py:137} INFO - Current =14-06-2022
+[2023-01-05T23:41:52.245+0530] {logging_mixin.py:137} INFO - Current =15-06-2022
+[2023-01-05T23:41:52.250+0530] {logging_mixin.py:137} INFO - Current =16-06-2022
+[2023-01-05T23:41:52.255+0530] {logging_mixin.py:137} INFO - Current =17-06-2022
+[2023-01-05T23:41:54.135+0530] {logging_mixin.py:137} INFO - Start = 2022-06-03 00:00:00
+[2023-01-05T23:41:54.135+0530] {logging_mixin.py:137} INFO - End = 2022-06-10 00:00:00
+[2023-01-05T23:41:54.135+0530] {logging_mixin.py:137} INFO - Current =03-06-2022
+[2023-01-05T23:41:54.140+0530] {logging_mixin.py:137} INFO - Current =04-06-2022
+[2023-01-05T23:41:54.147+0530] {logging_mixin.py:137} INFO - Current =05-06-2022
+[2023-01-05T23:41:54.153+0530] {logging_mixin.py:137} INFO - Current =06-06-2022
+[2023-01-05T23:41:54.161+0530] {logging_mixin.py:137} INFO - Current =07-06-2022
+[2023-01-05T23:41:54.166+0530] {logging_mixin.py:137} INFO - Current =08-06-2022
+[2023-01-05T23:41:54.170+0530] {logging_mixin.py:137} INFO - Current =09-06-2022
+[2023-01-05T23:41:54.174+0530] {logging_mixin.py:137} INFO - Current =10-06-2022
+[2023-01-05T23:41:56.118+0530] {logging_mixin.py:137} INFO - Start = 2022-05-27 00:00:00
+[2023-01-05T23:41:56.118+0530] {logging_mixin.py:137} INFO - End = 2022-06-03 00:00:00
+[2023-01-05T23:41:56.118+0530] {logging_mixin.py:137} INFO - Current =27-05-2022
+[2023-01-05T23:41:56.128+0530] {logging_mixin.py:137} INFO - Current =28-05-2022
+[2023-01-05T23:41:56.133+0530] {logging_mixin.py:137} INFO - 28-05-2022
+[2023-01-05T23:41:56.133+0530] {logging_mixin.py:137} INFO - 601.363
+[2023-01-05T23:41:56.133+0530] {logging_mixin.py:137} INFO - 536.988
+[2023-01-05T23:41:56.134+0530] {logging_mixin.py:137} INFO - 40.917
+[2023-01-05T23:41:56.134+0530] {logging_mixin.py:137} INFO - Current =29-05-2022
+[2023-01-05T23:41:56.140+0530] {logging_mixin.py:137} INFO - Current =30-05-2022
+[2023-01-05T23:41:56.153+0530] {logging_mixin.py:137} INFO - Current =31-05-2022
+[2023-01-05T23:41:56.158+0530] {logging_mixin.py:137} INFO - Current =01-06-2022
+[2023-01-05T23:41:56.169+0530] {logging_mixin.py:137} INFO - Current =02-06-2022
+[2023-01-05T23:41:56.177+0530] {logging_mixin.py:137} INFO - Current =03-06-2022
+[2023-01-05T23:41:58.251+0530] {logging_mixin.py:137} INFO - Start = 2022-05-20 00:00:00
+[2023-01-05T23:41:58.251+0530] {logging_mixin.py:137} INFO - End = 2022-05-27 00:00:00
+[2023-01-05T23:41:58.251+0530] {logging_mixin.py:137} INFO - Current =20-05-2022
+[2023-01-05T23:41:58.255+0530] {logging_mixin.py:137} INFO - Current =21-05-2022
+[2023-01-05T23:41:58.259+0530] {logging_mixin.py:137} INFO - Current =22-05-2022
+[2023-01-05T23:41:58.266+0530] {logging_mixin.py:137} INFO - Current =23-05-2022
+[2023-01-05T23:41:58.271+0530] {logging_mixin.py:137} INFO - Current =24-05-2022
+[2023-01-05T23:41:58.276+0530] {logging_mixin.py:137} INFO - Current =25-05-2022
+[2023-01-05T23:41:58.284+0530] {logging_mixin.py:137} INFO - Current =26-05-2022
+[2023-01-05T23:41:58.288+0530] {logging_mixin.py:137} INFO - Current =27-05-2022
+[2023-01-05T23:41:59.936+0530] {logging_mixin.py:137} INFO - Start = 2022-05-13 00:00:00
+[2023-01-05T23:41:59.936+0530] {logging_mixin.py:137} INFO - End = 2022-05-20 00:00:00
+[2023-01-05T23:41:59.936+0530] {logging_mixin.py:137} INFO - Current =13-05-2022
+[2023-01-05T23:41:59.941+0530] {logging_mixin.py:137} INFO - Current =14-05-2022
+[2023-01-05T23:41:59.949+0530] {logging_mixin.py:137} INFO - 14-05-2022
+[2023-01-05T23:41:59.949+0530] {logging_mixin.py:137} INFO - 593.279
+[2023-01-05T23:41:59.949+0530] {logging_mixin.py:137} INFO - 529.554
+[2023-01-05T23:41:59.949+0530] {logging_mixin.py:137} INFO - 40.57
+[2023-01-05T23:41:59.949+0530] {logging_mixin.py:137} INFO - Current =15-05-2022
+[2023-01-05T23:41:59.953+0530] {logging_mixin.py:137} INFO - 15-05-2022
+[2023-01-05T23:41:59.954+0530] {logging_mixin.py:137} INFO - 593.279
+[2023-01-05T23:41:59.954+0530] {logging_mixin.py:137} INFO - 529.554
+[2023-01-05T23:41:59.954+0530] {logging_mixin.py:137} INFO - 40.57
+[2023-01-05T23:41:59.954+0530] {logging_mixin.py:137} INFO - Current =16-05-2022
+[2023-01-05T23:41:59.957+0530] {logging_mixin.py:137} INFO - 16-05-2022
+[2023-01-05T23:41:59.957+0530] {logging_mixin.py:137} INFO - 593.279
+[2023-01-05T23:41:59.957+0530] {logging_mixin.py:137} INFO - 529.554
+[2023-01-05T23:41:59.957+0530] {logging_mixin.py:137} INFO - 40.57
+[2023-01-05T23:41:59.957+0530] {logging_mixin.py:137} INFO - Current =17-05-2022
+[2023-01-05T23:41:59.963+0530] {logging_mixin.py:137} INFO - Current =18-05-2022
+[2023-01-05T23:41:59.970+0530] {logging_mixin.py:137} INFO - Current =19-05-2022
+[2023-01-05T23:41:59.975+0530] {logging_mixin.py:137} INFO - Current =20-05-2022
+[2023-01-05T23:42:02.158+0530] {logging_mixin.py:137} INFO - Start = 2022-05-06 00:00:00
+[2023-01-05T23:42:02.158+0530] {logging_mixin.py:137} INFO - End = 2022-05-13 00:00:00
+[2023-01-05T23:42:02.158+0530] {logging_mixin.py:137} INFO - Current =06-05-2022
+[2023-01-05T23:42:02.166+0530] {logging_mixin.py:137} INFO - Current =07-05-2022
+[2023-01-05T23:42:02.170+0530] {logging_mixin.py:137} INFO - Current =08-05-2022
+[2023-01-05T23:42:02.174+0530] {logging_mixin.py:137} INFO - Current =09-05-2022
+[2023-01-05T23:42:02.181+0530] {logging_mixin.py:137} INFO - Current =10-05-2022
+[2023-01-05T23:42:02.186+0530] {logging_mixin.py:137} INFO - Current =11-05-2022
+[2023-01-05T23:42:02.189+0530] {logging_mixin.py:137} INFO - Current =12-05-2022
+[2023-01-05T23:42:02.193+0530] {logging_mixin.py:137} INFO - Current =13-05-2022
+[2023-01-05T23:42:04.600+0530] {logging_mixin.py:137} INFO - Start = 2022-04-29 00:00:00
+[2023-01-05T23:42:04.601+0530] {logging_mixin.py:137} INFO - End = 2022-05-06 00:00:00
+[2023-01-05T23:42:04.601+0530] {logging_mixin.py:137} INFO - Current =29-04-2022
+[2023-01-05T23:42:04.615+0530] {logging_mixin.py:137} INFO - Current =30-04-2022
+[2023-01-05T23:42:04.634+0530] {logging_mixin.py:137} INFO - Current =01-05-2022
+[2023-01-05T23:42:04.653+0530] {logging_mixin.py:137} INFO - Current =02-05-2022
+[2023-01-05T23:42:04.670+0530] {logging_mixin.py:137} INFO - Current =03-05-2022
+[2023-01-05T23:42:04.684+0530] {logging_mixin.py:137} INFO - Current =04-05-2022
+[2023-01-05T23:42:04.700+0530] {logging_mixin.py:137} INFO - Current =05-05-2022
+[2023-01-05T23:42:04.706+0530] {logging_mixin.py:137} INFO - Current =06-05-2022
+[2023-01-05T23:42:07.043+0530] {logging_mixin.py:137} INFO - Start = 2022-04-22 00:00:00
+[2023-01-05T23:42:07.043+0530] {logging_mixin.py:137} INFO - End = 2022-04-29 00:00:00
+[2023-01-05T23:42:07.043+0530] {logging_mixin.py:137} INFO - Current =22-04-2022
+[2023-01-05T23:42:07.050+0530] {logging_mixin.py:137} INFO - Current =23-04-2022
+[2023-01-05T23:42:07.055+0530] {logging_mixin.py:137} INFO - 23-04-2022
+[2023-01-05T23:42:07.055+0530] {logging_mixin.py:137} INFO - 600.423
+[2023-01-05T23:42:07.055+0530] {logging_mixin.py:137} INFO - 533.933
+[2023-01-05T23:42:07.055+0530] {logging_mixin.py:137} INFO - 42.768
+[2023-01-05T23:42:07.055+0530] {logging_mixin.py:137} INFO - Current =24-04-2022
+[2023-01-05T23:42:07.062+0530] {logging_mixin.py:137} INFO - Current =25-04-2022
+[2023-01-05T23:42:07.070+0530] {logging_mixin.py:137} INFO - Current =26-04-2022
+[2023-01-05T23:42:07.077+0530] {logging_mixin.py:137} INFO - Current =27-04-2022
+[2023-01-05T23:42:07.086+0530] {logging_mixin.py:137} INFO - Current =28-04-2022
+[2023-01-05T23:42:07.092+0530] {logging_mixin.py:137} INFO - Current =29-04-2022
+[2023-01-05T23:42:09.243+0530] {logging_mixin.py:137} INFO - Start = 2022-04-15 00:00:00
+[2023-01-05T23:42:09.244+0530] {logging_mixin.py:137} INFO - End = 2022-04-22 00:00:00
+[2023-01-05T23:42:09.244+0530] {logging_mixin.py:137} INFO - Current =15-04-2022
+[2023-01-05T23:42:09.247+0530] {logging_mixin.py:137} INFO - 15-04-2022
+[2023-01-05T23:42:09.247+0530] {logging_mixin.py:137} INFO - 603.694
+[2023-01-05T23:42:09.247+0530] {logging_mixin.py:137} INFO - 536.768
+[2023-01-05T23:42:09.247+0530] {logging_mixin.py:137} INFO - 43.145
+[2023-01-05T23:42:09.247+0530] {logging_mixin.py:137} INFO - Current =16-04-2022
+[2023-01-05T23:42:09.255+0530] {logging_mixin.py:137} INFO - Current =17-04-2022
+[2023-01-05T23:42:09.259+0530] {logging_mixin.py:137} INFO - Current =18-04-2022
+[2023-01-05T23:42:09.263+0530] {logging_mixin.py:137} INFO - Current =19-04-2022
+[2023-01-05T23:42:09.271+0530] {logging_mixin.py:137} INFO - Current =20-04-2022
+[2023-01-05T23:42:09.274+0530] {logging_mixin.py:137} INFO - Current =21-04-2022
+[2023-01-05T23:42:09.278+0530] {logging_mixin.py:137} INFO - Current =22-04-2022
+[2023-01-05T23:42:11.406+0530] {logging_mixin.py:137} INFO - Start = 2022-04-08 00:00:00
+[2023-01-05T23:42:11.407+0530] {logging_mixin.py:137} INFO - End = 2022-04-15 00:00:00
+[2023-01-05T23:42:11.407+0530] {logging_mixin.py:137} INFO - Current =08-04-2022
+[2023-01-05T23:42:11.422+0530] {logging_mixin.py:137} INFO - Current =09-04-2022
+[2023-01-05T23:42:11.427+0530] {logging_mixin.py:137} INFO - 09-04-2022
+[2023-01-05T23:42:11.427+0530] {logging_mixin.py:137} INFO - 604.004
+[2023-01-05T23:42:11.427+0530] {logging_mixin.py:137} INFO - 537.645
+[2023-01-05T23:42:11.428+0530] {logging_mixin.py:137} INFO - 42.519
+[2023-01-05T23:42:11.428+0530] {logging_mixin.py:137} INFO - Current =10-04-2022
+[2023-01-05T23:42:11.437+0530] {logging_mixin.py:137} INFO - Current =11-04-2022
+[2023-01-05T23:42:11.446+0530] {logging_mixin.py:137} INFO - Current =12-04-2022
+[2023-01-05T23:42:11.455+0530] {logging_mixin.py:137} INFO - Current =13-04-2022
+[2023-01-05T23:42:11.465+0530] {logging_mixin.py:137} INFO - Current =14-04-2022
+[2023-01-05T23:42:11.471+0530] {logging_mixin.py:137} INFO - 14-04-2022
+[2023-01-05T23:42:11.472+0530] {logging_mixin.py:137} INFO - 604.004
+[2023-01-05T23:42:11.472+0530] {logging_mixin.py:137} INFO - 537.645
+[2023-01-05T23:42:11.472+0530] {logging_mixin.py:137} INFO - 42.519
+[2023-01-05T23:42:11.472+0530] {logging_mixin.py:137} INFO - Current =15-04-2022
+[2023-01-05T23:42:13.394+0530] {logging_mixin.py:137} INFO - Start = 2022-04-01 00:00:00
+[2023-01-05T23:42:13.394+0530] {logging_mixin.py:137} INFO - End = 2022-04-08 00:00:00
+[2023-01-05T23:42:13.394+0530] {logging_mixin.py:137} INFO - Current =01-04-2022
+[2023-01-05T23:42:13.398+0530] {logging_mixin.py:137} INFO - Current =02-04-2022
+[2023-01-05T23:42:13.406+0530] {logging_mixin.py:137} INFO - 02-04-2022
+[2023-01-05T23:42:13.406+0530] {logging_mixin.py:137} INFO - 606.475
+[2023-01-05T23:42:13.406+0530] {logging_mixin.py:137} INFO - 539.727
+[2023-01-05T23:42:13.406+0530] {logging_mixin.py:137} INFO - 42.734
+[2023-01-05T23:42:13.406+0530] {logging_mixin.py:137} INFO - Current =03-04-2022
+[2023-01-05T23:42:13.411+0530] {logging_mixin.py:137} INFO - Current =04-04-2022
+[2023-01-05T23:42:13.416+0530] {logging_mixin.py:137} INFO - Current =05-04-2022
+[2023-01-05T23:42:13.424+0530] {logging_mixin.py:137} INFO - Current =06-04-2022
+[2023-01-05T23:42:13.429+0530] {logging_mixin.py:137} INFO - Current =07-04-2022
+[2023-01-05T23:42:13.435+0530] {logging_mixin.py:137} INFO - Current =08-04-2022
+[2023-01-05T23:42:15.361+0530] {logging_mixin.py:137} INFO - Start = 2022-03-25 00:00:00
+[2023-01-05T23:42:15.362+0530] {logging_mixin.py:137} INFO - End = 2022-04-01 00:00:00
+[2023-01-05T23:42:15.362+0530] {logging_mixin.py:137} INFO - Current =25-03-2022
+[2023-01-05T23:42:15.367+0530] {logging_mixin.py:137} INFO - Current =26-03-2022
+[2023-01-05T23:42:15.373+0530] {logging_mixin.py:137} INFO - 26-03-2022
+[2023-01-05T23:42:15.374+0530] {logging_mixin.py:137} INFO - 617.648
+[2023-01-05T23:42:15.374+0530] {logging_mixin.py:137} INFO - 550.454
+[2023-01-05T23:42:15.374+0530] {logging_mixin.py:137} INFO - 43.241
+[2023-01-05T23:42:15.374+0530] {logging_mixin.py:137} INFO - Current =27-03-2022
+[2023-01-05T23:42:15.379+0530] {logging_mixin.py:137} INFO - Current =28-03-2022
+[2023-01-05T23:42:15.384+0530] {logging_mixin.py:137} INFO - Current =29-03-2022
+[2023-01-05T23:42:15.392+0530] {logging_mixin.py:137} INFO - Current =30-03-2022
+[2023-01-05T23:42:15.397+0530] {logging_mixin.py:137} INFO - Current =31-03-2022
+[2023-01-05T23:42:15.405+0530] {logging_mixin.py:137} INFO - Current =01-04-2022
+[2023-01-05T23:42:17.700+0530] {logging_mixin.py:137} INFO - Start = 2022-03-18 00:00:00
+[2023-01-05T23:42:17.701+0530] {logging_mixin.py:137} INFO - End = 2022-03-25 00:00:00
+[2023-01-05T23:42:17.701+0530] {logging_mixin.py:137} INFO - Current =18-03-2022
+[2023-01-05T23:42:17.709+0530] {logging_mixin.py:137} INFO - 18-03-2022
+[2023-01-05T23:42:17.709+0530] {logging_mixin.py:137} INFO - 619.678
+[2023-01-05T23:42:17.710+0530] {logging_mixin.py:137} INFO - 553.656
+[2023-01-05T23:42:17.710+0530] {logging_mixin.py:137} INFO - 42.011
+[2023-01-05T23:42:17.710+0530] {logging_mixin.py:137} INFO - Current =19-03-2022
+[2023-01-05T23:42:17.718+0530] {logging_mixin.py:137} INFO - Current =20-03-2022
+[2023-01-05T23:42:17.732+0530] {logging_mixin.py:137} INFO - Current =21-03-2022
+[2023-01-05T23:42:17.743+0530] {logging_mixin.py:137} INFO - Current =22-03-2022
+[2023-01-05T23:42:17.750+0530] {logging_mixin.py:137} INFO - Current =23-03-2022
+[2023-01-05T23:42:17.759+0530] {logging_mixin.py:137} INFO - Current =24-03-2022
+[2023-01-05T23:42:17.766+0530] {logging_mixin.py:137} INFO - Current =25-03-2022
+[2023-01-05T23:42:19.684+0530] {logging_mixin.py:137} INFO - Start = 2022-03-11 00:00:00
+[2023-01-05T23:42:19.684+0530] {logging_mixin.py:137} INFO - End = 2022-03-18 00:00:00
+[2023-01-05T23:42:19.684+0530] {logging_mixin.py:137} INFO - Current =11-03-2022
+[2023-01-05T23:42:19.693+0530] {logging_mixin.py:137} INFO - Current =12-03-2022
+[2023-01-05T23:42:19.698+0530] {logging_mixin.py:137} INFO - 12-03-2022
+[2023-01-05T23:42:19.699+0530] {logging_mixin.py:137} INFO - 622.275
+[2023-01-05T23:42:19.699+0530] {logging_mixin.py:137} INFO - 554.359
+[2023-01-05T23:42:19.699+0530] {logging_mixin.py:137} INFO - 43.842
+[2023-01-05T23:42:19.699+0530] {logging_mixin.py:137} INFO - Current =13-03-2022
+[2023-01-05T23:42:19.709+0530] {logging_mixin.py:137} INFO - Current =14-03-2022
+[2023-01-05T23:42:19.715+0530] {logging_mixin.py:137} INFO - Current =15-03-2022
+[2023-01-05T23:42:19.723+0530] {logging_mixin.py:137} INFO - Current =16-03-2022
+[2023-01-05T23:42:19.728+0530] {logging_mixin.py:137} INFO - Current =17-03-2022
+[2023-01-05T23:42:19.732+0530] {logging_mixin.py:137} INFO - Current =18-03-2022
+[2023-01-05T23:42:21.762+0530] {logging_mixin.py:137} INFO - Start = 2022-03-04 00:00:00
+[2023-01-05T23:42:21.762+0530] {logging_mixin.py:137} INFO - End = 2022-03-11 00:00:00
+[2023-01-05T23:42:21.762+0530] {logging_mixin.py:137} INFO - Current =04-03-2022
+[2023-01-05T23:42:21.768+0530] {logging_mixin.py:137} INFO - Current =05-03-2022
+[2023-01-05T23:42:21.777+0530] {logging_mixin.py:137} INFO - Current =06-03-2022
+[2023-01-05T23:42:21.784+0530] {logging_mixin.py:137} INFO - Current =07-03-2022
+[2023-01-05T23:42:21.796+0530] {logging_mixin.py:137} INFO - Current =08-03-2022
+[2023-01-05T23:42:21.803+0530] {logging_mixin.py:137} INFO - Current =09-03-2022
+[2023-01-05T23:42:21.812+0530] {logging_mixin.py:137} INFO - Current =10-03-2022
+[2023-01-05T23:42:21.821+0530] {logging_mixin.py:137} INFO - Current =11-03-2022
+[2023-01-05T23:42:23.858+0530] {logging_mixin.py:137} INFO - Start = 2022-02-25 00:00:00
+[2023-01-05T23:42:23.858+0530] {logging_mixin.py:137} INFO - End = 2022-03-04 00:00:00
+[2023-01-05T23:42:23.859+0530] {logging_mixin.py:137} INFO - Current =25-02-2022
+[2023-01-05T23:42:23.862+0530] {logging_mixin.py:137} INFO - Current =26-02-2022
+[2023-01-05T23:42:23.866+0530] {logging_mixin.py:137} INFO - 26-02-2022
+[2023-01-05T23:42:23.867+0530] {logging_mixin.py:137} INFO - 631.527
+[2023-01-05T23:42:23.867+0530] {logging_mixin.py:137} INFO - 564.832
+[2023-01-05T23:42:23.867+0530] {logging_mixin.py:137} INFO - 42.467
+[2023-01-05T23:42:23.867+0530] {logging_mixin.py:137} INFO - Current =27-02-2022
+[2023-01-05T23:42:23.875+0530] {logging_mixin.py:137} INFO - Current =28-02-2022
+[2023-01-05T23:42:23.881+0530] {logging_mixin.py:137} INFO - Current =01-03-2022
+[2023-01-05T23:42:23.885+0530] {logging_mixin.py:137} INFO - Current =02-03-2022
+[2023-01-05T23:42:23.893+0530] {logging_mixin.py:137} INFO - Current =03-03-2022
+[2023-01-05T23:42:23.898+0530] {logging_mixin.py:137} INFO - Current =04-03-2022
+[2023-01-05T23:42:25.603+0530] {logging_mixin.py:137} INFO - Start = 2022-02-18 00:00:00
+[2023-01-05T23:42:25.603+0530] {logging_mixin.py:137} INFO - End = 2022-02-25 00:00:00
+[2023-01-05T23:42:25.603+0530] {logging_mixin.py:137} INFO - Current =18-02-2022
+[2023-01-05T23:42:25.610+0530] {logging_mixin.py:137} INFO - Current =19-02-2022
+[2023-01-05T23:42:25.613+0530] {logging_mixin.py:137} INFO - 19-02-2022
+[2023-01-05T23:42:25.614+0530] {logging_mixin.py:137} INFO - 632.952
+[2023-01-05T23:42:25.614+0530] {logging_mixin.py:137} INFO - 567.06
+[2023-01-05T23:42:25.614+0530] {logging_mixin.py:137} INFO - 41.509
+[2023-01-05T23:42:25.614+0530] {logging_mixin.py:137} INFO - Current =20-02-2022
+[2023-01-05T23:42:25.618+0530] {logging_mixin.py:137} INFO - Current =21-02-2022
+[2023-01-05T23:42:25.625+0530] {logging_mixin.py:137} INFO - Current =22-02-2022
+[2023-01-05T23:42:25.630+0530] {logging_mixin.py:137} INFO - Current =23-02-2022
+[2023-01-05T23:42:25.634+0530] {logging_mixin.py:137} INFO - Current =24-02-2022
+[2023-01-05T23:42:25.640+0530] {logging_mixin.py:137} INFO - Current =25-02-2022
+[2023-01-05T23:42:27.933+0530] {logging_mixin.py:137} INFO - Start = 2022-02-11 00:00:00
+[2023-01-05T23:42:27.933+0530] {logging_mixin.py:137} INFO - End = 2022-02-18 00:00:00
+[2023-01-05T23:42:27.933+0530] {logging_mixin.py:137} INFO - Current =11-02-2022
+[2023-01-05T23:42:27.938+0530] {logging_mixin.py:137} INFO - Current =12-02-2022
+[2023-01-05T23:42:27.944+0530] {logging_mixin.py:137} INFO - 12-02-2022
+[2023-01-05T23:42:27.944+0530] {logging_mixin.py:137} INFO - 630.19
+[2023-01-05T23:42:27.944+0530] {logging_mixin.py:137} INFO - 565.565
+[2023-01-05T23:42:27.945+0530] {logging_mixin.py:137} INFO - 40.235
+[2023-01-05T23:42:27.945+0530] {logging_mixin.py:137} INFO - Current =13-02-2022
+[2023-01-05T23:42:27.949+0530] {logging_mixin.py:137} INFO - Current =14-02-2022
+[2023-01-05T23:42:27.953+0530] {logging_mixin.py:137} INFO - Current =15-02-2022
+[2023-01-05T23:42:27.962+0530] {logging_mixin.py:137} INFO - Current =16-02-2022
+[2023-01-05T23:42:27.966+0530] {logging_mixin.py:137} INFO - Current =17-02-2022
+[2023-01-05T23:42:27.970+0530] {logging_mixin.py:137} INFO - Current =18-02-2022
+[2023-01-05T23:42:29.914+0530] {logging_mixin.py:137} INFO - Start = 2022-02-04 00:00:00
+[2023-01-05T23:42:29.914+0530] {logging_mixin.py:137} INFO - End = 2022-02-11 00:00:00
+[2023-01-05T23:42:29.915+0530] {logging_mixin.py:137} INFO - Current =04-02-2022
+[2023-01-05T23:42:29.919+0530] {logging_mixin.py:137} INFO - Current =05-02-2022
+[2023-01-05T23:42:29.925+0530] {logging_mixin.py:137} INFO - Current =06-02-2022
+[2023-01-05T23:42:29.929+0530] {logging_mixin.py:137} INFO - 06-02-2022
+[2023-01-05T23:42:29.930+0530] {logging_mixin.py:137} INFO - 631.953
+[2023-01-05T23:42:29.930+0530] {logging_mixin.py:137} INFO - 568.329
+[2023-01-05T23:42:29.930+0530] {logging_mixin.py:137} INFO - 39.283
+[2023-01-05T23:42:29.930+0530] {logging_mixin.py:137} INFO - Current =07-02-2022
+[2023-01-05T23:42:29.934+0530] {logging_mixin.py:137} INFO - Current =08-02-2022
+[2023-01-05T23:42:29.938+0530] {logging_mixin.py:137} INFO - Current =09-02-2022
+[2023-01-05T23:42:29.946+0530] {logging_mixin.py:137} INFO - Current =10-02-2022
+[2023-01-05T23:42:29.951+0530] {logging_mixin.py:137} INFO - Current =11-02-2022
+[2023-01-05T23:42:32.062+0530] {logging_mixin.py:137} INFO - Start = 2022-01-28 00:00:00
+[2023-01-05T23:42:32.063+0530] {logging_mixin.py:137} INFO - End = 2022-02-04 00:00:00
+[2023-01-05T23:42:32.063+0530] {logging_mixin.py:137} INFO - Current =28-01-2022
+[2023-01-05T23:42:32.067+0530] {logging_mixin.py:137} INFO - Current =29-01-2022
+[2023-01-05T23:42:32.071+0530] {logging_mixin.py:137} INFO - Current =30-01-2022
+[2023-01-05T23:42:32.080+0530] {logging_mixin.py:137} INFO - Current =31-01-2022
+[2023-01-05T23:42:32.085+0530] {logging_mixin.py:137} INFO - Current =01-02-2022
+[2023-01-05T23:42:32.093+0530] {logging_mixin.py:137} INFO - Current =02-02-2022
+[2023-01-05T23:42:32.100+0530] {logging_mixin.py:137} INFO - Current =03-02-2022
+[2023-01-05T23:42:32.104+0530] {logging_mixin.py:137} INFO - Current =04-02-2022
+[2023-01-05T23:42:34.103+0530] {logging_mixin.py:137} INFO - Start = 2022-01-21 00:00:00
+[2023-01-05T23:42:34.103+0530] {logging_mixin.py:137} INFO - End = 2022-01-28 00:00:00
+[2023-01-05T23:42:34.103+0530] {logging_mixin.py:137} INFO - Current =21-01-2022
+[2023-01-05T23:42:34.110+0530] {logging_mixin.py:137} INFO - Current =22-01-2022
+[2023-01-05T23:42:34.114+0530] {logging_mixin.py:137} INFO - 22-01-2022
+[2023-01-05T23:42:34.115+0530] {logging_mixin.py:137} INFO - 634.287
+[2023-01-05T23:42:34.115+0530] {logging_mixin.py:137} INFO - 569.582
+[2023-01-05T23:42:34.115+0530] {logging_mixin.py:137} INFO - 40.337
+[2023-01-05T23:42:34.115+0530] {logging_mixin.py:137} INFO - Current =23-01-2022
+[2023-01-05T23:42:34.119+0530] {logging_mixin.py:137} INFO - Current =24-01-2022
+[2023-01-05T23:42:34.123+0530] {logging_mixin.py:137} INFO - Current =25-01-2022
+[2023-01-05T23:42:34.132+0530] {logging_mixin.py:137} INFO - Current =26-01-2022
+[2023-01-05T23:42:34.136+0530] {logging_mixin.py:137} INFO - Current =27-01-2022
+[2023-01-05T23:42:34.140+0530] {logging_mixin.py:137} INFO - Current =28-01-2022
+[2023-01-05T23:42:36.229+0530] {logging_mixin.py:137} INFO - Start = 2022-01-14 00:00:00
+[2023-01-05T23:42:36.230+0530] {logging_mixin.py:137} INFO - End = 2022-01-21 00:00:00
+[2023-01-05T23:42:36.230+0530] {logging_mixin.py:137} INFO - Current =14-01-2022
+[2023-01-05T23:42:36.235+0530] {logging_mixin.py:137} INFO - Current =15-01-2022
+[2023-01-05T23:42:36.240+0530] {logging_mixin.py:137} INFO - Current =16-01-2022
+[2023-01-05T23:42:36.252+0530] {logging_mixin.py:137} INFO - Current =17-01-2022
+[2023-01-05T23:42:36.262+0530] {logging_mixin.py:137} INFO - Current =18-01-2022
+[2023-01-05T23:42:36.268+0530] {logging_mixin.py:137} INFO - Current =19-01-2022
+[2023-01-05T23:42:36.275+0530] {logging_mixin.py:137} INFO - Current =20-01-2022
+[2023-01-05T23:42:36.286+0530] {logging_mixin.py:137} INFO - Current =21-01-2022
+[2023-01-05T23:42:38.477+0530] {logging_mixin.py:137} INFO - Start = 2022-01-07 00:00:00
+[2023-01-05T23:42:38.478+0530] {logging_mixin.py:137} INFO - End = 2022-01-14 00:00:00
+[2023-01-05T23:42:38.478+0530] {logging_mixin.py:137} INFO - Current =07-01-2022
+[2023-01-05T23:42:38.485+0530] {logging_mixin.py:137} INFO - Current =08-01-2022
+[2023-01-05T23:42:38.489+0530] {logging_mixin.py:137} INFO - 08-01-2022
+[2023-01-05T23:42:38.490+0530] {logging_mixin.py:137} INFO - 632.736
+[2023-01-05T23:42:38.490+0530] {logging_mixin.py:137} INFO - 569.392
+[2023-01-05T23:42:38.491+0530] {logging_mixin.py:137} INFO - 39.044
+[2023-01-05T23:42:38.491+0530] {logging_mixin.py:137} INFO - Current =09-01-2022
+[2023-01-05T23:42:38.498+0530] {logging_mixin.py:137} INFO - Current =10-01-2022
+[2023-01-05T23:42:38.504+0530] {logging_mixin.py:137} INFO - Current =11-01-2022
+[2023-01-05T23:42:38.509+0530] {logging_mixin.py:137} INFO - Current =12-01-2022
+[2023-01-05T23:42:38.516+0530] {logging_mixin.py:137} INFO - Current =13-01-2022
+[2023-01-05T23:42:38.521+0530] {logging_mixin.py:137} INFO - Current =14-01-2022
+[2023-01-05T23:42:40.279+0530] {logging_mixin.py:137} INFO - Start = 2021-12-31 00:00:00
+[2023-01-05T23:42:40.280+0530] {logging_mixin.py:137} INFO - End = 2022-01-07 00:00:00
+[2023-01-05T23:42:40.280+0530] {logging_mixin.py:137} INFO - Current =31-12-2021
+[2023-01-05T23:42:40.285+0530] {logging_mixin.py:137} INFO - Current =01-01-2022
+[2023-01-05T23:42:40.290+0530] {logging_mixin.py:137} INFO - Current =02-01-2022
+[2023-01-05T23:42:40.294+0530] {logging_mixin.py:137} INFO - Current =03-01-2022
+[2023-01-05T23:42:40.302+0530] {logging_mixin.py:137} INFO - Current =04-01-2022
+[2023-01-05T23:42:40.311+0530] {logging_mixin.py:137} INFO - Current =05-01-2022
+[2023-01-05T23:42:40.320+0530] {logging_mixin.py:137} INFO - Current =06-01-2022
+[2023-01-05T23:42:40.325+0530] {logging_mixin.py:137} INFO - Current =07-01-2022
+[2023-01-05T23:42:42.705+0530] {logging_mixin.py:137} INFO - Start = 2021-12-24 00:00:00
+[2023-01-05T23:42:42.705+0530] {logging_mixin.py:137} INFO - End = 2021-12-31 00:00:00
+[2023-01-05T23:42:42.705+0530] {logging_mixin.py:137} INFO - Current =24-12-2021
+[2023-01-05T23:42:42.709+0530] {logging_mixin.py:137} INFO - Current =25-12-2021
+[2023-01-05T23:42:42.712+0530] {logging_mixin.py:137} INFO - 25-12-2021
+[2023-01-05T23:42:42.712+0530] {logging_mixin.py:137} INFO - 635.08
+[2023-01-05T23:42:42.712+0530] {logging_mixin.py:137} INFO - 571.369
+[2023-01-05T23:42:42.712+0530] {logging_mixin.py:137} INFO - 39.39
+[2023-01-05T23:42:42.712+0530] {logging_mixin.py:137} INFO - Current =26-12-2021
+[2023-01-05T23:42:42.719+0530] {logging_mixin.py:137} INFO - Current =27-12-2021
+[2023-01-05T23:42:42.723+0530] {logging_mixin.py:137} INFO - Current =28-12-2021
+[2023-01-05T23:42:42.726+0530] {logging_mixin.py:137} INFO - Current =29-12-2021
+[2023-01-05T23:42:42.732+0530] {logging_mixin.py:137} INFO - Current =30-12-2021
+[2023-01-05T23:42:42.737+0530] {logging_mixin.py:137} INFO - Current =31-12-2021
+[2023-01-05T23:42:44.522+0530] {logging_mixin.py:137} INFO - Start = 2021-12-17 00:00:00
+[2023-01-05T23:42:44.522+0530] {logging_mixin.py:137} INFO - End = 2021-12-24 00:00:00
+[2023-01-05T23:42:44.522+0530] {logging_mixin.py:137} INFO - Current =17-12-2021
+[2023-01-05T23:42:44.533+0530] {logging_mixin.py:137} INFO - Current =18-12-2021
+[2023-01-05T23:42:44.545+0530] {logging_mixin.py:137} INFO - Current =19-12-2021
+[2023-01-05T23:42:44.553+0530] {logging_mixin.py:137} INFO - Current =20-12-2021
+[2023-01-05T23:42:44.558+0530] {logging_mixin.py:137} INFO - Current =21-12-2021
+[2023-01-05T23:42:44.566+0530] {logging_mixin.py:137} INFO - Current =22-12-2021
+[2023-01-05T23:42:44.573+0530] {logging_mixin.py:137} INFO - Current =23-12-2021
+[2023-01-05T23:42:44.579+0530] {logging_mixin.py:137} INFO - Current =24-12-2021
+[2023-01-05T23:42:46.886+0530] {logging_mixin.py:137} INFO - Start = 2021-12-10 00:00:00
+[2023-01-05T23:42:46.886+0530] {logging_mixin.py:137} INFO - End = 2021-12-17 00:00:00
+[2023-01-05T23:42:46.886+0530] {logging_mixin.py:137} INFO - Current =10-12-2021
+[2023-01-05T23:42:46.890+0530] {logging_mixin.py:137} INFO - Current =11-12-2021
+[2023-01-05T23:42:46.893+0530] {logging_mixin.py:137} INFO - 11-12-2021
+[2023-01-05T23:42:46.894+0530] {logging_mixin.py:137} INFO - 635.828
+[2023-01-05T23:42:46.894+0530] {logging_mixin.py:137} INFO - 572.86
+[2023-01-05T23:42:46.894+0530] {logging_mixin.py:137} INFO - 38.709
+[2023-01-05T23:42:46.894+0530] {logging_mixin.py:137} INFO - Current =12-12-2021
+[2023-01-05T23:42:46.900+0530] {logging_mixin.py:137} INFO - Current =13-12-2021
+[2023-01-05T23:42:46.906+0530] {logging_mixin.py:137} INFO - Current =14-12-2021
+[2023-01-05T23:42:46.911+0530] {logging_mixin.py:137} INFO - Current =15-12-2021
+[2023-01-05T23:42:46.916+0530] {logging_mixin.py:137} INFO - Current =16-12-2021
+[2023-01-05T23:42:46.921+0530] {logging_mixin.py:137} INFO - Current =17-12-2021
+[2023-01-05T23:42:49.087+0530] {logging_mixin.py:137} INFO - Start = 2021-12-03 00:00:00
+[2023-01-05T23:42:49.088+0530] {logging_mixin.py:137} INFO - End = 2021-12-10 00:00:00
+[2023-01-05T23:42:49.088+0530] {logging_mixin.py:137} INFO - Current =03-12-2021
+[2023-01-05T23:42:49.092+0530] {logging_mixin.py:137} INFO - Current =04-12-2021
+[2023-01-05T23:42:49.097+0530] {logging_mixin.py:137} INFO - Current =05-12-2021
+[2023-01-05T23:42:49.104+0530] {logging_mixin.py:137} INFO - Current =06-12-2021
+[2023-01-05T23:42:49.108+0530] {logging_mixin.py:137} INFO - Current =07-12-2021
+[2023-01-05T23:42:49.113+0530] {logging_mixin.py:137} INFO - Current =08-12-2021
+[2023-01-05T23:42:49.121+0530] {logging_mixin.py:137} INFO - Current =09-12-2021
+[2023-01-05T23:42:49.126+0530] {logging_mixin.py:137} INFO - Current =10-12-2021
+[2023-01-05T23:42:50.757+0530] {logging_mixin.py:137} INFO - Start = 2021-11-26 00:00:00
+[2023-01-05T23:42:50.757+0530] {logging_mixin.py:137} INFO - End = 2021-12-03 00:00:00
+[2023-01-05T23:42:50.757+0530] {logging_mixin.py:137} INFO - Current =26-11-2021
+[2023-01-05T23:42:50.762+0530] {logging_mixin.py:137} INFO - Current =27-11-2021
+[2023-01-05T23:42:50.766+0530] {logging_mixin.py:137} INFO - 27-11-2021
+[2023-01-05T23:42:50.767+0530] {logging_mixin.py:137} INFO - 637.687
+[2023-01-05T23:42:50.767+0530] {logging_mixin.py:137} INFO - 574.664
+[2023-01-05T23:42:50.767+0530] {logging_mixin.py:137} INFO - 38.825
+[2023-01-05T23:42:50.767+0530] {logging_mixin.py:137} INFO - Current =28-11-2021
+[2023-01-05T23:42:50.774+0530] {logging_mixin.py:137} INFO - Current =29-11-2021
+[2023-01-05T23:42:50.778+0530] {logging_mixin.py:137} INFO - Current =30-11-2021
+[2023-01-05T23:42:50.785+0530] {logging_mixin.py:137} INFO - Current =01-12-2021
+[2023-01-05T23:42:50.791+0530] {logging_mixin.py:137} INFO - Current =02-12-2021
+[2023-01-05T23:42:50.795+0530] {logging_mixin.py:137} INFO - Current =03-12-2021
+[2023-01-05T23:42:53.144+0530] {logging_mixin.py:137} INFO - Start = 2021-11-19 00:00:00
+[2023-01-05T23:42:53.144+0530] {logging_mixin.py:137} INFO - End = 2021-11-26 00:00:00
+[2023-01-05T23:42:53.145+0530] {logging_mixin.py:137} INFO - Current =19-11-2021
+[2023-01-05T23:42:53.148+0530] {logging_mixin.py:137} INFO - 19-11-2021
+[2023-01-05T23:42:53.148+0530] {logging_mixin.py:137} INFO - 640.401
+[2023-01-05T23:42:53.148+0530] {logging_mixin.py:137} INFO - 575.712
+[2023-01-05T23:42:53.149+0530] {logging_mixin.py:137} INFO - 40.391
+[2023-01-05T23:42:53.149+0530] {logging_mixin.py:137} INFO - Current =20-11-2021
+[2023-01-05T23:42:53.156+0530] {logging_mixin.py:137} INFO - Current =21-11-2021
+[2023-01-05T23:42:53.161+0530] {logging_mixin.py:137} INFO - Current =22-11-2021
+[2023-01-05T23:42:53.165+0530] {logging_mixin.py:137} INFO - Current =23-11-2021
+[2023-01-05T23:42:53.173+0530] {logging_mixin.py:137} INFO - Current =24-11-2021
+[2023-01-05T23:42:53.179+0530] {logging_mixin.py:137} INFO - Current =25-11-2021
+[2023-01-05T23:42:53.185+0530] {logging_mixin.py:137} INFO - Current =26-11-2021
+[2023-01-05T23:42:55.173+0530] {logging_mixin.py:137} INFO - Start = 2021-11-12 00:00:00
+[2023-01-05T23:42:55.173+0530] {logging_mixin.py:137} INFO - End = 2021-11-19 00:00:00
+[2023-01-05T23:42:55.173+0530] {logging_mixin.py:137} INFO - Current =12-11-2021
+[2023-01-05T23:42:55.178+0530] {logging_mixin.py:137} INFO - Current =13-11-2021
+[2023-01-05T23:42:55.181+0530] {logging_mixin.py:137} INFO - 13-11-2021
+[2023-01-05T23:42:55.182+0530] {logging_mixin.py:137} INFO - 640.112
+[2023-01-05T23:42:55.182+0530] {logging_mixin.py:137} INFO - 575.487
+[2023-01-05T23:42:55.182+0530] {logging_mixin.py:137} INFO - 40.239
+[2023-01-05T23:42:55.182+0530] {logging_mixin.py:137} INFO - Current =14-11-2021
+[2023-01-05T23:42:55.189+0530] {logging_mixin.py:137} INFO - Current =15-11-2021
+[2023-01-05T23:42:55.193+0530] {logging_mixin.py:137} INFO - Current =16-11-2021
+[2023-01-05T23:42:55.197+0530] {logging_mixin.py:137} INFO - Current =17-11-2021
+[2023-01-05T23:42:55.204+0530] {logging_mixin.py:137} INFO - Current =18-11-2021
+[2023-01-05T23:42:55.210+0530] {logging_mixin.py:137} INFO - Current =19-11-2021
+[2023-01-05T23:42:57.131+0530] {logging_mixin.py:137} INFO - Start = 2021-11-05 00:00:00
+[2023-01-05T23:42:57.132+0530] {logging_mixin.py:137} INFO - End = 2021-11-12 00:00:00
+[2023-01-05T23:42:57.132+0530] {logging_mixin.py:137} INFO - Current =05-11-2021
+[2023-01-05T23:42:57.138+0530] {logging_mixin.py:137} INFO - 05-11-2021
+[2023-01-05T23:42:57.138+0530] {logging_mixin.py:137} INFO - 640.874
+[2023-01-05T23:42:57.139+0530] {logging_mixin.py:137} INFO - 577.581
+[2023-01-05T23:42:57.139+0530] {logging_mixin.py:137} INFO - 38.778
+[2023-01-05T23:42:57.139+0530] {logging_mixin.py:137} INFO - Current =06-11-2021
+[2023-01-05T23:42:57.143+0530] {logging_mixin.py:137} INFO - Current =07-11-2021
+[2023-01-05T23:42:57.147+0530] {logging_mixin.py:137} INFO - Current =08-11-2021
+[2023-01-05T23:42:57.157+0530] {logging_mixin.py:137} INFO - Current =09-11-2021
+[2023-01-05T23:42:57.163+0530] {logging_mixin.py:137} INFO - Current =10-11-2021
+[2023-01-05T23:42:57.168+0530] {logging_mixin.py:137} INFO - Current =11-11-2021
+[2023-01-05T23:42:57.176+0530] {logging_mixin.py:137} INFO - Current =12-11-2021
+[2023-01-05T23:42:59.357+0530] {logging_mixin.py:137} INFO - Start = 2021-10-29 00:00:00
+[2023-01-05T23:42:59.358+0530] {logging_mixin.py:137} INFO - End = 2021-11-05 00:00:00
+[2023-01-05T23:42:59.358+0530] {logging_mixin.py:137} INFO - Current =29-10-2021
+[2023-01-05T23:42:59.362+0530] {logging_mixin.py:137} INFO - Current =30-10-2021
+[2023-01-05T23:42:59.366+0530] {logging_mixin.py:137} INFO - Current =31-10-2021
+[2023-01-05T23:42:59.373+0530] {logging_mixin.py:137} INFO - Current =01-11-2021
+[2023-01-05T23:42:59.378+0530] {logging_mixin.py:137} INFO - Current =02-11-2021
+[2023-01-05T23:42:59.383+0530] {logging_mixin.py:137} INFO - Current =03-11-2021
+[2023-01-05T23:42:59.393+0530] {logging_mixin.py:137} INFO - Current =04-11-2021
+[2023-01-05T23:42:59.396+0530] {logging_mixin.py:137} INFO - 04-11-2021
+[2023-01-05T23:42:59.397+0530] {logging_mixin.py:137} INFO - 642.019
+[2023-01-05T23:42:59.397+0530] {logging_mixin.py:137} INFO - 578.462
+[2023-01-05T23:42:59.397+0530] {logging_mixin.py:137} INFO - 39.012
+[2023-01-05T23:42:59.397+0530] {logging_mixin.py:137} INFO - Current =05-11-2021
+[2023-01-05T23:43:01.582+0530] {logging_mixin.py:137} INFO - Start = 2021-10-22 00:00:00
+[2023-01-05T23:43:01.582+0530] {logging_mixin.py:137} INFO - End = 2021-10-29 00:00:00
+[2023-01-05T23:43:01.582+0530] {logging_mixin.py:137} INFO - Current =22-10-2021
+[2023-01-05T23:43:01.596+0530] {logging_mixin.py:137} INFO - Current =23-10-2021
+[2023-01-05T23:43:01.602+0530] {logging_mixin.py:137} INFO - 23-10-2021
+[2023-01-05T23:43:01.602+0530] {logging_mixin.py:137} INFO - 640.1
+[2023-01-05T23:43:01.603+0530] {logging_mixin.py:137} INFO - 577.098
+[2023-01-05T23:43:01.603+0530] {logging_mixin.py:137} INFO - 38.441
+[2023-01-05T23:43:01.603+0530] {logging_mixin.py:137} INFO - Current =24-10-2021
+[2023-01-05T23:43:01.617+0530] {logging_mixin.py:137} INFO - Current =25-10-2021
+[2023-01-05T23:43:01.627+0530] {logging_mixin.py:137} INFO - Current =26-10-2021
+[2023-01-05T23:43:01.634+0530] {logging_mixin.py:137} INFO - Current =27-10-2021
+[2023-01-05T23:43:01.644+0530] {logging_mixin.py:137} INFO - Current =28-10-2021
+[2023-01-05T23:43:01.652+0530] {logging_mixin.py:137} INFO - Current =29-10-2021
+[2023-01-05T23:43:03.494+0530] {logging_mixin.py:137} INFO - Start = 2021-10-15 00:00:00
+[2023-01-05T23:43:03.494+0530] {logging_mixin.py:137} INFO - End = 2021-10-22 00:00:00
+[2023-01-05T23:43:03.495+0530] {logging_mixin.py:137} INFO - Current =15-10-2021
+[2023-01-05T23:43:03.498+0530] {logging_mixin.py:137} INFO - 15-10-2021
+[2023-01-05T23:43:03.498+0530] {logging_mixin.py:137} INFO - 641.008
+[2023-01-05T23:43:03.498+0530] {logging_mixin.py:137} INFO - 577.951
+[2023-01-05T23:43:03.499+0530] {logging_mixin.py:137} INFO - 38.579
+[2023-01-05T23:43:03.499+0530] {logging_mixin.py:137} INFO - Current =16-10-2021
+[2023-01-05T23:43:03.503+0530] {logging_mixin.py:137} INFO - Current =17-10-2021
+[2023-01-05T23:43:03.511+0530] {logging_mixin.py:137} INFO - Current =18-10-2021
+[2023-01-05T23:43:03.516+0530] {logging_mixin.py:137} INFO - Current =19-10-2021
+[2023-01-05T23:43:03.521+0530] {logging_mixin.py:137} INFO - Current =20-10-2021
+[2023-01-05T23:43:03.528+0530] {logging_mixin.py:137} INFO - Current =21-10-2021
+[2023-01-05T23:43:03.532+0530] {logging_mixin.py:137} INFO - Current =22-10-2021
+[2023-01-05T23:43:05.426+0530] {logging_mixin.py:137} INFO - Start = 2021-10-08 00:00:00
+[2023-01-05T23:43:05.427+0530] {logging_mixin.py:137} INFO - End = 2021-10-15 00:00:00
+[2023-01-05T23:43:05.427+0530] {logging_mixin.py:137} INFO - Current =08-10-2021
+[2023-01-05T23:43:05.432+0530] {logging_mixin.py:137} INFO - Current =09-10-2021
+[2023-01-05T23:43:05.436+0530] {logging_mixin.py:137} INFO - 09-10-2021
+[2023-01-05T23:43:05.436+0530] {logging_mixin.py:137} INFO - 639.516
+[2023-01-05T23:43:05.436+0530] {logging_mixin.py:137} INFO - 577.001
+[2023-01-05T23:43:05.436+0530] {logging_mixin.py:137} INFO - 38.022
+[2023-01-05T23:43:05.436+0530] {logging_mixin.py:137} INFO - Current =10-10-2021
+[2023-01-05T23:43:05.444+0530] {logging_mixin.py:137} INFO - Current =11-10-2021
+[2023-01-05T23:43:05.448+0530] {logging_mixin.py:137} INFO - Current =12-10-2021
+[2023-01-05T23:43:05.452+0530] {logging_mixin.py:137} INFO - Current =13-10-2021
+[2023-01-05T23:43:05.459+0530] {logging_mixin.py:137} INFO - Current =14-10-2021
+[2023-01-05T23:43:05.464+0530] {logging_mixin.py:137} INFO - Current =15-10-2021
+[2023-01-05T23:43:07.702+0530] {logging_mixin.py:137} INFO - Start = 2021-10-01 00:00:00
+[2023-01-05T23:43:07.702+0530] {logging_mixin.py:137} INFO - End = 2021-10-08 00:00:00
+[2023-01-05T23:43:07.702+0530] {logging_mixin.py:137} INFO - Current =01-10-2021
+[2023-01-05T23:43:07.711+0530] {logging_mixin.py:137} INFO - Current =02-10-2021
+[2023-01-05T23:43:07.717+0530] {logging_mixin.py:137} INFO - 02-10-2021
+[2023-01-05T23:43:07.717+0530] {logging_mixin.py:137} INFO - 637.477
+[2023-01-05T23:43:07.717+0530] {logging_mixin.py:137} INFO - 575.451
+[2023-01-05T23:43:07.717+0530] {logging_mixin.py:137} INFO - 37.558
+[2023-01-05T23:43:07.717+0530] {logging_mixin.py:137} INFO - Current =03-10-2021
+[2023-01-05T23:43:07.725+0530] {logging_mixin.py:137} INFO - Current =04-10-2021
+[2023-01-05T23:43:07.741+0530] {logging_mixin.py:137} INFO - Current =05-10-2021
+[2023-01-05T23:43:07.750+0530] {logging_mixin.py:137} INFO - Current =06-10-2021
+[2023-01-05T23:43:07.761+0530] {logging_mixin.py:137} INFO - Current =07-10-2021
+[2023-01-05T23:43:07.768+0530] {logging_mixin.py:137} INFO - Current =08-10-2021
+[2023-01-05T23:43:09.714+0530] {logging_mixin.py:137} INFO - Start = 2021-09-24 00:00:00
+[2023-01-05T23:43:09.714+0530] {logging_mixin.py:137} INFO - End = 2021-10-01 00:00:00
+[2023-01-05T23:43:09.714+0530] {logging_mixin.py:137} INFO - Current =24-09-2021
+[2023-01-05T23:43:09.719+0530] {logging_mixin.py:137} INFO - Current =25-09-2021
+[2023-01-05T23:43:09.723+0530] {logging_mixin.py:137} INFO - 25-09-2021
+[2023-01-05T23:43:09.724+0530] {logging_mixin.py:137} INFO - 638.646
+[2023-01-05T23:43:09.724+0530] {logging_mixin.py:137} INFO - 576.731
+[2023-01-05T23:43:09.724+0530] {logging_mixin.py:137} INFO - 37.43
+[2023-01-05T23:43:09.725+0530] {logging_mixin.py:137} INFO - Current =26-09-2021
+[2023-01-05T23:43:09.731+0530] {logging_mixin.py:137} INFO - Current =27-09-2021
+[2023-01-05T23:43:09.735+0530] {logging_mixin.py:137} INFO - Current =28-09-2021
+[2023-01-05T23:43:09.744+0530] {logging_mixin.py:137} INFO - Current =29-09-2021
+[2023-01-05T23:43:09.750+0530] {logging_mixin.py:137} INFO - Current =30-09-2021
+[2023-01-05T23:43:09.760+0530] {logging_mixin.py:137} INFO - Current =01-10-2021
+[2023-01-05T23:43:11.814+0530] {logging_mixin.py:137} INFO - Start = 2021-09-17 00:00:00
+[2023-01-05T23:43:11.814+0530] {logging_mixin.py:137} INFO - End = 2021-09-24 00:00:00
+[2023-01-05T23:43:11.815+0530] {logging_mixin.py:137} INFO - Current =17-09-2021
+[2023-01-05T23:43:11.820+0530] {logging_mixin.py:137} INFO - Current =18-09-2021
+[2023-01-05T23:43:11.829+0530] {logging_mixin.py:137} INFO - Current =19-09-2021
+[2023-01-05T23:43:11.835+0530] {logging_mixin.py:137} INFO - Current =20-09-2021
+[2023-01-05T23:43:11.839+0530] {logging_mixin.py:137} INFO - Current =21-09-2021
+[2023-01-05T23:43:11.848+0530] {logging_mixin.py:137} INFO - Current =22-09-2021
+[2023-01-05T23:43:11.854+0530] {logging_mixin.py:137} INFO - Current =23-09-2021
+[2023-01-05T23:43:11.863+0530] {logging_mixin.py:137} INFO - Current =24-09-2021
+[2023-01-05T23:43:14.069+0530] {logging_mixin.py:137} INFO - Start = 2021-09-10 00:00:00
+[2023-01-05T23:43:14.069+0530] {logging_mixin.py:137} INFO - End = 2021-09-17 00:00:00
+[2023-01-05T23:43:14.069+0530] {logging_mixin.py:137} INFO - Current =10-09-2021
+[2023-01-05T23:43:14.072+0530] {logging_mixin.py:137} INFO - 10-09-2021
+[2023-01-05T23:43:14.072+0530] {logging_mixin.py:137} INFO - 641.113
+[2023-01-05T23:43:14.072+0530] {logging_mixin.py:137} INFO - 578.879
+[2023-01-05T23:43:14.073+0530] {logging_mixin.py:137} INFO - 37.669
+[2023-01-05T23:43:14.073+0530] {logging_mixin.py:137} INFO - Current =11-09-2021
+[2023-01-05T23:43:14.079+0530] {logging_mixin.py:137} INFO - 11-09-2021
+[2023-01-05T23:43:14.080+0530] {logging_mixin.py:137} INFO - 641.113
+[2023-01-05T23:43:14.080+0530] {logging_mixin.py:137} INFO - 578.879
+[2023-01-05T23:43:14.080+0530] {logging_mixin.py:137} INFO - 37.669
+[2023-01-05T23:43:14.080+0530] {logging_mixin.py:137} INFO - Current =12-09-2021
+[2023-01-05T23:43:14.085+0530] {logging_mixin.py:137} INFO - Current =13-09-2021
+[2023-01-05T23:43:14.089+0530] {logging_mixin.py:137} INFO - Current =14-09-2021
+[2023-01-05T23:43:14.096+0530] {logging_mixin.py:137} INFO - Current =15-09-2021
+[2023-01-05T23:43:14.102+0530] {logging_mixin.py:137} INFO - Current =16-09-2021
+[2023-01-05T23:43:14.108+0530] {logging_mixin.py:137} INFO - Current =17-09-2021
+[2023-01-05T23:43:15.880+0530] {logging_mixin.py:137} INFO - Start = 2021-09-03 00:00:00
+[2023-01-05T23:43:15.881+0530] {logging_mixin.py:137} INFO - End = 2021-09-10 00:00:00
+[2023-01-05T23:43:15.881+0530] {logging_mixin.py:137} INFO - Current =03-09-2021
+[2023-01-05T23:43:15.889+0530] {logging_mixin.py:137} INFO - Current =04-09-2021
+[2023-01-05T23:43:15.897+0530] {logging_mixin.py:137} INFO - Current =05-09-2021
+[2023-01-05T23:43:15.905+0530] {logging_mixin.py:137} INFO - Current =06-09-2021
+[2023-01-05T23:43:15.915+0530] {logging_mixin.py:137} INFO - Current =07-09-2021
+[2023-01-05T23:43:15.922+0530] {logging_mixin.py:137} INFO - Current =08-09-2021
+[2023-01-05T23:43:15.934+0530] {logging_mixin.py:137} INFO - Current =09-09-2021
+[2023-01-05T23:43:15.947+0530] {logging_mixin.py:137} INFO - Current =10-09-2021
+[2023-01-05T23:43:18.306+0530] {logging_mixin.py:137} INFO - Start = 2021-08-27 00:00:00
+[2023-01-05T23:43:18.306+0530] {logging_mixin.py:137} INFO - End = 2021-09-03 00:00:00
+[2023-01-05T23:43:18.307+0530] {logging_mixin.py:137} INFO - Current =27-08-2021
+[2023-01-05T23:43:18.316+0530] {logging_mixin.py:137} INFO - Current =28-08-2021
+[2023-01-05T23:43:18.321+0530] {logging_mixin.py:137} INFO - 28-08-2021
+[2023-01-05T23:43:18.322+0530] {logging_mixin.py:137} INFO - 633.558
+[2023-01-05T23:43:18.322+0530] {logging_mixin.py:137} INFO - 571.6
+[2023-01-05T23:43:18.322+0530] {logging_mixin.py:137} INFO - 37.441
+[2023-01-05T23:43:18.322+0530] {logging_mixin.py:137} INFO - Current =29-08-2021
+[2023-01-05T23:43:18.333+0530] {logging_mixin.py:137} INFO - Current =30-08-2021
+[2023-01-05T23:43:18.339+0530] {logging_mixin.py:137} INFO - Current =31-08-2021
+[2023-01-05T23:43:18.348+0530] {logging_mixin.py:137} INFO - Current =01-09-2021
+[2023-01-05T23:43:18.353+0530] {logging_mixin.py:137} INFO - Current =02-09-2021
+[2023-01-05T23:43:18.359+0530] {logging_mixin.py:137} INFO - Current =03-09-2021
+[2023-01-05T23:43:20.263+0530] {logging_mixin.py:137} INFO - Start = 2021-08-20 00:00:00
+[2023-01-05T23:43:20.264+0530] {logging_mixin.py:137} INFO - End = 2021-08-27 00:00:00
+[2023-01-05T23:43:20.264+0530] {logging_mixin.py:137} INFO - Current =20-08-2021
+[2023-01-05T23:43:20.268+0530] {logging_mixin.py:137} INFO - Current =21-08-2021
+[2023-01-05T23:43:20.272+0530] {logging_mixin.py:137} INFO - Current =22-08-2021
+[2023-01-05T23:43:20.280+0530] {logging_mixin.py:137} INFO - Current =23-08-2021
+[2023-01-05T23:43:20.285+0530] {logging_mixin.py:137} INFO - Current =24-08-2021
+[2023-01-05T23:43:20.290+0530] {logging_mixin.py:137} INFO - Current =25-08-2021
+[2023-01-05T23:43:20.297+0530] {logging_mixin.py:137} INFO - Current =26-08-2021
+[2023-01-05T23:43:20.303+0530] {logging_mixin.py:137} INFO - Current =27-08-2021
+[2023-01-05T23:43:22.311+0530] {logging_mixin.py:137} INFO - Start = 2021-08-13 00:00:00
+[2023-01-05T23:43:22.312+0530] {logging_mixin.py:137} INFO - End = 2021-08-20 00:00:00
+[2023-01-05T23:43:22.312+0530] {logging_mixin.py:137} INFO - Current =13-08-2021
+[2023-01-05T23:43:22.318+0530] {logging_mixin.py:137} INFO - Current =14-08-2021
+[2023-01-05T23:43:22.322+0530] {logging_mixin.py:137} INFO - 14-08-2021
+[2023-01-05T23:43:22.323+0530] {logging_mixin.py:137} INFO - 619.365
+[2023-01-05T23:43:22.323+0530] {logging_mixin.py:137} INFO - 576.374
+[2023-01-05T23:43:22.323+0530] {logging_mixin.py:137} INFO - 36.336
+[2023-01-05T23:43:22.323+0530] {logging_mixin.py:137} INFO - Current =15-08-2021
+[2023-01-05T23:43:22.326+0530] {logging_mixin.py:137} INFO - 15-08-2021
+[2023-01-05T23:43:22.326+0530] {logging_mixin.py:137} INFO - 619.365
+[2023-01-05T23:43:22.326+0530] {logging_mixin.py:137} INFO - 576.374
+[2023-01-05T23:43:22.327+0530] {logging_mixin.py:137} INFO - 36.336
+[2023-01-05T23:43:22.327+0530] {logging_mixin.py:137} INFO - Current =16-08-2021
+[2023-01-05T23:43:22.333+0530] {logging_mixin.py:137} INFO - Current =17-08-2021
+[2023-01-05T23:43:22.339+0530] {logging_mixin.py:137} INFO - Current =18-08-2021
+[2023-01-05T23:43:22.344+0530] {logging_mixin.py:137} INFO - Current =19-08-2021
+[2023-01-05T23:43:22.351+0530] {logging_mixin.py:137} INFO - Current =20-08-2021
+[2023-01-05T23:43:24.522+0530] {logging_mixin.py:137} INFO - Start = 2021-08-06 00:00:00
+[2023-01-05T23:43:24.523+0530] {logging_mixin.py:137} INFO - End = 2021-08-13 00:00:00
+[2023-01-05T23:43:24.523+0530] {logging_mixin.py:137} INFO - Current =06-08-2021
+[2023-01-05T23:43:24.527+0530] {logging_mixin.py:137} INFO - Current =07-08-2021
+[2023-01-05T23:43:24.537+0530] {logging_mixin.py:137} INFO - Current =08-08-2021
+[2023-01-05T23:43:24.542+0530] {logging_mixin.py:137} INFO - Current =09-08-2021
+[2023-01-05T23:43:24.549+0530] {logging_mixin.py:137} INFO - Current =10-08-2021
+[2023-01-05T23:43:24.555+0530] {logging_mixin.py:137} INFO - Current =11-08-2021
+[2023-01-05T23:43:24.560+0530] {logging_mixin.py:137} INFO - Current =12-08-2021
+[2023-01-05T23:43:24.567+0530] {logging_mixin.py:137} INFO - Current =13-08-2021
+[2023-01-05T23:43:26.791+0530] {logging_mixin.py:137} INFO - Start = 2021-07-30 00:00:00
+[2023-01-05T23:43:26.792+0530] {logging_mixin.py:137} INFO - End = 2021-08-06 00:00:00
+[2023-01-05T23:43:26.792+0530] {logging_mixin.py:137} INFO - Current =30-07-2021
+[2023-01-05T23:43:26.797+0530] {logging_mixin.py:137} INFO - Current =31-07-2021
+[2023-01-05T23:43:26.805+0530] {logging_mixin.py:137} INFO - Current =01-08-2021
+[2023-01-05T23:43:26.809+0530] {logging_mixin.py:137} INFO - Current =02-08-2021
+[2023-01-05T23:43:26.817+0530] {logging_mixin.py:137} INFO - Current =03-08-2021
+[2023-01-05T23:43:26.823+0530] {logging_mixin.py:137} INFO - Current =04-08-2021
+[2023-01-05T23:43:26.828+0530] {logging_mixin.py:137} INFO - Current =05-08-2021
+[2023-01-05T23:43:26.835+0530] {logging_mixin.py:137} INFO - Current =06-08-2021
+[2023-01-05T23:43:28.683+0530] {logging_mixin.py:137} INFO - Start = 2021-07-23 00:00:00
+[2023-01-05T23:43:28.683+0530] {logging_mixin.py:137} INFO - End = 2021-07-30 00:00:00
+[2023-01-05T23:43:28.683+0530] {logging_mixin.py:137} INFO - Current =23-07-2021
+[2023-01-05T23:43:28.688+0530] {logging_mixin.py:137} INFO - Current =24-07-2021
+[2023-01-05T23:43:28.692+0530] {logging_mixin.py:137} INFO - 24-07-2021
+[2023-01-05T23:43:28.692+0530] {logging_mixin.py:137} INFO - 611.149
+[2023-01-05T23:43:28.692+0530] {logging_mixin.py:137} INFO - 567.628
+[2023-01-05T23:43:28.692+0530] {logging_mixin.py:137} INFO - 36.884
+[2023-01-05T23:43:28.692+0530] {logging_mixin.py:137} INFO - Current =25-07-2021
+[2023-01-05T23:43:28.700+0530] {logging_mixin.py:137} INFO - Current =26-07-2021
+[2023-01-05T23:43:28.704+0530] {logging_mixin.py:137} INFO - Current =27-07-2021
+[2023-01-05T23:43:28.710+0530] {logging_mixin.py:137} INFO - Current =28-07-2021
+[2023-01-05T23:43:28.718+0530] {logging_mixin.py:137} INFO - Current =29-07-2021
+[2023-01-05T23:43:28.723+0530] {logging_mixin.py:137} INFO - Current =30-07-2021
+[2023-01-05T23:43:30.545+0530] {logging_mixin.py:137} INFO - Start = 2021-07-16 00:00:00
+[2023-01-05T23:43:30.546+0530] {logging_mixin.py:137} INFO - End = 2021-07-23 00:00:00
+[2023-01-05T23:43:30.546+0530] {logging_mixin.py:137} INFO - Current =16-07-2021
+[2023-01-05T23:43:30.553+0530] {logging_mixin.py:137} INFO - Current =17-07-2021
+[2023-01-05T23:43:30.559+0530] {logging_mixin.py:137} INFO - Current =18-07-2021
+[2023-01-05T23:43:30.565+0530] {logging_mixin.py:137} INFO - Current =19-07-2021
+[2023-01-05T23:43:30.572+0530] {logging_mixin.py:137} INFO - Current =20-07-2021
+[2023-01-05T23:43:30.577+0530] {logging_mixin.py:137} INFO - Current =21-07-2021
+[2023-01-05T23:43:30.585+0530] {logging_mixin.py:137} INFO - Current =22-07-2021
+[2023-01-05T23:43:30.591+0530] {logging_mixin.py:137} INFO - Current =23-07-2021
+[2023-01-05T23:43:33.089+0530] {logging_mixin.py:137} INFO - Start = 2021-07-09 00:00:00
+[2023-01-05T23:43:33.089+0530] {logging_mixin.py:137} INFO - End = 2021-07-16 00:00:00
+[2023-01-05T23:43:33.090+0530] {logging_mixin.py:137} INFO - Current =09-07-2021
+[2023-01-05T23:43:33.096+0530] {logging_mixin.py:137} INFO - Current =10-07-2021
+[2023-01-05T23:43:33.104+0530] {logging_mixin.py:137} INFO - 10-07-2021
+[2023-01-05T23:43:33.104+0530] {logging_mixin.py:137} INFO - 611.895
+[2023-01-05T23:43:33.105+0530] {logging_mixin.py:137} INFO - 568.285
+[2023-01-05T23:43:33.105+0530] {logging_mixin.py:137} INFO - 36.956
+[2023-01-05T23:43:33.105+0530] {logging_mixin.py:137} INFO - Current =11-07-2021
+[2023-01-05T23:43:33.111+0530] {logging_mixin.py:137} INFO - Current =12-07-2021
+[2023-01-05T23:43:33.121+0530] {logging_mixin.py:137} INFO - Current =13-07-2021
+[2023-01-05T23:43:33.127+0530] {logging_mixin.py:137} INFO - Current =14-07-2021
+[2023-01-05T23:43:33.137+0530] {logging_mixin.py:137} INFO - Current =15-07-2021
+[2023-01-05T23:43:33.144+0530] {logging_mixin.py:137} INFO - Current =16-07-2021
+[2023-01-05T23:43:35.148+0530] {logging_mixin.py:137} INFO - Start = 2021-07-02 00:00:00
+[2023-01-05T23:43:35.148+0530] {logging_mixin.py:137} INFO - End = 2021-07-09 00:00:00
+[2023-01-05T23:43:35.148+0530] {logging_mixin.py:137} INFO - Current =02-07-2021
+[2023-01-05T23:43:35.155+0530] {logging_mixin.py:137} INFO - Current =03-07-2021
+[2023-01-05T23:43:35.160+0530] {logging_mixin.py:137} INFO - Current =04-07-2021
+[2023-01-05T23:43:35.165+0530] {logging_mixin.py:137} INFO - Current =05-07-2021
+[2023-01-05T23:43:35.175+0530] {logging_mixin.py:137} INFO - Current =06-07-2021
+[2023-01-05T23:43:35.180+0530] {logging_mixin.py:137} INFO - Current =07-07-2021
+[2023-01-05T23:43:35.188+0530] {logging_mixin.py:137} INFO - Current =08-07-2021
+[2023-01-05T23:43:35.192+0530] {logging_mixin.py:137} INFO - Current =09-07-2021
+[2023-01-05T23:43:37.189+0530] {logging_mixin.py:137} INFO - Start = 2021-06-25 00:00:00
+[2023-01-05T23:43:37.190+0530] {logging_mixin.py:137} INFO - End = 2021-07-02 00:00:00
+[2023-01-05T23:43:37.190+0530] {logging_mixin.py:137} INFO - Current =25-06-2021
+[2023-01-05T23:43:37.194+0530] {logging_mixin.py:137} INFO - Current =26-06-2021
+[2023-01-05T23:43:37.198+0530] {logging_mixin.py:137} INFO - 26-06-2021
+[2023-01-05T23:43:37.198+0530] {logging_mixin.py:137} INFO - 608.999
+[2023-01-05T23:43:37.198+0530] {logging_mixin.py:137} INFO - 566.24
+[2023-01-05T23:43:37.198+0530] {logging_mixin.py:137} INFO - 36.296
+[2023-01-05T23:43:37.198+0530] {logging_mixin.py:137} INFO - Current =27-06-2021
+[2023-01-05T23:43:37.206+0530] {logging_mixin.py:137} INFO - Current =28-06-2021
+[2023-01-05T23:43:37.211+0530] {logging_mixin.py:137} INFO - Current =29-06-2021
+[2023-01-05T23:43:37.215+0530] {logging_mixin.py:137} INFO - Current =30-06-2021
+[2023-01-05T23:43:37.222+0530] {logging_mixin.py:137} INFO - Current =01-07-2021
+[2023-01-05T23:43:37.228+0530] {logging_mixin.py:137} INFO - Current =02-07-2021
+[2023-01-05T23:43:39.318+0530] {logging_mixin.py:137} INFO - Start = 2021-06-18 00:00:00
+[2023-01-05T23:43:39.318+0530] {logging_mixin.py:137} INFO - End = 2021-06-25 00:00:00
+[2023-01-05T23:43:39.319+0530] {logging_mixin.py:137} INFO - Current =18-06-2021
+[2023-01-05T23:43:39.325+0530] {logging_mixin.py:137} INFO - Current =19-06-2021
+[2023-01-05T23:43:39.329+0530] {logging_mixin.py:137} INFO - Current =20-06-2021
+[2023-01-05T23:43:39.333+0530] {logging_mixin.py:137} INFO - Current =21-06-2021
+[2023-01-05T23:43:39.342+0530] {logging_mixin.py:137} INFO - Current =22-06-2021
+[2023-01-05T23:43:39.346+0530] {logging_mixin.py:137} INFO - Current =23-06-2021
+[2023-01-05T23:43:39.355+0530] {logging_mixin.py:137} INFO - Current =24-06-2021
+[2023-01-05T23:43:39.361+0530] {logging_mixin.py:137} INFO - Current =25-06-2021
+[2023-01-05T23:43:41.116+0530] {logging_mixin.py:137} INFO - Start = 2021-06-11 00:00:00
+[2023-01-05T23:43:41.117+0530] {logging_mixin.py:137} INFO - End = 2021-06-18 00:00:00
+[2023-01-05T23:43:41.117+0530] {logging_mixin.py:137} INFO - Current =11-06-2021
+[2023-01-05T23:43:41.126+0530] {logging_mixin.py:137} INFO - Current =12-06-2021
+[2023-01-05T23:43:41.131+0530] {logging_mixin.py:137} INFO - 12-06-2021
+[2023-01-05T23:43:41.132+0530] {logging_mixin.py:137} INFO - 608.081
+[2023-01-05T23:43:41.132+0530] {logging_mixin.py:137} INFO - 563.457
+[2023-01-05T23:43:41.132+0530] {logging_mixin.py:137} INFO - 38.101
+[2023-01-05T23:43:41.132+0530] {logging_mixin.py:137} INFO - Current =13-06-2021
+[2023-01-05T23:43:41.140+0530] {logging_mixin.py:137} INFO - Current =14-06-2021
+[2023-01-05T23:43:41.148+0530] {logging_mixin.py:137} INFO - Current =15-06-2021
+[2023-01-05T23:43:41.160+0530] {logging_mixin.py:137} INFO - Current =16-06-2021
+[2023-01-05T23:43:41.169+0530] {logging_mixin.py:137} INFO - Current =17-06-2021
+[2023-01-05T23:43:41.180+0530] {logging_mixin.py:137} INFO - Current =18-06-2021
+[2023-01-05T23:43:43.524+0530] {logging_mixin.py:137} INFO - Start = 2021-06-04 00:00:00
+[2023-01-05T23:43:43.524+0530] {logging_mixin.py:137} INFO - End = 2021-06-11 00:00:00
+[2023-01-05T23:43:43.524+0530] {logging_mixin.py:137} INFO - Current =04-06-2021
+[2023-01-05T23:43:43.530+0530] {logging_mixin.py:137} INFO - Current =05-06-2021
+[2023-01-05T23:43:43.535+0530] {logging_mixin.py:137} INFO - Current =06-06-2021
+[2023-01-05T23:43:43.542+0530] {logging_mixin.py:137} INFO - Current =07-06-2021
+[2023-01-05T23:43:43.548+0530] {logging_mixin.py:137} INFO - Current =08-06-2021
+[2023-01-05T23:43:43.553+0530] {logging_mixin.py:137} INFO - Current =09-06-2021
+[2023-01-05T23:43:43.561+0530] {logging_mixin.py:137} INFO - Current =10-06-2021
+[2023-01-05T23:43:43.566+0530] {logging_mixin.py:137} INFO - Current =11-06-2021
+[2023-01-05T23:43:45.498+0530] {logging_mixin.py:137} INFO - Start = 2021-05-28 00:00:00
+[2023-01-05T23:43:45.498+0530] {logging_mixin.py:137} INFO - End = 2021-06-04 00:00:00
+[2023-01-05T23:43:45.498+0530] {logging_mixin.py:137} INFO - Current =28-05-2021
+[2023-01-05T23:43:45.503+0530] {logging_mixin.py:137} INFO - Current =29-05-2021
+[2023-01-05T23:43:45.510+0530] {logging_mixin.py:137} INFO - Current =30-05-2021
+[2023-01-05T23:43:45.515+0530] {logging_mixin.py:137} INFO - Current =31-05-2021
+[2023-01-05T23:43:45.520+0530] {logging_mixin.py:137} INFO - Current =01-06-2021
+[2023-01-05T23:43:45.528+0530] {logging_mixin.py:137} INFO - Current =02-06-2021
+[2023-01-05T23:43:45.532+0530] {logging_mixin.py:137} INFO - Current =03-06-2021
+[2023-01-05T23:43:45.536+0530] {logging_mixin.py:137} INFO - Current =04-06-2021
+[2023-01-05T23:43:47.841+0530] {logging_mixin.py:137} INFO - Start = 2021-05-21 00:00:00
+[2023-01-05T23:43:47.841+0530] {logging_mixin.py:137} INFO - End = 2021-05-28 00:00:00
+[2023-01-05T23:43:47.841+0530] {logging_mixin.py:137} INFO - Current =21-05-2021
+[2023-01-05T23:43:47.853+0530] {logging_mixin.py:137} INFO - Current =22-05-2021
+[2023-01-05T23:43:47.860+0530] {logging_mixin.py:137} INFO - 22-05-2021
+[2023-01-05T23:43:47.862+0530] {logging_mixin.py:137} INFO - 592.894
+[2023-01-05T23:43:47.862+0530] {logging_mixin.py:137} INFO - 548.519
+[2023-01-05T23:43:47.863+0530] {logging_mixin.py:137} INFO - 37.841
+[2023-01-05T23:43:47.863+0530] {logging_mixin.py:137} INFO - Current =23-05-2021
+[2023-01-05T23:43:47.879+0530] {logging_mixin.py:137} INFO - Current =24-05-2021
+[2023-01-05T23:43:47.898+0530] {logging_mixin.py:137} INFO - Current =25-05-2021
+[2023-01-05T23:43:47.917+0530] {logging_mixin.py:137} INFO - Current =26-05-2021
+[2023-01-05T23:43:47.929+0530] {logging_mixin.py:137} INFO - Current =27-05-2021
+[2023-01-05T23:43:47.935+0530] {logging_mixin.py:137} INFO - Current =28-05-2021
+[2023-01-05T23:43:49.843+0530] {logging_mixin.py:137} INFO - Start = 2021-05-14 00:00:00
+[2023-01-05T23:43:49.843+0530] {logging_mixin.py:137} INFO - End = 2021-05-21 00:00:00
+[2023-01-05T23:43:49.843+0530] {logging_mixin.py:137} INFO - Current =14-05-2021
+[2023-01-05T23:43:49.848+0530] {logging_mixin.py:137} INFO - Current =15-05-2021
+[2023-01-05T23:43:49.854+0530] {logging_mixin.py:137} INFO - Current =16-05-2021
+[2023-01-05T23:43:49.863+0530] {logging_mixin.py:137} INFO - Current =17-05-2021
+[2023-01-05T23:43:49.868+0530] {logging_mixin.py:137} INFO - Current =18-05-2021
+[2023-01-05T23:43:49.873+0530] {logging_mixin.py:137} INFO - Current =19-05-2021
+[2023-01-05T23:43:49.881+0530] {logging_mixin.py:137} INFO - Current =20-05-2021
+[2023-01-05T23:43:49.886+0530] {logging_mixin.py:137} INFO - Current =21-05-2021
+[2023-01-05T23:43:52.198+0530] {logging_mixin.py:137} INFO - Start = 2021-05-07 00:00:00
+[2023-01-05T23:43:52.198+0530] {logging_mixin.py:137} INFO - End = 2021-05-14 00:00:00
+[2023-01-05T23:43:52.199+0530] {logging_mixin.py:137} INFO - Current =07-05-2021
+[2023-01-05T23:43:52.203+0530] {logging_mixin.py:137} INFO - Current =08-05-2021
+[2023-01-05T23:43:52.206+0530] {logging_mixin.py:137} INFO - 08-05-2021
+[2023-01-05T23:43:52.207+0530] {logging_mixin.py:137} INFO - 589.465
+[2023-01-05T23:43:52.207+0530] {logging_mixin.py:137} INFO - 546.493
+[2023-01-05T23:43:52.207+0530] {logging_mixin.py:137} INFO - 36.48
+[2023-01-05T23:43:52.208+0530] {logging_mixin.py:137} INFO - Current =09-05-2021
+[2023-01-05T23:43:52.214+0530] {logging_mixin.py:137} INFO - Current =10-05-2021
+[2023-01-05T23:43:52.219+0530] {logging_mixin.py:137} INFO - Current =11-05-2021
+[2023-01-05T23:43:52.223+0530] {logging_mixin.py:137} INFO - Current =12-05-2021
+[2023-01-05T23:43:52.231+0530] {logging_mixin.py:137} INFO - Current =13-05-2021
+[2023-01-05T23:43:52.236+0530] {logging_mixin.py:137} INFO - Current =14-05-2021
+[2023-01-05T23:43:54.330+0530] {logging_mixin.py:137} INFO - Start = 2021-04-30 00:00:00
+[2023-01-05T23:43:54.331+0530] {logging_mixin.py:137} INFO - End = 2021-05-07 00:00:00
+[2023-01-05T23:43:54.331+0530] {logging_mixin.py:137} INFO - Current =30-04-2021
+[2023-01-05T23:43:54.335+0530] {logging_mixin.py:137} INFO - Current =01-05-2021
+[2023-01-05T23:43:54.339+0530] {logging_mixin.py:137} INFO - 01-05-2021
+[2023-01-05T23:43:54.339+0530] {logging_mixin.py:137} INFO - 588.02
+[2023-01-05T23:43:54.340+0530] {logging_mixin.py:137} INFO - 546.059
+[2023-01-05T23:43:54.340+0530] {logging_mixin.py:137} INFO - 35.464
+[2023-01-05T23:43:54.340+0530] {logging_mixin.py:137} INFO - Current =02-05-2021
+[2023-01-05T23:43:54.350+0530] {logging_mixin.py:137} INFO - Current =03-05-2021
+[2023-01-05T23:43:54.356+0530] {logging_mixin.py:137} INFO - Current =04-05-2021
+[2023-01-05T23:43:54.364+0530] {logging_mixin.py:137} INFO - Current =05-05-2021
+[2023-01-05T23:43:54.369+0530] {logging_mixin.py:137} INFO - Current =06-05-2021
+[2023-01-05T23:43:54.373+0530] {logging_mixin.py:137} INFO - Current =07-05-2021
+[2023-01-05T23:43:56.510+0530] {logging_mixin.py:137} INFO - Start = 2021-04-23 00:00:00
+[2023-01-05T23:43:56.511+0530] {logging_mixin.py:137} INFO - End = 2021-04-30 00:00:00
+[2023-01-05T23:43:56.511+0530] {logging_mixin.py:137} INFO - Current =23-04-2021
+[2023-01-05T23:43:56.517+0530] {logging_mixin.py:137} INFO - Current =24-04-2021
+[2023-01-05T23:43:56.520+0530] {logging_mixin.py:137} INFO - 24-04-2021
+[2023-01-05T23:43:56.520+0530] {logging_mixin.py:137} INFO - 584.107
+[2023-01-05T23:43:56.520+0530] {logging_mixin.py:137} INFO - 541.647
+[2023-01-05T23:43:56.520+0530] {logging_mixin.py:137} INFO - 35.969
+[2023-01-05T23:43:56.520+0530] {logging_mixin.py:137} INFO - Current =25-04-2021
+[2023-01-05T23:43:56.524+0530] {logging_mixin.py:137} INFO - Current =26-04-2021
+[2023-01-05T23:43:56.531+0530] {logging_mixin.py:137} INFO - Current =27-04-2021
+[2023-01-05T23:43:56.535+0530] {logging_mixin.py:137} INFO - Current =28-04-2021
+[2023-01-05T23:43:56.539+0530] {logging_mixin.py:137} INFO - Current =29-04-2021
+[2023-01-05T23:43:56.546+0530] {logging_mixin.py:137} INFO - Current =30-04-2021
+[2023-01-05T23:43:58.742+0530] {logging_mixin.py:137} INFO - Start = 2021-04-16 00:00:00
+[2023-01-05T23:43:58.743+0530] {logging_mixin.py:137} INFO - End = 2021-04-23 00:00:00
+[2023-01-05T23:43:58.744+0530] {logging_mixin.py:137} INFO - Current =16-04-2021
+[2023-01-05T23:43:58.751+0530] {logging_mixin.py:137} INFO - Current =17-04-2021
+[2023-01-05T23:43:58.756+0530] {logging_mixin.py:137} INFO - Current =18-04-2021
+[2023-01-05T23:43:58.764+0530] {logging_mixin.py:137} INFO - Current =19-04-2021
+[2023-01-05T23:43:58.768+0530] {logging_mixin.py:137} INFO - Current =20-04-2021
+[2023-01-05T23:43:58.772+0530] {logging_mixin.py:137} INFO - Current =21-04-2021
+[2023-01-05T23:43:58.781+0530] {logging_mixin.py:137} INFO - Current =22-04-2021
+[2023-01-05T23:43:58.786+0530] {logging_mixin.py:137} INFO - Current =23-04-2021
+[2023-01-05T23:44:00.527+0530] {logging_mixin.py:137} INFO - Start = 2021-04-09 00:00:00
+[2023-01-05T23:44:00.527+0530] {logging_mixin.py:137} INFO - End = 2021-04-16 00:00:00
+[2023-01-05T23:44:00.528+0530] {logging_mixin.py:137} INFO - Current =09-04-2021
+[2023-01-05T23:44:00.534+0530] {logging_mixin.py:137} INFO - Current =10-04-2021
+[2023-01-05T23:44:00.538+0530] {logging_mixin.py:137} INFO - 10-04-2021
+[2023-01-05T23:44:00.538+0530] {logging_mixin.py:137} INFO - 581.213
+[2023-01-05T23:44:00.538+0530] {logging_mixin.py:137} INFO - 539.455
+[2023-01-05T23:44:00.538+0530] {logging_mixin.py:137} INFO - 35.32
+[2023-01-05T23:44:00.538+0530] {logging_mixin.py:137} INFO - Current =11-04-2021
+[2023-01-05T23:44:00.543+0530] {logging_mixin.py:137} INFO - Current =12-04-2021
+[2023-01-05T23:44:00.550+0530] {logging_mixin.py:137} INFO - Current =13-04-2021
+[2023-01-05T23:44:00.553+0530] {logging_mixin.py:137} INFO - 13-04-2021
+[2023-01-05T23:44:00.553+0530] {logging_mixin.py:137} INFO - 581.213
+[2023-01-05T23:44:00.553+0530] {logging_mixin.py:137} INFO - 539.455
+[2023-01-05T23:44:00.554+0530] {logging_mixin.py:137} INFO - 35.32
+[2023-01-05T23:44:00.554+0530] {logging_mixin.py:137} INFO - Current =14-04-2021
+[2023-01-05T23:44:00.558+0530] {logging_mixin.py:137} INFO - Current =15-04-2021
+[2023-01-05T23:44:00.564+0530] {logging_mixin.py:137} INFO - Current =16-04-2021
+[2023-01-05T23:44:02.922+0530] {logging_mixin.py:137} INFO - Start = 2021-04-02 00:00:00
+[2023-01-05T23:44:02.922+0530] {logging_mixin.py:137} INFO - End = 2021-04-09 00:00:00
+[2023-01-05T23:44:02.922+0530] {logging_mixin.py:137} INFO - Current =02-04-2021
+[2023-01-05T23:44:02.926+0530] {logging_mixin.py:137} INFO - 02-04-2021
+[2023-01-05T23:44:02.927+0530] {logging_mixin.py:137} INFO - 576.869
+[2023-01-05T23:44:02.927+0530] {logging_mixin.py:137} INFO - 536.438
+[2023-01-05T23:44:02.927+0530] {logging_mixin.py:137} INFO - 34.023
+[2023-01-05T23:44:02.927+0530] {logging_mixin.py:137} INFO - Current =03-04-2021
+[2023-01-05T23:44:02.935+0530] {logging_mixin.py:137} INFO - Current =04-04-2021
+[2023-01-05T23:44:02.940+0530] {logging_mixin.py:137} INFO - Current =05-04-2021
+[2023-01-05T23:44:02.949+0530] {logging_mixin.py:137} INFO - Current =06-04-2021
+[2023-01-05T23:44:02.955+0530] {logging_mixin.py:137} INFO - Current =07-04-2021
+[2023-01-05T23:44:02.959+0530] {logging_mixin.py:137} INFO - Current =08-04-2021
+[2023-01-05T23:44:02.968+0530] {logging_mixin.py:137} INFO - Current =09-04-2021
+[2023-01-05T23:44:04.940+0530] {logging_mixin.py:137} INFO - Start = 2021-03-26 00:00:00
+[2023-01-05T23:44:04.940+0530] {logging_mixin.py:137} INFO - End = 2021-04-02 00:00:00
+[2023-01-05T23:44:04.940+0530] {logging_mixin.py:137} INFO - Current =26-03-2021
+[2023-01-05T23:44:04.944+0530] {logging_mixin.py:137} INFO - Current =27-03-2021
+[2023-01-05T23:44:04.951+0530] {logging_mixin.py:137} INFO - 27-03-2021
+[2023-01-05T23:44:04.951+0530] {logging_mixin.py:137} INFO - 579.285
+[2023-01-05T23:44:04.951+0530] {logging_mixin.py:137} INFO - 537.953
+[2023-01-05T23:44:04.951+0530] {logging_mixin.py:137} INFO - 34.907
+[2023-01-05T23:44:04.951+0530] {logging_mixin.py:137} INFO - Current =28-03-2021
+[2023-01-05T23:44:04.955+0530] {logging_mixin.py:137} INFO - 28-03-2021
+[2023-01-05T23:44:04.955+0530] {logging_mixin.py:137} INFO - 579.285
+[2023-01-05T23:44:04.955+0530] {logging_mixin.py:137} INFO - 537.953
+[2023-01-05T23:44:04.955+0530] {logging_mixin.py:137} INFO - 34.907
+[2023-01-05T23:44:04.955+0530] {logging_mixin.py:137} INFO - Current =29-03-2021
+[2023-01-05T23:44:04.960+0530] {logging_mixin.py:137} INFO - Current =30-03-2021
+[2023-01-05T23:44:04.967+0530] {logging_mixin.py:137} INFO - Current =31-03-2021
+[2023-01-05T23:44:04.972+0530] {logging_mixin.py:137} INFO - Current =01-04-2021
+[2023-01-05T23:44:04.977+0530] {logging_mixin.py:137} INFO - Current =02-04-2021
+[2023-01-05T23:44:07.341+0530] {logging_mixin.py:137} INFO - Start = 2021-03-19 00:00:00
+[2023-01-05T23:44:07.341+0530] {logging_mixin.py:137} INFO - End = 2021-03-26 00:00:00
+[2023-01-05T23:44:07.342+0530] {logging_mixin.py:137} INFO - Current =19-03-2021
+[2023-01-05T23:44:07.348+0530] {logging_mixin.py:137} INFO - Current =20-03-2021
+[2023-01-05T23:44:07.355+0530] {logging_mixin.py:137} INFO - Current =21-03-2021
+[2023-01-05T23:44:07.360+0530] {logging_mixin.py:137} INFO - Current =22-03-2021
+[2023-01-05T23:44:07.368+0530] {logging_mixin.py:137} INFO - Current =23-03-2021
+[2023-01-05T23:44:07.373+0530] {logging_mixin.py:137} INFO - Current =24-03-2021
+[2023-01-05T23:44:07.377+0530] {logging_mixin.py:137} INFO - Current =25-03-2021
+[2023-01-05T23:44:07.386+0530] {logging_mixin.py:137} INFO - Current =26-03-2021
+[2023-01-05T23:44:09.336+0530] {logging_mixin.py:137} INFO - Start = 2021-03-12 00:00:00
+[2023-01-05T23:44:09.336+0530] {logging_mixin.py:137} INFO - End = 2021-03-19 00:00:00
+[2023-01-05T23:44:09.336+0530] {logging_mixin.py:137} INFO - Current =12-03-2021
+[2023-01-05T23:44:09.341+0530] {logging_mixin.py:137} INFO - Current =13-03-2021
+[2023-01-05T23:44:09.345+0530] {logging_mixin.py:137} INFO - 13-03-2021
+[2023-01-05T23:44:09.345+0530] {logging_mixin.py:137} INFO - 582.037
+[2023-01-05T23:44:09.346+0530] {logging_mixin.py:137} INFO - 541.022
+[2023-01-05T23:44:09.346+0530] {logging_mixin.py:137} INFO - 34.551
+[2023-01-05T23:44:09.346+0530] {logging_mixin.py:137} INFO - Current =14-03-2021
+[2023-01-05T23:44:09.355+0530] {logging_mixin.py:137} INFO - Current =15-03-2021
+[2023-01-05T23:44:09.362+0530] {logging_mixin.py:137} INFO - Current =16-03-2021
+[2023-01-05T23:44:09.370+0530] {logging_mixin.py:137} INFO - Current =17-03-2021
+[2023-01-05T23:44:09.376+0530] {logging_mixin.py:137} INFO - Current =18-03-2021
+[2023-01-05T23:44:09.385+0530] {logging_mixin.py:137} INFO - Current =19-03-2021
+[2023-01-05T23:44:11.539+0530] {logging_mixin.py:137} INFO - Start = 2021-03-05 00:00:00
+[2023-01-05T23:44:11.540+0530] {logging_mixin.py:137} INFO - End = 2021-03-12 00:00:00
+[2023-01-05T23:44:11.540+0530] {logging_mixin.py:137} INFO - Current =05-03-2021
+[2023-01-05T23:44:11.547+0530] {logging_mixin.py:137} INFO - Current =06-03-2021
+[2023-01-05T23:44:11.556+0530] {logging_mixin.py:137} INFO - Current =07-03-2021
+[2023-01-05T23:44:11.563+0530] {logging_mixin.py:137} INFO - Current =08-03-2021
+[2023-01-05T23:44:11.574+0530] {logging_mixin.py:137} INFO - Current =09-03-2021
+[2023-01-05T23:44:11.585+0530] {logging_mixin.py:137} INFO - Current =10-03-2021
+[2023-01-05T23:44:11.592+0530] {logging_mixin.py:137} INFO - Current =11-03-2021
+[2023-01-05T23:44:11.598+0530] {logging_mixin.py:137} INFO - Current =12-03-2021
+[2023-01-05T23:44:13.697+0530] {logging_mixin.py:137} INFO - Start = 2021-02-26 00:00:00
+[2023-01-05T23:44:13.698+0530] {logging_mixin.py:137} INFO - End = 2021-03-05 00:00:00
+[2023-01-05T23:44:13.698+0530] {logging_mixin.py:137} INFO - Current =26-02-2021
+[2023-01-05T23:44:13.706+0530] {logging_mixin.py:137} INFO - Current =27-02-2021
+[2023-01-05T23:44:13.710+0530] {logging_mixin.py:137} INFO - 27-02-2021
+[2023-01-05T23:44:13.711+0530] {logging_mixin.py:137} INFO - 584.554
+[2023-01-05T23:44:13.711+0530] {logging_mixin.py:137} INFO - 542.615
+[2023-01-05T23:44:13.711+0530] {logging_mixin.py:137} INFO - 35.421
+[2023-01-05T23:44:13.711+0530] {logging_mixin.py:137} INFO - Current =28-02-2021
+[2023-01-05T23:44:13.719+0530] {logging_mixin.py:137} INFO - Current =01-03-2021
+[2023-01-05T23:44:13.723+0530] {logging_mixin.py:137} INFO - Current =02-03-2021
+[2023-01-05T23:44:13.728+0530] {logging_mixin.py:137} INFO - Current =03-03-2021
+[2023-01-05T23:44:13.737+0530] {logging_mixin.py:137} INFO - Current =04-03-2021
+[2023-01-05T23:44:13.741+0530] {logging_mixin.py:137} INFO - Current =05-03-2021
+[2023-01-05T23:44:15.711+0530] {logging_mixin.py:137} INFO - Start = 2021-02-19 00:00:00
+[2023-01-05T23:44:15.711+0530] {logging_mixin.py:137} INFO - End = 2021-02-26 00:00:00
+[2023-01-05T23:44:15.711+0530] {logging_mixin.py:137} INFO - Current =19-02-2021
+[2023-01-05T23:44:15.717+0530] {logging_mixin.py:137} INFO - 19-02-2021
+[2023-01-05T23:44:15.718+0530] {logging_mixin.py:137} INFO - 583.865
+[2023-01-05T23:44:15.718+0530] {logging_mixin.py:137} INFO - 542.106
+[2023-01-05T23:44:15.718+0530] {logging_mixin.py:137} INFO - 35.25
+[2023-01-05T23:44:15.718+0530] {logging_mixin.py:137} INFO - Current =20-02-2021
+[2023-01-05T23:44:15.726+0530] {logging_mixin.py:137} INFO - Current =21-02-2021
+[2023-01-05T23:44:15.735+0530] {logging_mixin.py:137} INFO - Current =22-02-2021
+[2023-01-05T23:44:15.743+0530] {logging_mixin.py:137} INFO - Current =23-02-2021
+[2023-01-05T23:44:15.753+0530] {logging_mixin.py:137} INFO - Current =24-02-2021
+[2023-01-05T23:44:15.760+0530] {logging_mixin.py:137} INFO - Current =25-02-2021
+[2023-01-05T23:44:15.774+0530] {logging_mixin.py:137} INFO - Current =26-02-2021
+[2023-01-05T23:44:18.039+0530] {logging_mixin.py:137} INFO - Start = 2021-02-12 00:00:00
+[2023-01-05T23:44:18.040+0530] {logging_mixin.py:137} INFO - End = 2021-02-19 00:00:00
+[2023-01-05T23:44:18.040+0530] {logging_mixin.py:137} INFO - Current =12-02-2021
+[2023-01-05T23:44:18.044+0530] {logging_mixin.py:137} INFO - Current =13-02-2021
+[2023-01-05T23:44:18.047+0530] {logging_mixin.py:137} INFO - 13-02-2021
+[2023-01-05T23:44:18.047+0530] {logging_mixin.py:137} INFO - 583.697
+[2023-01-05T23:44:18.047+0530] {logging_mixin.py:137} INFO - 540.951
+[2023-01-05T23:44:18.047+0530] {logging_mixin.py:137} INFO - 36.227
+[2023-01-05T23:44:18.047+0530] {logging_mixin.py:137} INFO - Current =14-02-2021
+[2023-01-05T23:44:18.055+0530] {logging_mixin.py:137} INFO - Current =15-02-2021
+[2023-01-05T23:44:18.064+0530] {logging_mixin.py:137} INFO - Current =16-02-2021
+[2023-01-05T23:44:18.073+0530] {logging_mixin.py:137} INFO - Current =17-02-2021
+[2023-01-05T23:44:18.078+0530] {logging_mixin.py:137} INFO - Current =18-02-2021
+[2023-01-05T23:44:18.083+0530] {logging_mixin.py:137} INFO - Current =19-02-2021
+[2023-01-05T23:44:20.163+0530] {logging_mixin.py:137} INFO - Start = 2021-02-05 00:00:00
+[2023-01-05T23:44:20.163+0530] {logging_mixin.py:137} INFO - End = 2021-02-12 00:00:00
+[2023-01-05T23:44:20.163+0530] {logging_mixin.py:137} INFO - Current =05-02-2021
+[2023-01-05T23:44:20.172+0530] {logging_mixin.py:137} INFO - Current =06-02-2021
+[2023-01-05T23:44:20.176+0530] {logging_mixin.py:137} INFO - Current =07-02-2021
+[2023-01-05T23:44:20.181+0530] {logging_mixin.py:137} INFO - Current =08-02-2021
+[2023-01-05T23:44:20.190+0530] {logging_mixin.py:137} INFO - Current =09-02-2021
+[2023-01-05T23:44:20.195+0530] {logging_mixin.py:137} INFO - Current =10-02-2021
+[2023-01-05T23:44:20.199+0530] {logging_mixin.py:137} INFO - Current =11-02-2021
+[2023-01-05T23:44:20.206+0530] {logging_mixin.py:137} INFO - Current =12-02-2021
+[2023-01-05T23:44:22.768+0530] {logging_mixin.py:137} INFO - Start = 2021-01-29 00:00:00
+[2023-01-05T23:44:22.768+0530] {logging_mixin.py:137} INFO - End = 2021-02-05 00:00:00
+[2023-01-05T23:44:22.769+0530] {logging_mixin.py:137} INFO - Current =29-01-2021
+[2023-01-05T23:44:22.777+0530] {logging_mixin.py:137} INFO - Current =30-01-2021
+[2023-01-05T23:44:22.784+0530] {logging_mixin.py:137} INFO - Current =31-01-2021
+[2023-01-05T23:44:22.792+0530] {logging_mixin.py:137} INFO - Current =01-02-2021
+[2023-01-05T23:44:22.799+0530] {logging_mixin.py:137} INFO - Current =02-02-2021
+[2023-01-05T23:44:22.809+0530] {logging_mixin.py:137} INFO - Current =03-02-2021
+[2023-01-05T23:44:22.822+0530] {logging_mixin.py:137} INFO - Current =04-02-2021
+[2023-01-05T23:44:22.831+0530] {logging_mixin.py:137} INFO - Current =05-02-2021
+[2023-01-05T23:44:25.165+0530] {logging_mixin.py:137} INFO - Start = 2021-01-22 00:00:00
+[2023-01-05T23:44:25.166+0530] {logging_mixin.py:137} INFO - End = 2021-01-29 00:00:00
+[2023-01-05T23:44:25.166+0530] {logging_mixin.py:137} INFO - Current =22-01-2021
+[2023-01-05T23:44:25.174+0530] {logging_mixin.py:137} INFO - Current =23-01-2021
+[2023-01-05T23:44:25.180+0530] {logging_mixin.py:137} INFO - 23-01-2021
+[2023-01-05T23:44:25.180+0530] {logging_mixin.py:137} INFO - 585.334
+[2023-01-05T23:44:25.180+0530] {logging_mixin.py:137} INFO - 542.192
+[2023-01-05T23:44:25.180+0530] {logging_mixin.py:137} INFO - 36.459
+[2023-01-05T23:44:25.180+0530] {logging_mixin.py:137} INFO - Current =24-01-2021
+[2023-01-05T23:44:25.184+0530] {logging_mixin.py:137} INFO - Current =25-01-2021
+[2023-01-05T23:44:25.193+0530] {logging_mixin.py:137} INFO - Current =26-01-2021
+[2023-01-05T23:44:25.200+0530] {logging_mixin.py:137} INFO - Current =27-01-2021
+[2023-01-05T23:44:25.208+0530] {logging_mixin.py:137} INFO - Current =28-01-2021
+[2023-01-05T23:44:25.212+0530] {logging_mixin.py:137} INFO - Current =29-01-2021
+[2023-01-05T23:44:27.714+0530] {logging_mixin.py:137} INFO - Start = 2021-01-15 00:00:00
+[2023-01-05T23:44:27.715+0530] {logging_mixin.py:137} INFO - End = 2021-01-22 00:00:00
+[2023-01-05T23:44:27.715+0530] {logging_mixin.py:137} INFO - Current =15-01-2021
+[2023-01-05T23:44:27.720+0530] {logging_mixin.py:137} INFO - Current =16-01-2021
+[2023-01-05T23:44:27.730+0530] {logging_mixin.py:137} INFO - Current =17-01-2021
+[2023-01-05T23:44:27.735+0530] {logging_mixin.py:137} INFO - Current =18-01-2021
+[2023-01-05T23:44:27.746+0530] {logging_mixin.py:137} INFO - Current =19-01-2021
+[2023-01-05T23:44:27.752+0530] {logging_mixin.py:137} INFO - Current =20-01-2021
+[2023-01-05T23:44:27.762+0530] {logging_mixin.py:137} INFO - Current =21-01-2021
+[2023-01-05T23:44:27.768+0530] {logging_mixin.py:137} INFO - Current =22-01-2021
+[2023-01-05T23:44:29.951+0530] {logging_mixin.py:137} INFO - Start = 2021-01-08 00:00:00
+[2023-01-05T23:44:29.951+0530] {logging_mixin.py:137} INFO - End = 2021-01-15 00:00:00
+[2023-01-05T23:44:29.951+0530] {logging_mixin.py:137} INFO - Current =08-01-2021
+[2023-01-05T23:44:29.960+0530] {logging_mixin.py:137} INFO - Current =09-01-2021
+[2023-01-05T23:44:29.964+0530] {logging_mixin.py:137} INFO - 09-01-2021
+[2023-01-05T23:44:29.964+0530] {logging_mixin.py:137} INFO - 586.082
+[2023-01-05T23:44:29.964+0530] {logging_mixin.py:137} INFO - 541.791
+[2023-01-05T23:44:29.965+0530] {logging_mixin.py:137} INFO - 37.594
+[2023-01-05T23:44:29.965+0530] {logging_mixin.py:137} INFO - Current =10-01-2021
+[2023-01-05T23:44:29.970+0530] {logging_mixin.py:137} INFO - Current =11-01-2021
+[2023-01-05T23:44:29.977+0530] {logging_mixin.py:137} INFO - Current =12-01-2021
+[2023-01-05T23:44:29.983+0530] {logging_mixin.py:137} INFO - Current =13-01-2021
+[2023-01-05T23:44:29.988+0530] {logging_mixin.py:137} INFO - Current =14-01-2021
+[2023-01-05T23:44:29.996+0530] {logging_mixin.py:137} INFO - Current =15-01-2021
+[2023-01-05T23:44:33.050+0530] {logging_mixin.py:137} INFO - Start = 2021-01-01 00:00:00
+[2023-01-05T23:44:33.050+0530] {logging_mixin.py:137} INFO - End = 2021-01-08 00:00:00
+[2023-01-05T23:44:33.050+0530] {logging_mixin.py:137} INFO - Current =01-01-2021
+[2023-01-05T23:44:33.055+0530] {logging_mixin.py:137} INFO - Current =02-01-2021
+[2023-01-05T23:44:33.062+0530] {logging_mixin.py:137} INFO - Current =03-01-2021
+[2023-01-05T23:44:33.067+0530] {logging_mixin.py:137} INFO - Current =04-01-2021
+[2023-01-05T23:44:33.076+0530] {logging_mixin.py:137} INFO - Current =05-01-2021
+[2023-01-05T23:44:33.081+0530] {logging_mixin.py:137} INFO - Current =06-01-2021
+[2023-01-05T23:44:33.087+0530] {logging_mixin.py:137} INFO - Current =07-01-2021
+[2023-01-05T23:44:33.096+0530] {logging_mixin.py:137} INFO - Current =08-01-2021
+[2023-01-05T23:44:35.159+0530] {logging_mixin.py:137} INFO - Start = 2020-12-25 00:00:00
+[2023-01-05T23:44:35.160+0530] {logging_mixin.py:137} INFO - End = 2021-01-01 00:00:00
+[2023-01-05T23:44:35.161+0530] {logging_mixin.py:137} INFO - Current =25-12-2020
+[2023-01-05T23:44:35.166+0530] {logging_mixin.py:137} INFO - 25-12-2020
+[2023-01-05T23:44:35.166+0530] {logging_mixin.py:137} INFO - 580.841
+[2023-01-05T23:44:35.166+0530] {logging_mixin.py:137} INFO - 537.474
+[2023-01-05T23:44:35.166+0530] {logging_mixin.py:137} INFO - 36.711
+[2023-01-05T23:44:35.166+0530] {logging_mixin.py:137} INFO - Current =26-12-2020
+[2023-01-05T23:44:35.170+0530] {logging_mixin.py:137} INFO - 26-12-2020
+[2023-01-05T23:44:35.171+0530] {logging_mixin.py:137} INFO - 580.841
+[2023-01-05T23:44:35.171+0530] {logging_mixin.py:137} INFO - 537.474
+[2023-01-05T23:44:35.171+0530] {logging_mixin.py:137} INFO - 36.711
+[2023-01-05T23:44:35.171+0530] {logging_mixin.py:137} INFO - Current =27-12-2020
+[2023-01-05T23:44:35.178+0530] {logging_mixin.py:137} INFO - Current =28-12-2020
+[2023-01-05T23:44:35.183+0530] {logging_mixin.py:137} INFO - Current =29-12-2020
+[2023-01-05T23:44:35.186+0530] {logging_mixin.py:137} INFO - Current =30-12-2020
+[2023-01-05T23:44:35.196+0530] {logging_mixin.py:137} INFO - Current =31-12-2020
+[2023-01-05T23:44:35.203+0530] {logging_mixin.py:137} INFO - Current =01-01-2021
+[2023-01-05T23:44:37.299+0530] {logging_mixin.py:137} INFO - Start = 2020-12-18 00:00:00
+[2023-01-05T23:44:37.299+0530] {logging_mixin.py:137} INFO - End = 2020-12-25 00:00:00
+[2023-01-05T23:44:37.299+0530] {logging_mixin.py:137} INFO - Current =18-12-2020
+[2023-01-05T23:44:37.305+0530] {logging_mixin.py:137} INFO - Current =19-12-2020
+[2023-01-05T23:44:37.313+0530] {logging_mixin.py:137} INFO - Current =20-12-2020
+[2023-01-05T23:44:37.319+0530] {logging_mixin.py:137} INFO - 20-12-2020
+[2023-01-05T23:44:37.320+0530] {logging_mixin.py:137} INFO - 581.131
+[2023-01-05T23:44:37.320+0530] {logging_mixin.py:137} INFO - 537.727
+[2023-01-05T23:44:37.320+0530] {logging_mixin.py:137} INFO - 37.02
+[2023-01-05T23:44:37.320+0530] {logging_mixin.py:137} INFO - Current =21-12-2020
+[2023-01-05T23:44:37.327+0530] {logging_mixin.py:137} INFO - Current =22-12-2020
+[2023-01-05T23:44:37.334+0530] {logging_mixin.py:137} INFO - Current =23-12-2020
+[2023-01-05T23:44:37.339+0530] {logging_mixin.py:137} INFO - Current =24-12-2020
+[2023-01-05T23:44:37.348+0530] {logging_mixin.py:137} INFO - Current =25-12-2020
+[2023-01-05T23:44:39.490+0530] {logging_mixin.py:137} INFO - Start = 2020-12-11 00:00:00
+[2023-01-05T23:44:39.490+0530] {logging_mixin.py:137} INFO - End = 2020-12-18 00:00:00
+[2023-01-05T23:44:39.490+0530] {logging_mixin.py:137} INFO - Current =11-12-2020
+[2023-01-05T23:44:39.497+0530] {logging_mixin.py:137} INFO - Current =12-12-2020
+[2023-01-05T23:44:39.502+0530] {logging_mixin.py:137} INFO - 12-12-2020
+[2023-01-05T23:44:39.502+0530] {logging_mixin.py:137} INFO - 578.568
+[2023-01-05T23:44:39.502+0530] {logging_mixin.py:137} INFO - 536.344
+[2023-01-05T23:44:39.502+0530] {logging_mixin.py:137} INFO - 36.012
+[2023-01-05T23:44:39.502+0530] {logging_mixin.py:137} INFO - Current =13-12-2020
+[2023-01-05T23:44:39.507+0530] {logging_mixin.py:137} INFO - Current =14-12-2020
+[2023-01-05T23:44:39.512+0530] {logging_mixin.py:137} INFO - Current =15-12-2020
+[2023-01-05T23:44:39.518+0530] {logging_mixin.py:137} INFO - Current =16-12-2020
+[2023-01-05T23:44:39.522+0530] {logging_mixin.py:137} INFO - Current =17-12-2020
+[2023-01-05T23:44:39.526+0530] {logging_mixin.py:137} INFO - Current =18-12-2020
+[2023-01-05T23:44:41.992+0530] {logging_mixin.py:137} INFO - Start = 2020-12-04 00:00:00
+[2023-01-05T23:44:41.992+0530] {logging_mixin.py:137} INFO - End = 2020-12-11 00:00:00
+[2023-01-05T23:44:41.993+0530] {logging_mixin.py:137} INFO - Current =04-12-2020
+[2023-01-05T23:44:42.006+0530] {logging_mixin.py:137} INFO - Current =05-12-2020
+[2023-01-05T23:44:42.025+0530] {logging_mixin.py:137} INFO - Current =06-12-2020
+[2023-01-05T23:44:42.042+0530] {logging_mixin.py:137} INFO - Current =07-12-2020
+[2023-01-05T23:44:42.056+0530] {logging_mixin.py:137} INFO - Current =08-12-2020
+[2023-01-05T23:44:42.067+0530] {logging_mixin.py:137} INFO - Current =09-12-2020
+[2023-01-05T23:44:42.073+0530] {logging_mixin.py:137} INFO - Current =10-12-2020
+[2023-01-05T23:44:42.080+0530] {logging_mixin.py:137} INFO - Current =11-12-2020
+[2023-01-05T23:44:44.192+0530] {logging_mixin.py:137} INFO - Start = 2020-11-27 00:00:00
+[2023-01-05T23:44:44.193+0530] {logging_mixin.py:137} INFO - End = 2020-12-04 00:00:00
+[2023-01-05T23:44:44.193+0530] {logging_mixin.py:137} INFO - Current =27-11-2020
+[2023-01-05T23:44:44.202+0530] {logging_mixin.py:137} INFO - Current =28-11-2020
+[2023-01-05T23:44:44.206+0530] {logging_mixin.py:137} INFO - 28-11-2020
+[2023-01-05T23:44:44.206+0530] {logging_mixin.py:137} INFO - 574.821
+[2023-01-05T23:44:44.206+0530] {logging_mixin.py:137} INFO - 533.455
+[2023-01-05T23:44:44.207+0530] {logging_mixin.py:137} INFO - 35.192
+[2023-01-05T23:44:44.207+0530] {logging_mixin.py:137} INFO - Current =29-11-2020
+[2023-01-05T23:44:44.211+0530] {logging_mixin.py:137} INFO - 29-11-2020
+[2023-01-05T23:44:44.211+0530] {logging_mixin.py:137} INFO - 574.821
+[2023-01-05T23:44:44.211+0530] {logging_mixin.py:137} INFO - 533.455
+[2023-01-05T23:44:44.212+0530] {logging_mixin.py:137} INFO - 35.192
+[2023-01-05T23:44:44.212+0530] {logging_mixin.py:137} INFO - Current =30-11-2020
+[2023-01-05T23:44:44.220+0530] {logging_mixin.py:137} INFO - Current =01-12-2020
+[2023-01-05T23:44:44.225+0530] {logging_mixin.py:137} INFO - Current =02-12-2020
+[2023-01-05T23:44:44.233+0530] {logging_mixin.py:137} INFO - Current =03-12-2020
+[2023-01-05T23:44:44.240+0530] {logging_mixin.py:137} INFO - Current =04-12-2020
+[2023-01-05T23:44:47.206+0530] {logging_mixin.py:137} INFO - Start = 2020-11-20 00:00:00
+[2023-01-05T23:44:47.206+0530] {logging_mixin.py:137} INFO - End = 2020-11-27 00:00:00
+[2023-01-05T23:44:47.206+0530] {logging_mixin.py:137} INFO - Current =20-11-2020
+[2023-01-05T23:44:47.212+0530] {logging_mixin.py:137} INFO - Current =21-11-2020
+[2023-01-05T23:44:47.221+0530] {logging_mixin.py:137} INFO - Current =22-11-2020
+[2023-01-05T23:44:47.227+0530] {logging_mixin.py:137} INFO - Current =23-11-2020
+[2023-01-05T23:44:47.236+0530] {logging_mixin.py:137} INFO - Current =24-11-2020
+[2023-01-05T23:44:47.243+0530] {logging_mixin.py:137} INFO - Current =25-11-2020
+[2023-01-05T23:44:47.250+0530] {logging_mixin.py:137} INFO - Current =26-11-2020
+[2023-01-05T23:44:47.257+0530] {logging_mixin.py:137} INFO - Current =27-11-2020
+[2023-01-05T23:44:50.164+0530] {logging_mixin.py:137} INFO - Start = 2020-11-13 00:00:00
+[2023-01-05T23:44:50.164+0530] {logging_mixin.py:137} INFO - End = 2020-11-20 00:00:00
+[2023-01-05T23:44:50.164+0530] {logging_mixin.py:137} INFO - Current =13-11-2020
+[2023-01-05T23:44:50.172+0530] {logging_mixin.py:137} INFO - Current =14-11-2020
+[2023-01-05T23:44:50.176+0530] {logging_mixin.py:137} INFO - 14-11-2020
+[2023-01-05T23:44:50.176+0530] {logging_mixin.py:137} INFO - 572.771
+[2023-01-05T23:44:50.176+0530] {logging_mixin.py:137} INFO - 530.268
+[2023-01-05T23:44:50.176+0530] {logging_mixin.py:137} INFO - 36.354
+[2023-01-05T23:44:50.176+0530] {logging_mixin.py:137} INFO - Current =15-11-2020
+[2023-01-05T23:44:50.180+0530] {logging_mixin.py:137} INFO - 15-11-2020
+[2023-01-05T23:44:50.180+0530] {logging_mixin.py:137} INFO - 572.771
+[2023-01-05T23:44:50.180+0530] {logging_mixin.py:137} INFO - 530.268
+[2023-01-05T23:44:50.180+0530] {logging_mixin.py:137} INFO - 36.354
+[2023-01-05T23:44:50.180+0530] {logging_mixin.py:137} INFO - Current =16-11-2020
+[2023-01-05T23:44:50.188+0530] {logging_mixin.py:137} INFO - Current =17-11-2020
+[2023-01-05T23:44:50.193+0530] {logging_mixin.py:137} INFO - Current =18-11-2020
+[2023-01-05T23:44:50.198+0530] {logging_mixin.py:137} INFO - Current =19-11-2020
+[2023-01-05T23:44:50.206+0530] {logging_mixin.py:137} INFO - Current =20-11-2020
+[2023-01-05T23:44:52.508+0530] {logging_mixin.py:137} INFO - Start = 2020-11-06 00:00:00
+[2023-01-05T23:44:52.508+0530] {logging_mixin.py:137} INFO - End = 2020-11-13 00:00:00
+[2023-01-05T23:44:52.508+0530] {logging_mixin.py:137} INFO - Current =06-11-2020
+[2023-01-05T23:44:52.514+0530] {logging_mixin.py:137} INFO - Current =07-11-2020
+[2023-01-05T23:44:52.523+0530] {logging_mixin.py:137} INFO - Current =08-11-2020
+[2023-01-05T23:44:52.528+0530] {logging_mixin.py:137} INFO - Current =09-11-2020
+[2023-01-05T23:44:52.536+0530] {logging_mixin.py:137} INFO - Current =10-11-2020
+[2023-01-05T23:44:52.542+0530] {logging_mixin.py:137} INFO - Current =11-11-2020
+[2023-01-05T23:44:52.547+0530] {logging_mixin.py:137} INFO - Current =12-11-2020
+[2023-01-05T23:44:52.555+0530] {logging_mixin.py:137} INFO - Current =13-11-2020
+[2023-01-05T23:44:54.647+0530] {logging_mixin.py:137} INFO - Start = 2020-10-30 00:00:00
+[2023-01-05T23:44:54.648+0530] {logging_mixin.py:137} INFO - End = 2020-11-06 00:00:00
+[2023-01-05T23:44:54.648+0530] {logging_mixin.py:137} INFO - Current =30-10-2020
+[2023-01-05T23:44:54.657+0530] {logging_mixin.py:137} INFO - 30-10-2020
+[2023-01-05T23:44:54.657+0530] {logging_mixin.py:137} INFO - 560.715
+[2023-01-05T23:44:54.657+0530] {logging_mixin.py:137} INFO - 518.339
+[2023-01-05T23:44:54.657+0530] {logging_mixin.py:137} INFO - 36.259
+[2023-01-05T23:44:54.657+0530] {logging_mixin.py:137} INFO - Current =31-10-2020
+[2023-01-05T23:44:54.662+0530] {logging_mixin.py:137} INFO - Current =01-11-2020
+[2023-01-05T23:44:54.670+0530] {logging_mixin.py:137} INFO - Current =02-11-2020
+[2023-01-05T23:44:54.674+0530] {logging_mixin.py:137} INFO - Current =03-11-2020
+[2023-01-05T23:44:54.679+0530] {logging_mixin.py:137} INFO - Current =04-11-2020
+[2023-01-05T23:44:54.686+0530] {logging_mixin.py:137} INFO - Current =05-11-2020
+[2023-01-05T23:44:54.691+0530] {logging_mixin.py:137} INFO - Current =06-11-2020
+[2023-01-05T23:44:56.727+0530] {logging_mixin.py:137} INFO - Start = 2020-10-23 00:00:00
+[2023-01-05T23:44:56.727+0530] {logging_mixin.py:137} INFO - End = 2020-10-30 00:00:00
+[2023-01-05T23:44:56.727+0530] {logging_mixin.py:137} INFO - Current =23-10-2020
+[2023-01-05T23:44:56.732+0530] {logging_mixin.py:137} INFO - Current =24-10-2020
+[2023-01-05T23:44:56.740+0530] {logging_mixin.py:137} INFO - 24-10-2020
+[2023-01-05T23:44:56.740+0530] {logging_mixin.py:137} INFO - 560.532
+[2023-01-05T23:44:56.740+0530] {logging_mixin.py:137} INFO - 517.524
+[2023-01-05T23:44:56.740+0530] {logging_mixin.py:137} INFO - 36.86
+[2023-01-05T23:44:56.741+0530] {logging_mixin.py:137} INFO - Current =25-10-2020
+[2023-01-05T23:44:56.746+0530] {logging_mixin.py:137} INFO - Current =26-10-2020
+[2023-01-05T23:44:56.754+0530] {logging_mixin.py:137} INFO - Current =27-10-2020
+[2023-01-05T23:44:56.759+0530] {logging_mixin.py:137} INFO - Current =28-10-2020
+[2023-01-05T23:44:56.764+0530] {logging_mixin.py:137} INFO - Current =29-10-2020
+[2023-01-05T23:44:56.772+0530] {logging_mixin.py:137} INFO - Current =30-10-2020
+[2023-01-05T23:44:58.863+0530] {logging_mixin.py:137} INFO - Start = 2020-10-16 00:00:00
+[2023-01-05T23:44:58.864+0530] {logging_mixin.py:137} INFO - End = 2020-10-23 00:00:00
+[2023-01-05T23:44:58.864+0530] {logging_mixin.py:137} INFO - Current =16-10-2020
+[2023-01-05T23:44:58.873+0530] {logging_mixin.py:137} INFO - Current =17-10-2020
+[2023-01-05T23:44:58.878+0530] {logging_mixin.py:137} INFO - Current =18-10-2020
+[2023-01-05T23:44:58.883+0530] {logging_mixin.py:137} INFO - Current =19-10-2020
+[2023-01-05T23:44:58.890+0530] {logging_mixin.py:137} INFO - Current =20-10-2020
+[2023-01-05T23:44:58.895+0530] {logging_mixin.py:137} INFO - Current =21-10-2020
+[2023-01-05T23:44:58.900+0530] {logging_mixin.py:137} INFO - Current =22-10-2020
+[2023-01-05T23:44:58.910+0530] {logging_mixin.py:137} INFO - Current =23-10-2020
+[2023-01-05T23:45:00.908+0530] {logging_mixin.py:137} INFO - Start = 2020-10-09 00:00:00
+[2023-01-05T23:45:00.908+0530] {logging_mixin.py:137} INFO - End = 2020-10-16 00:00:00
+[2023-01-05T23:45:00.908+0530] {logging_mixin.py:137} INFO - Current =09-10-2020
+[2023-01-05T23:45:00.917+0530] {logging_mixin.py:137} INFO - Current =10-10-2020
+[2023-01-05T23:45:00.924+0530] {logging_mixin.py:137} INFO - 10-10-2020
+[2023-01-05T23:45:00.924+0530] {logging_mixin.py:137} INFO - 551.505
+[2023-01-05T23:45:00.924+0530] {logging_mixin.py:137} INFO - 508.783
+[2023-01-05T23:45:00.924+0530] {logging_mixin.py:137} INFO - 36.598
+[2023-01-05T23:45:00.924+0530] {logging_mixin.py:137} INFO - Current =11-10-2020
+[2023-01-05T23:45:00.932+0530] {logging_mixin.py:137} INFO - Current =12-10-2020
+[2023-01-05T23:45:00.941+0530] {logging_mixin.py:137} INFO - Current =13-10-2020
+[2023-01-05T23:45:00.948+0530] {logging_mixin.py:137} INFO - Current =14-10-2020
+[2023-01-05T23:45:00.960+0530] {logging_mixin.py:137} INFO - Current =15-10-2020
+[2023-01-05T23:45:00.966+0530] {logging_mixin.py:137} INFO - Current =16-10-2020
+[2023-01-05T23:45:03.693+0530] {logging_mixin.py:137} INFO - Start = 2020-10-02 00:00:00
+[2023-01-05T23:45:03.693+0530] {logging_mixin.py:137} INFO - End = 2020-10-09 00:00:00
+[2023-01-05T23:45:03.693+0530] {logging_mixin.py:137} INFO - Current =02-10-2020
+[2023-01-05T23:45:03.697+0530] {logging_mixin.py:137} INFO - 02-10-2020
+[2023-01-05T23:45:03.697+0530] {logging_mixin.py:137} INFO - 545.638
+[2023-01-05T23:45:03.697+0530] {logging_mixin.py:137} INFO - 503.046
+[2023-01-05T23:45:03.697+0530] {logging_mixin.py:137} INFO - 36.486
+[2023-01-05T23:45:03.697+0530] {logging_mixin.py:137} INFO - Current =03-10-2020
+[2023-01-05T23:45:03.702+0530] {logging_mixin.py:137} INFO - Current =04-10-2020
+[2023-01-05T23:45:03.709+0530] {logging_mixin.py:137} INFO - Current =05-10-2020
+[2023-01-05T23:45:03.713+0530] {logging_mixin.py:137} INFO - Current =06-10-2020
+[2023-01-05T23:45:03.718+0530] {logging_mixin.py:137} INFO - Current =07-10-2020
+[2023-01-05T23:45:03.725+0530] {logging_mixin.py:137} INFO - Current =08-10-2020
+[2023-01-05T23:45:03.730+0530] {logging_mixin.py:137} INFO - Current =09-10-2020
+[2023-01-05T23:45:05.410+0530] {logging_mixin.py:137} INFO - Start = 2020-09-25 00:00:00
+[2023-01-05T23:45:05.410+0530] {logging_mixin.py:137} INFO - End = 2020-10-02 00:00:00
+[2023-01-05T23:45:05.410+0530] {logging_mixin.py:137} INFO - Current =25-09-2020
+[2023-01-05T23:45:05.415+0530] {logging_mixin.py:137} INFO - Current =26-09-2020
+[2023-01-05T23:45:05.419+0530] {logging_mixin.py:137} INFO - 26-09-2020
+[2023-01-05T23:45:05.419+0530] {logging_mixin.py:137} INFO - 542.021
+[2023-01-05T23:45:05.419+0530] {logging_mixin.py:137} INFO - 499.941
+[2023-01-05T23:45:05.419+0530] {logging_mixin.py:137} INFO - 35.999
+[2023-01-05T23:45:05.423+0530] {logging_mixin.py:137} INFO - Current =27-09-2020
+[2023-01-05T23:45:05.430+0530] {logging_mixin.py:137} INFO - Current =28-09-2020
+[2023-01-05T23:45:05.434+0530] {logging_mixin.py:137} INFO - Current =29-09-2020
+[2023-01-05T23:45:05.447+0530] {logging_mixin.py:137} INFO - Current =30-09-2020
+[2023-01-05T23:45:05.452+0530] {logging_mixin.py:137} INFO - Current =01-10-2020
+[2023-01-05T23:45:05.461+0530] {logging_mixin.py:137} INFO - Current =02-10-2020
+[2023-01-05T23:45:08.011+0530] {logging_mixin.py:137} INFO - Start = 2020-09-18 00:00:00
+[2023-01-05T23:45:08.012+0530] {logging_mixin.py:137} INFO - End = 2020-09-25 00:00:00
+[2023-01-05T23:45:08.012+0530] {logging_mixin.py:137} INFO - Current =18-09-2020
+[2023-01-05T23:45:08.018+0530] {logging_mixin.py:137} INFO - Current =19-09-2020
+[2023-01-05T23:45:08.024+0530] {logging_mixin.py:137} INFO - Current =20-09-2020
+[2023-01-05T23:45:08.029+0530] {logging_mixin.py:137} INFO - Current =21-09-2020
+[2023-01-05T23:45:08.038+0530] {logging_mixin.py:137} INFO - Current =22-09-2020
+[2023-01-05T23:45:08.043+0530] {logging_mixin.py:137} INFO - Current =23-09-2020
+[2023-01-05T23:45:08.048+0530] {logging_mixin.py:137} INFO - Current =24-09-2020
+[2023-01-05T23:45:08.057+0530] {logging_mixin.py:137} INFO - Current =25-09-2020
+[2023-01-05T23:45:10.062+0530] {logging_mixin.py:137} INFO - Start = 2020-09-11 00:00:00
+[2023-01-05T23:45:10.062+0530] {logging_mixin.py:137} INFO - End = 2020-09-18 00:00:00
+[2023-01-05T23:45:10.062+0530] {logging_mixin.py:137} INFO - Current =11-09-2020
+[2023-01-05T23:45:10.069+0530] {logging_mixin.py:137} INFO - Current =12-09-2020
+[2023-01-05T23:45:10.075+0530] {logging_mixin.py:137} INFO - 12-09-2020
+[2023-01-05T23:45:10.076+0530] {logging_mixin.py:137} INFO - 541.66
+[2023-01-05T23:45:10.076+0530] {logging_mixin.py:137} INFO - 497.521
+[2023-01-05T23:45:10.076+0530] {logging_mixin.py:137} INFO - 38.02
+[2023-01-05T23:45:10.076+0530] {logging_mixin.py:137} INFO - Current =13-09-2020
+[2023-01-05T23:45:10.083+0530] {logging_mixin.py:137} INFO - Current =14-09-2020
+[2023-01-05T23:45:10.092+0530] {logging_mixin.py:137} INFO - Current =15-09-2020
+[2023-01-05T23:45:10.100+0530] {logging_mixin.py:137} INFO - Current =16-09-2020
+[2023-01-05T23:45:10.108+0530] {logging_mixin.py:137} INFO - Current =17-09-2020
+[2023-01-05T23:45:10.114+0530] {logging_mixin.py:137} INFO - Current =18-09-2020
+[2023-01-05T23:45:12.266+0530] {logging_mixin.py:137} INFO - Start = 2020-09-04 00:00:00
+[2023-01-05T23:45:12.267+0530] {logging_mixin.py:137} INFO - End = 2020-09-11 00:00:00
+[2023-01-05T23:45:12.269+0530] {logging_mixin.py:137} INFO - Current =04-09-2020
+[2023-01-05T23:45:12.275+0530] {logging_mixin.py:137} INFO - Current =05-09-2020
+[2023-01-05T23:45:12.280+0530] {logging_mixin.py:137} INFO - Current =06-09-2020
+[2023-01-05T23:45:12.288+0530] {logging_mixin.py:137} INFO - Current =07-09-2020
+[2023-01-05T23:45:12.294+0530] {logging_mixin.py:137} INFO - Current =08-09-2020
+[2023-01-05T23:45:12.299+0530] {logging_mixin.py:137} INFO - Current =09-09-2020
+[2023-01-05T23:45:12.307+0530] {logging_mixin.py:137} INFO - Current =10-09-2020
+[2023-01-05T23:45:12.312+0530] {logging_mixin.py:137} INFO - Current =11-09-2020
+[2023-01-05T23:45:14.675+0530] {logging_mixin.py:137} INFO - Start = 2020-08-28 00:00:00
+[2023-01-05T23:45:14.676+0530] {logging_mixin.py:137} INFO - End = 2020-09-04 00:00:00
+[2023-01-05T23:45:14.676+0530] {logging_mixin.py:137} INFO - Current =28-08-2020
+[2023-01-05T23:45:14.680+0530] {logging_mixin.py:137} INFO - Current =29-08-2020
+[2023-01-05T23:45:14.687+0530] {logging_mixin.py:137} INFO - Current =30-08-2020
+[2023-01-05T23:45:14.693+0530] {logging_mixin.py:137} INFO - Current =31-08-2020
+[2023-01-05T23:45:14.698+0530] {logging_mixin.py:137} INFO - Current =01-09-2020
+[2023-01-05T23:45:14.707+0530] {logging_mixin.py:137} INFO - Current =02-09-2020
+[2023-01-05T23:45:14.712+0530] {logging_mixin.py:137} INFO - Current =03-09-2020
+[2023-01-05T23:45:14.716+0530] {logging_mixin.py:137} INFO - Current =04-09-2020
+[2023-01-05T23:45:17.093+0530] {logging_mixin.py:137} INFO - Start = 2020-08-21 00:00:00
+[2023-01-05T23:45:17.093+0530] {logging_mixin.py:137} INFO - End = 2020-08-28 00:00:00
+[2023-01-05T23:45:17.093+0530] {logging_mixin.py:137} INFO - Current =21-08-2020
+[2023-01-05T23:45:17.097+0530] {logging_mixin.py:137} INFO - Current =22-08-2020
+[2023-01-05T23:45:17.100+0530] {logging_mixin.py:137} INFO - 22-08-2020
+[2023-01-05T23:45:17.101+0530] {logging_mixin.py:137} INFO - 537.548
+[2023-01-05T23:45:17.101+0530] {logging_mixin.py:137} INFO - 494.168
+[2023-01-05T23:45:17.101+0530] {logging_mixin.py:137} INFO - 37.264
+[2023-01-05T23:45:17.101+0530] {logging_mixin.py:137} INFO - Current =23-08-2020
+[2023-01-05T23:45:17.109+0530] {logging_mixin.py:137} INFO - Current =24-08-2020
+[2023-01-05T23:45:17.115+0530] {logging_mixin.py:137} INFO - Current =25-08-2020
+[2023-01-05T23:45:17.119+0530] {logging_mixin.py:137} INFO - Current =26-08-2020
+[2023-01-05T23:45:17.128+0530] {logging_mixin.py:137} INFO - Current =27-08-2020
+[2023-01-05T23:45:17.133+0530] {logging_mixin.py:137} INFO - Current =28-08-2020
+[2023-01-05T23:45:19.137+0530] {logging_mixin.py:137} INFO - Start = 2020-08-14 00:00:00
+[2023-01-05T23:45:19.137+0530] {logging_mixin.py:137} INFO - End = 2020-08-21 00:00:00
+[2023-01-05T23:45:19.137+0530] {logging_mixin.py:137} INFO - Current =14-08-2020
+[2023-01-05T23:45:19.145+0530] {logging_mixin.py:137} INFO - Current =15-08-2020
+[2023-01-05T23:45:19.149+0530] {logging_mixin.py:137} INFO - 15-08-2020
+[2023-01-05T23:45:19.149+0530] {logging_mixin.py:137} INFO - 535.252
+[2023-01-05T23:45:19.149+0530] {logging_mixin.py:137} INFO - 491.55
+[2023-01-05T23:45:19.149+0530] {logging_mixin.py:137} INFO - 37.595
+[2023-01-05T23:45:19.149+0530] {logging_mixin.py:137} INFO - Current =16-08-2020
+[2023-01-05T23:45:19.154+0530] {logging_mixin.py:137} INFO - Current =17-08-2020
+[2023-01-05T23:45:19.162+0530] {logging_mixin.py:137} INFO - Current =18-08-2020
+[2023-01-05T23:45:19.167+0530] {logging_mixin.py:137} INFO - Current =19-08-2020
+[2023-01-05T23:45:19.172+0530] {logging_mixin.py:137} INFO - Current =20-08-2020
+[2023-01-05T23:45:19.180+0530] {logging_mixin.py:137} INFO - Current =21-08-2020
+[2023-01-05T23:45:20.970+0530] {logging_mixin.py:137} INFO - Start = 2020-08-07 00:00:00
+[2023-01-05T23:45:20.971+0530] {logging_mixin.py:137} INFO - End = 2020-08-14 00:00:00
+[2023-01-05T23:45:20.971+0530] {logging_mixin.py:137} INFO - Current =07-08-2020
+[2023-01-05T23:45:20.980+0530] {logging_mixin.py:137} INFO - Current =08-08-2020
+[2023-01-05T23:45:20.988+0530] {logging_mixin.py:137} INFO - 08-08-2020
+[2023-01-05T23:45:20.989+0530] {logging_mixin.py:137} INFO - 538.191
+[2023-01-05T23:45:20.989+0530] {logging_mixin.py:137} INFO - 492.293
+[2023-01-05T23:45:20.989+0530] {logging_mixin.py:137} INFO - 39.785
+[2023-01-05T23:45:20.989+0530] {logging_mixin.py:137} INFO - Current =09-08-2020
+[2023-01-05T23:45:21.000+0530] {logging_mixin.py:137} INFO - Current =10-08-2020
+[2023-01-05T23:45:21.012+0530] {logging_mixin.py:137} INFO - Current =11-08-2020
+[2023-01-05T23:45:21.019+0530] {logging_mixin.py:137} INFO - Current =12-08-2020
+[2023-01-05T23:45:21.030+0530] {logging_mixin.py:137} INFO - Current =13-08-2020
+[2023-01-05T23:45:21.040+0530] {logging_mixin.py:137} INFO - Current =14-08-2020
+[2023-01-05T23:45:23.499+0530] {logging_mixin.py:137} INFO - Start = 2020-06-26 00:00:00
+[2023-01-05T23:45:23.499+0530] {logging_mixin.py:137} INFO - End = 2020-07-03 00:00:00
+[2023-01-05T23:45:23.499+0530] {logging_mixin.py:137} INFO - Current =26-06-2020
+[2023-01-05T23:45:23.505+0530] {logging_mixin.py:137} INFO - Current =27-06-2020
+[2023-01-05T23:45:23.513+0530] {logging_mixin.py:137} INFO - 27-06-2020
+[2023-01-05T23:45:23.513+0530] {logging_mixin.py:137} INFO - 506.838
+[2023-01-05T23:45:23.513+0530] {logging_mixin.py:137} INFO - 467.603
+[2023-01-05T23:45:23.513+0530] {logging_mixin.py:137} INFO - 33.523
+[2023-01-05T23:45:23.514+0530] {logging_mixin.py:137} INFO - Current =28-06-2020
+[2023-01-05T23:45:23.518+0530] {logging_mixin.py:137} INFO - Current =29-06-2020
+[2023-01-05T23:45:23.523+0530] {logging_mixin.py:137} INFO - Current =30-06-2020
+[2023-01-05T23:45:23.533+0530] {logging_mixin.py:137} INFO - Current =01-07-2020
+[2023-01-05T23:45:23.540+0530] {logging_mixin.py:137} INFO - Current =02-07-2020
+[2023-01-05T23:45:23.549+0530] {logging_mixin.py:137} INFO - Current =03-07-2020
+[2023-01-05T23:45:25.468+0530] {logging_mixin.py:137} INFO - Start = 2020-06-19 00:00:00
+[2023-01-05T23:45:25.468+0530] {logging_mixin.py:137} INFO - End = 2020-06-26 00:00:00
+[2023-01-05T23:45:25.469+0530] {logging_mixin.py:137} INFO - Current =19-06-2020
+[2023-01-05T23:45:25.474+0530] {logging_mixin.py:137} INFO - Current =20-06-2020
+[2023-01-05T23:45:25.485+0530] {logging_mixin.py:137} INFO - Current =21-06-2020
+[2023-01-05T23:45:25.492+0530] {logging_mixin.py:137} INFO - Current =22-06-2020
+[2023-01-05T23:45:25.500+0530] {logging_mixin.py:137} INFO - Current =23-06-2020
+[2023-01-05T23:45:25.507+0530] {logging_mixin.py:137} INFO - Current =24-06-2020
+[2023-01-05T23:45:25.518+0530] {logging_mixin.py:137} INFO - Current =25-06-2020
+[2023-01-05T23:45:25.525+0530] {logging_mixin.py:137} INFO - Current =26-06-2020
+[2023-01-05T23:45:27.626+0530] {logging_mixin.py:137} INFO - Start = 2020-06-12 00:00:00
+[2023-01-05T23:45:27.626+0530] {logging_mixin.py:137} INFO - End = 2020-06-19 00:00:00
+[2023-01-05T23:45:27.626+0530] {logging_mixin.py:137} INFO - Current =12-06-2020
+[2023-01-05T23:45:27.640+0530] {logging_mixin.py:137} INFO - Current =13-06-2020
+[2023-01-05T23:45:27.657+0530] {logging_mixin.py:137} INFO - 13-06-2020
+[2023-01-05T23:45:27.657+0530] {logging_mixin.py:137} INFO - 507.644
+[2023-01-05T23:45:27.657+0530] {logging_mixin.py:137} INFO - 468.737
+[2023-01-05T23:45:27.657+0530] {logging_mixin.py:137} INFO - 33.173
+[2023-01-05T23:45:27.658+0530] {logging_mixin.py:137} INFO - Current =14-06-2020
+[2023-01-05T23:45:27.665+0530] {logging_mixin.py:137} INFO - Current =15-06-2020
+[2023-01-05T23:45:27.673+0530] {logging_mixin.py:137} INFO - Current =16-06-2020
+[2023-01-05T23:45:27.680+0530] {logging_mixin.py:137} INFO - Current =17-06-2020
+[2023-01-05T23:45:27.689+0530] {logging_mixin.py:137} INFO - Current =18-06-2020
+[2023-01-05T23:45:27.696+0530] {logging_mixin.py:137} INFO - Current =19-06-2020
+[2023-01-05T23:45:29.821+0530] {logging_mixin.py:137} INFO - Start = 2020-06-05 00:00:00
+[2023-01-05T23:45:29.821+0530] {logging_mixin.py:137} INFO - End = 2020-06-12 00:00:00
+[2023-01-05T23:45:29.821+0530] {logging_mixin.py:137} INFO - Current =05-06-2020
+[2023-01-05T23:45:29.826+0530] {logging_mixin.py:137} INFO - Current =06-06-2020
+[2023-01-05T23:45:29.830+0530] {logging_mixin.py:137} INFO - Current =07-06-2020
+[2023-01-05T23:45:29.837+0530] {logging_mixin.py:137} INFO - Current =08-06-2020
+[2023-01-05T23:45:29.841+0530] {logging_mixin.py:137} INFO - Current =09-06-2020
+[2023-01-05T23:45:29.845+0530] {logging_mixin.py:137} INFO - Current =10-06-2020
+[2023-01-05T23:45:29.852+0530] {logging_mixin.py:137} INFO - Current =11-06-2020
+[2023-01-05T23:45:29.858+0530] {logging_mixin.py:137} INFO - Current =12-06-2020
+[2023-01-05T23:45:31.997+0530] {logging_mixin.py:137} INFO - Start = 2020-05-29 00:00:00
+[2023-01-05T23:45:31.998+0530] {logging_mixin.py:137} INFO - End = 2020-06-05 00:00:00
+[2023-01-05T23:45:31.998+0530] {logging_mixin.py:137} INFO - Current =29-05-2020
+[2023-01-05T23:45:32.007+0530] {logging_mixin.py:137} INFO - Current =30-05-2020
+[2023-01-05T23:45:32.012+0530] {logging_mixin.py:137} INFO - Current =31-05-2020
+[2023-01-05T23:45:32.020+0530] {logging_mixin.py:137} INFO - Current =01-06-2020
+[2023-01-05T23:45:32.027+0530] {logging_mixin.py:137} INFO - Current =02-06-2020
+[2023-01-05T23:45:32.035+0530] {logging_mixin.py:137} INFO - Current =03-06-2020
+[2023-01-05T23:45:32.041+0530] {logging_mixin.py:137} INFO - Current =04-06-2020
+[2023-01-05T23:45:32.046+0530] {logging_mixin.py:137} INFO - Current =05-06-2020
+[2023-01-05T23:45:34.393+0530] {logging_mixin.py:137} INFO - Start = 2020-05-22 00:00:00
+[2023-01-05T23:45:34.394+0530] {logging_mixin.py:137} INFO - End = 2020-05-29 00:00:00
+[2023-01-05T23:45:34.394+0530] {logging_mixin.py:137} INFO - Current =22-05-2020
+[2023-01-05T23:45:34.398+0530] {logging_mixin.py:137} INFO - Current =23-05-2020
+[2023-01-05T23:45:34.406+0530] {logging_mixin.py:137} INFO - 23-05-2020
+[2023-01-05T23:45:34.406+0530] {logging_mixin.py:137} INFO - 490.044
+[2023-01-05T23:45:34.406+0530] {logging_mixin.py:137} INFO - 451.706
+[2023-01-05T23:45:34.407+0530] {logging_mixin.py:137} INFO - 32.779
+[2023-01-05T23:45:34.407+0530] {logging_mixin.py:137} INFO - Current =24-05-2020
+[2023-01-05T23:45:34.411+0530] {logging_mixin.py:137} INFO - 24-05-2020
+[2023-01-05T23:45:34.411+0530] {logging_mixin.py:137} INFO - 490.044
+[2023-01-05T23:45:34.412+0530] {logging_mixin.py:137} INFO - 451.706
+[2023-01-05T23:45:34.412+0530] {logging_mixin.py:137} INFO - 32.779
+[2023-01-05T23:45:34.412+0530] {logging_mixin.py:137} INFO - Current =25-05-2020
+[2023-01-05T23:45:34.417+0530] {logging_mixin.py:137} INFO - Current =26-05-2020
+[2023-01-05T23:45:34.424+0530] {logging_mixin.py:137} INFO - Current =27-05-2020
+[2023-01-05T23:45:34.429+0530] {logging_mixin.py:137} INFO - Current =28-05-2020
+[2023-01-05T23:45:34.435+0530] {logging_mixin.py:137} INFO - Current =29-05-2020
+[2023-01-05T23:45:36.991+0530] {logging_mixin.py:137} INFO - Start = 2020-05-15 00:00:00
+[2023-01-05T23:45:36.992+0530] {logging_mixin.py:137} INFO - End = 2020-05-22 00:00:00
+[2023-01-05T23:45:36.992+0530] {logging_mixin.py:137} INFO - Current =15-05-2020
+[2023-01-05T23:45:36.996+0530] {logging_mixin.py:137} INFO - Current =16-05-2020
+[2023-01-05T23:45:37.004+0530] {logging_mixin.py:137} INFO - Current =17-05-2020
+[2023-01-05T23:45:37.009+0530] {logging_mixin.py:137} INFO - Current =18-05-2020
+[2023-01-05T23:45:37.014+0530] {logging_mixin.py:137} INFO - Current =19-05-2020
+[2023-01-05T23:45:37.022+0530] {logging_mixin.py:137} INFO - Current =20-05-2020
+[2023-01-05T23:45:37.027+0530] {logging_mixin.py:137} INFO - Current =21-05-2020
+[2023-01-05T23:45:37.032+0530] {logging_mixin.py:137} INFO - Current =22-05-2020
+[2023-01-05T23:45:39.063+0530] {logging_mixin.py:137} INFO - Start = 2020-05-08 00:00:00
+[2023-01-05T23:45:39.063+0530] {logging_mixin.py:137} INFO - End = 2020-05-15 00:00:00
+[2023-01-05T23:45:39.063+0530] {logging_mixin.py:137} INFO - Current =08-05-2020
+[2023-01-05T23:45:39.070+0530] {logging_mixin.py:137} INFO - Current =09-05-2020
+[2023-01-05T23:45:39.075+0530] {logging_mixin.py:137} INFO - 09-05-2020
+[2023-01-05T23:45:39.076+0530] {logging_mixin.py:137} INFO - 485.313
+[2023-01-05T23:45:39.076+0530] {logging_mixin.py:137} INFO - 447.548
+[2023-01-05T23:45:39.076+0530] {logging_mixin.py:137} INFO - 32.291
+[2023-01-05T23:45:39.076+0530] {logging_mixin.py:137} INFO - Current =10-05-2020
+[2023-01-05T23:45:39.081+0530] {logging_mixin.py:137} INFO - Current =11-05-2020
+[2023-01-05T23:45:39.089+0530] {logging_mixin.py:137} INFO - Current =12-05-2020
+[2023-01-05T23:45:39.094+0530] {logging_mixin.py:137} INFO - Current =13-05-2020
+[2023-01-05T23:45:39.099+0530] {logging_mixin.py:137} INFO - Current =14-05-2020
+[2023-01-05T23:45:39.112+0530] {logging_mixin.py:137} INFO - Current =15-05-2020
+[2023-01-05T23:45:41.361+0530] {logging_mixin.py:137} INFO - Start = 2020-05-01 00:00:00
+[2023-01-05T23:45:41.361+0530] {logging_mixin.py:137} INFO - End = 2020-05-08 00:00:00
+[2023-01-05T23:45:41.361+0530] {logging_mixin.py:137} INFO - Current =01-05-2020
+[2023-01-05T23:45:41.368+0530] {logging_mixin.py:137} INFO - 01-05-2020
+[2023-01-05T23:45:41.368+0530] {logging_mixin.py:137} INFO - 481.078
+[2023-01-05T23:45:41.369+0530] {logging_mixin.py:137} INFO - 443.316
+[2023-01-05T23:45:41.372+0530] {logging_mixin.py:137} INFO - 32.277
+[2023-01-05T23:45:41.373+0530] {logging_mixin.py:137} INFO - Current =02-05-2020
+[2023-01-05T23:45:41.382+0530] {logging_mixin.py:137} INFO - Current =03-05-2020
+[2023-01-05T23:45:41.393+0530] {logging_mixin.py:137} INFO - Current =04-05-2020
+[2023-01-05T23:45:41.413+0530] {logging_mixin.py:137} INFO - Current =05-05-2020
+[2023-01-05T23:45:41.425+0530] {logging_mixin.py:137} INFO - Current =06-05-2020
+[2023-01-05T23:45:41.432+0530] {logging_mixin.py:137} INFO - Current =07-05-2020
+[2023-01-05T23:45:41.444+0530] {logging_mixin.py:137} INFO - Current =08-05-2020
+[2023-01-05T23:45:43.636+0530] {logging_mixin.py:137} INFO - Start = 2020-04-24 00:00:00
+[2023-01-05T23:45:43.639+0530] {logging_mixin.py:137} INFO - End = 2020-05-01 00:00:00
+[2023-01-05T23:45:43.640+0530] {logging_mixin.py:137} INFO - Current =24-04-2020
+[2023-01-05T23:45:43.648+0530] {logging_mixin.py:137} INFO - Current =25-04-2020
+[2023-01-05T23:45:43.657+0530] {logging_mixin.py:137} INFO - 25-04-2020
+[2023-01-05T23:45:43.658+0530] {logging_mixin.py:137} INFO - 479.455
+[2023-01-05T23:45:43.659+0530] {logging_mixin.py:137} INFO - 441.564
+[2023-01-05T23:45:43.659+0530] {logging_mixin.py:137} INFO - 32.901
+[2023-01-05T23:45:43.660+0530] {logging_mixin.py:137} INFO - Current =26-04-2020
+[2023-01-05T23:45:43.667+0530] {logging_mixin.py:137} INFO - Current =27-04-2020
+[2023-01-05T23:45:43.674+0530] {logging_mixin.py:137} INFO - Current =28-04-2020
+[2023-01-05T23:45:43.679+0530] {logging_mixin.py:137} INFO - Current =29-04-2020
+[2023-01-05T23:45:43.685+0530] {logging_mixin.py:137} INFO - Current =30-04-2020
+[2023-01-05T23:45:43.693+0530] {logging_mixin.py:137} INFO - Current =01-05-2020
+[2023-01-05T23:45:45.608+0530] {logging_mixin.py:137} INFO - Start = 2020-04-17 00:00:00
+[2023-01-05T23:45:45.608+0530] {logging_mixin.py:137} INFO - End = 2020-04-24 00:00:00
+[2023-01-05T23:45:45.608+0530] {logging_mixin.py:137} INFO - Current =17-04-2020
+[2023-01-05T23:45:45.614+0530] {logging_mixin.py:137} INFO - Current =18-04-2020
+[2023-01-05T23:45:45.619+0530] {logging_mixin.py:137} INFO - Current =19-04-2020
+[2023-01-05T23:45:45.627+0530] {logging_mixin.py:137} INFO - Current =20-04-2020
+[2023-01-05T23:45:45.632+0530] {logging_mixin.py:137} INFO - Current =21-04-2020
+[2023-01-05T23:45:45.640+0530] {logging_mixin.py:137} INFO - Current =22-04-2020
+[2023-01-05T23:45:45.651+0530] {logging_mixin.py:137} INFO - Current =23-04-2020
+[2023-01-05T23:45:45.659+0530] {logging_mixin.py:137} INFO - Current =24-04-2020
+[2023-01-05T23:45:48.204+0530] {logging_mixin.py:137} INFO - Start = 2020-04-10 00:00:00
+[2023-01-05T23:45:48.204+0530] {logging_mixin.py:137} INFO - End = 2020-04-17 00:00:00
+[2023-01-05T23:45:48.204+0530] {logging_mixin.py:137} INFO - Current =10-04-2020
+[2023-01-05T23:45:48.212+0530] {logging_mixin.py:137} INFO - 10-04-2020
+[2023-01-05T23:45:48.212+0530] {logging_mixin.py:137} INFO - 476.475
+[2023-01-05T23:45:48.212+0530] {logging_mixin.py:137} INFO - 440.338
+[2023-01-05T23:45:48.212+0530] {logging_mixin.py:137} INFO - 31.136
+[2023-01-05T23:45:48.212+0530] {logging_mixin.py:137} INFO - Current =11-04-2020
+[2023-01-05T23:45:48.216+0530] {logging_mixin.py:137} INFO - 11-04-2020
+[2023-01-05T23:45:48.217+0530] {logging_mixin.py:137} INFO - 476.475
+[2023-01-05T23:45:48.217+0530] {logging_mixin.py:137} INFO - 440.338
+[2023-01-05T23:45:48.217+0530] {logging_mixin.py:137} INFO - 31.136
+[2023-01-05T23:45:48.217+0530] {logging_mixin.py:137} INFO - Current =12-04-2020
+[2023-01-05T23:45:48.222+0530] {logging_mixin.py:137} INFO - Current =13-04-2020
+[2023-01-05T23:45:48.229+0530] {logging_mixin.py:137} INFO - Current =14-04-2020
+[2023-01-05T23:45:48.235+0530] {logging_mixin.py:137} INFO - Current =15-04-2020
+[2023-01-05T23:45:48.244+0530] {logging_mixin.py:137} INFO - Current =16-04-2020
+[2023-01-05T23:45:48.248+0530] {logging_mixin.py:137} INFO - Current =17-04-2020
+[2023-01-05T23:45:50.270+0530] {logging_mixin.py:137} INFO - Start = 2020-04-03 00:00:00
+[2023-01-05T23:45:50.270+0530] {logging_mixin.py:137} INFO - End = 2020-04-10 00:00:00
+[2023-01-05T23:45:50.270+0530] {logging_mixin.py:137} INFO - Current =03-04-2020
+[2023-01-05T23:45:50.276+0530] {logging_mixin.py:137} INFO - Current =04-04-2020
+[2023-01-05T23:45:50.282+0530] {logging_mixin.py:137} INFO - Current =05-04-2020
+[2023-01-05T23:45:50.286+0530] {logging_mixin.py:137} INFO - 05-04-2020
+[2023-01-05T23:45:50.286+0530] {logging_mixin.py:137} INFO - 474.66
+[2023-01-05T23:45:50.286+0530] {logging_mixin.py:137} INFO - 439.116
+[2023-01-05T23:45:50.286+0530] {logging_mixin.py:137} INFO - 30.55
+[2023-01-05T23:45:50.286+0530] {logging_mixin.py:137} INFO - Current =06-04-2020
+[2023-01-05T23:45:50.294+0530] {logging_mixin.py:137} INFO - Current =07-04-2020
+[2023-01-05T23:45:50.300+0530] {logging_mixin.py:137} INFO - Current =08-04-2020
+[2023-01-05T23:45:50.305+0530] {logging_mixin.py:137} INFO - Current =09-04-2020
+[2023-01-05T23:45:50.314+0530] {logging_mixin.py:137} INFO - Current =10-04-2020
+[2023-01-05T23:45:52.574+0530] {logging_mixin.py:137} INFO - Start = 2020-03-27 00:00:00
+[2023-01-05T23:45:52.574+0530] {logging_mixin.py:137} INFO - End = 2020-04-03 00:00:00
+[2023-01-05T23:45:52.574+0530] {logging_mixin.py:137} INFO - Current =27-03-2020
+[2023-01-05T23:45:52.582+0530] {logging_mixin.py:137} INFO - Current =28-03-2020
+[2023-01-05T23:45:52.586+0530] {logging_mixin.py:137} INFO - 28-03-2020
+[2023-01-05T23:45:52.587+0530] {logging_mixin.py:137} INFO - 475.561
+[2023-01-05T23:45:52.587+0530] {logging_mixin.py:137} INFO - 439.663
+[2023-01-05T23:45:52.587+0530] {logging_mixin.py:137} INFO - 30.89
+[2023-01-05T23:45:52.587+0530] {logging_mixin.py:137} INFO - Current =29-03-2020
+[2023-01-05T23:45:52.594+0530] {logging_mixin.py:137} INFO - Current =30-03-2020
+[2023-01-05T23:45:52.599+0530] {logging_mixin.py:137} INFO - Current =31-03-2020
+[2023-01-05T23:45:52.606+0530] {logging_mixin.py:137} INFO - Current =01-04-2020
+[2023-01-05T23:45:52.615+0530] {logging_mixin.py:137} INFO - Current =02-04-2020
+[2023-01-05T23:45:52.623+0530] {logging_mixin.py:137} INFO - Current =03-04-2020
+[2023-01-05T23:45:54.642+0530] {logging_mixin.py:137} INFO - Start = 2020-03-20 00:00:00
+[2023-01-05T23:45:54.642+0530] {logging_mixin.py:137} INFO - End = 2020-03-27 00:00:00
+[2023-01-05T23:45:54.642+0530] {logging_mixin.py:137} INFO - Current =20-03-2020
+[2023-01-05T23:45:54.653+0530] {logging_mixin.py:137} INFO - Current =21-03-2020
+[2023-01-05T23:45:54.662+0530] {logging_mixin.py:137} INFO - Current =22-03-2020
+[2023-01-05T23:45:54.668+0530] {logging_mixin.py:137} INFO - Current =23-03-2020
+[2023-01-05T23:45:54.673+0530] {logging_mixin.py:137} INFO - Current =24-03-2020
+[2023-01-05T23:45:54.683+0530] {logging_mixin.py:137} INFO - Current =25-03-2020
+[2023-01-05T23:45:54.689+0530] {logging_mixin.py:137} INFO - Current =26-03-2020
+[2023-01-05T23:45:54.696+0530] {logging_mixin.py:137} INFO - Current =27-03-2020
+[2023-01-05T23:45:57.068+0530] {logging_mixin.py:137} INFO - Start = 2020-03-13 00:00:00
+[2023-01-05T23:45:57.068+0530] {logging_mixin.py:137} INFO - End = 2020-03-20 00:00:00
+[2023-01-05T23:45:57.068+0530] {logging_mixin.py:137} INFO - Current =13-03-2020
+[2023-01-05T23:45:57.072+0530] {logging_mixin.py:137} INFO - Current =14-03-2020
+[2023-01-05T23:45:57.078+0530] {logging_mixin.py:137} INFO - 14-03-2020
+[2023-01-05T23:45:57.079+0530] {logging_mixin.py:137} INFO - 481.892
+[2023-01-05T23:45:57.079+0530] {logging_mixin.py:137} INFO - 447.358
+[2023-01-05T23:45:57.079+0530] {logging_mixin.py:137} INFO - 29.467
+[2023-01-05T23:45:57.079+0530] {logging_mixin.py:137} INFO - Current =15-03-2020
+[2023-01-05T23:45:57.085+0530] {logging_mixin.py:137} INFO - Current =16-03-2020
+[2023-01-05T23:45:57.090+0530] {logging_mixin.py:137} INFO - Current =17-03-2020
+[2023-01-05T23:45:57.098+0530] {logging_mixin.py:137} INFO - Current =18-03-2020
+[2023-01-05T23:45:57.102+0530] {logging_mixin.py:137} INFO - Current =19-03-2020
+[2023-01-05T23:45:57.107+0530] {logging_mixin.py:137} INFO - Current =20-03-2020
+[2023-01-05T23:45:59.272+0530] {logging_mixin.py:137} INFO - Start = 2020-03-06 00:00:00
+[2023-01-05T23:45:59.273+0530] {logging_mixin.py:137} INFO - End = 2020-03-13 00:00:00
+[2023-01-05T23:45:59.273+0530] {logging_mixin.py:137} INFO - Current =06-03-2020
+[2023-01-05T23:45:59.282+0530] {logging_mixin.py:137} INFO - Current =07-03-2020
+[2023-01-05T23:45:59.289+0530] {logging_mixin.py:137} INFO - Current =08-03-2020
+[2023-01-05T23:45:59.299+0530] {logging_mixin.py:137} INFO - Current =09-03-2020
+[2023-01-05T23:45:59.305+0530] {logging_mixin.py:137} INFO - Current =10-03-2020
+[2023-01-05T23:45:59.315+0530] {logging_mixin.py:137} INFO - Current =11-03-2020
+[2023-01-05T23:45:59.321+0530] {logging_mixin.py:137} INFO - Current =12-03-2020
+[2023-01-05T23:45:59.331+0530] {logging_mixin.py:137} INFO - Current =13-03-2020
+[2023-01-05T23:46:01.469+0530] {logging_mixin.py:137} INFO - Start = 2020-02-28 00:00:00
+[2023-01-05T23:46:01.470+0530] {logging_mixin.py:137} INFO - End = 2020-03-06 00:00:00
+[2023-01-05T23:46:01.470+0530] {logging_mixin.py:137} INFO - Current =28-02-2020
+[2023-01-05T23:46:01.482+0530] {logging_mixin.py:137} INFO - Current =29-02-2020
+[2023-01-05T23:46:01.491+0530] {logging_mixin.py:137} INFO - Current =01-03-2020
+[2023-01-05T23:46:01.501+0530] {logging_mixin.py:137} INFO - Current =02-03-2020
+[2023-01-05T23:46:01.514+0530] {logging_mixin.py:137} INFO - Current =03-03-2020
+[2023-01-05T23:46:01.525+0530] {logging_mixin.py:137} INFO - Current =04-03-2020
+[2023-01-05T23:46:01.537+0530] {logging_mixin.py:137} INFO - Current =05-03-2020
+[2023-01-05T23:46:01.549+0530] {logging_mixin.py:137} INFO - Current =06-03-2020
+[2023-01-05T23:46:03.843+0530] {logging_mixin.py:137} INFO - Start = 2020-02-21 00:00:00
+[2023-01-05T23:46:03.843+0530] {logging_mixin.py:137} INFO - End = 2020-02-28 00:00:00
+[2023-01-05T23:46:03.843+0530] {logging_mixin.py:137} INFO - Current =21-02-2020
+[2023-01-05T23:46:03.850+0530] {logging_mixin.py:137} INFO - Current =22-02-2020
+[2023-01-05T23:46:03.854+0530] {logging_mixin.py:137} INFO - 22-02-2020
+[2023-01-05T23:46:03.854+0530] {logging_mixin.py:137} INFO - 476.122
+[2023-01-05T23:46:03.854+0530] {logging_mixin.py:137} INFO - 441.458
+[2023-01-05T23:46:03.854+0530] {logging_mixin.py:137} INFO - 29.662
+[2023-01-05T23:46:03.854+0530] {logging_mixin.py:137} INFO - Current =23-02-2020
+[2023-01-05T23:46:03.858+0530] {logging_mixin.py:137} INFO - Current =24-02-2020
+[2023-01-05T23:46:03.866+0530] {logging_mixin.py:137} INFO - Current =25-02-2020
+[2023-01-05T23:46:03.871+0530] {logging_mixin.py:137} INFO - Current =26-02-2020
+[2023-01-05T23:46:03.876+0530] {logging_mixin.py:137} INFO - Current =27-02-2020
+[2023-01-05T23:46:03.884+0530] {logging_mixin.py:137} INFO - Current =28-02-2020
+[2023-01-05T23:46:05.844+0530] {logging_mixin.py:137} INFO - Start = 2020-02-14 00:00:00
+[2023-01-05T23:46:05.844+0530] {logging_mixin.py:137} INFO - End = 2020-02-21 00:00:00
+[2023-01-05T23:46:05.844+0530] {logging_mixin.py:137} INFO - Current =14-02-2020
+[2023-01-05T23:46:05.854+0530] {logging_mixin.py:137} INFO - Current =15-02-2020
+[2023-01-05T23:46:05.859+0530] {logging_mixin.py:137} INFO - Current =16-02-2020
+[2023-01-05T23:46:05.870+0530] {logging_mixin.py:137} INFO - Current =17-02-2020
+[2023-01-05T23:46:05.878+0530] {logging_mixin.py:137} INFO - Current =18-02-2020
+[2023-01-05T23:46:05.892+0530] {logging_mixin.py:137} INFO - Current =19-02-2020
+[2023-01-05T23:46:05.901+0530] {logging_mixin.py:137} INFO - Current =20-02-2020
+[2023-01-05T23:46:05.910+0530] {logging_mixin.py:137} INFO - Current =21-02-2020
+[2023-01-05T23:46:07.994+0530] {logging_mixin.py:137} INFO - Start = 2020-02-07 00:00:00
+[2023-01-05T23:46:07.995+0530] {logging_mixin.py:137} INFO - End = 2020-02-14 00:00:00
+[2023-01-05T23:46:07.995+0530] {logging_mixin.py:137} INFO - Current =14-02-2020
+[2023-01-05T23:46:10.053+0530] {logging_mixin.py:137} INFO - Start = 2020-01-31 00:00:00
+[2023-01-05T23:46:10.053+0530] {logging_mixin.py:137} INFO - End = 2020-02-07 00:00:00
+[2023-01-05T23:46:12.552+0530] {logging_mixin.py:137} INFO - Start = 2020-01-24 00:00:00
+[2023-01-05T23:46:12.553+0530] {logging_mixin.py:137} INFO - End = 2020-01-31 00:00:00
+[2023-01-05T23:46:14.966+0530] {logging_mixin.py:137} INFO - Start = 2020-01-17 00:00:00
+[2023-01-05T23:46:14.966+0530] {logging_mixin.py:137} INFO - End = 2020-01-24 00:00:00
+[2023-01-05T23:46:17.196+0530] {logging_mixin.py:137} INFO - Start = 2020-01-10 00:00:00
+[2023-01-05T23:46:17.196+0530] {logging_mixin.py:137} INFO - End = 2020-01-17 00:00:00
+[2023-01-05T23:46:19.524+0530] {logging_mixin.py:137} INFO - Start = 2020-01-03 00:00:00
+[2023-01-05T23:46:19.525+0530] {logging_mixin.py:137} INFO - End = 2020-01-10 00:00:00
+[2023-01-05T23:46:21.515+0530] {logging_mixin.py:137} INFO - Start = 2019-12-27 00:00:00
+[2023-01-05T23:46:21.515+0530] {logging_mixin.py:137} INFO - End = 2020-01-03 00:00:00
+[2023-01-05T23:46:23.576+0530] {logging_mixin.py:137} INFO - Start = 2019-12-20 00:00:00
+[2023-01-05T23:46:23.576+0530] {logging_mixin.py:137} INFO - End = 2019-12-27 00:00:00
+[2023-01-05T23:46:25.637+0530] {logging_mixin.py:137} INFO - Start = 2019-12-13 00:00:00
+[2023-01-05T23:46:25.637+0530] {logging_mixin.py:137} INFO - End = 2019-12-20 00:00:00
+[2023-01-05T23:46:28.016+0530] {logging_mixin.py:137} INFO - Start = 2019-12-06 00:00:00
+[2023-01-05T23:46:28.017+0530] {logging_mixin.py:137} INFO - End = 2019-12-13 00:00:00
+[2023-01-05T23:46:29.844+0530] {logging_mixin.py:137} INFO - Start = 2019-11-29 00:00:00
+[2023-01-05T23:46:29.844+0530] {logging_mixin.py:137} INFO - End = 2019-12-06 00:00:00
+[2023-01-05T23:46:31.931+0530] {logging_mixin.py:137} INFO - Start = 2019-11-22 00:00:00
+[2023-01-05T23:46:31.931+0530] {logging_mixin.py:137} INFO - End = 2019-11-29 00:00:00
+[2023-01-05T23:46:34.216+0530] {logging_mixin.py:137} INFO - Start = 2019-11-01 00:00:00
+[2023-01-05T23:46:34.217+0530] {logging_mixin.py:137} INFO - End = 2019-11-08 00:00:00
+[2023-01-05T23:46:36.193+0530] {logging_mixin.py:137} INFO - Start = 2019-10-25 00:00:00
+[2023-01-05T23:46:36.195+0530] {logging_mixin.py:137} INFO - End = 2019-11-01 00:00:00
+[2023-01-05T23:46:38.548+0530] {logging_mixin.py:137} INFO - Start = 2019-10-11 00:00:00
+[2023-01-05T23:46:38.548+0530] {logging_mixin.py:137} INFO - End = 2019-10-18 00:00:00
+[2023-01-05T23:46:40.448+0530] {logging_mixin.py:137} INFO - Start = 2019-10-04 00:00:00
+[2023-01-05T23:46:40.449+0530] {logging_mixin.py:137} INFO - End = 2019-10-11 00:00:00
+[2023-01-05T23:46:42.489+0530] {logging_mixin.py:137} INFO - Start = 2019-09-20 00:00:00
+[2023-01-05T23:46:42.490+0530] {logging_mixin.py:137} INFO - End = 2019-09-27 00:00:00
+[2023-01-05T23:46:44.734+0530] {logging_mixin.py:137} INFO - Start = 2019-09-06 00:00:00
+[2023-01-05T23:46:44.734+0530] {logging_mixin.py:137} INFO - End = 2019-09-13 00:00:00
+[2023-01-05T23:46:46.901+0530] {logging_mixin.py:137} INFO - Start = 2019-08-16 00:00:00
+[2023-01-05T23:46:46.901+0530] {logging_mixin.py:137} INFO - End = 2019-08-23 00:00:00
+[2023-01-05T23:46:49.352+0530] {logging_mixin.py:137} INFO - Start = 2019-08-09 00:00:00
+[2023-01-05T23:46:49.352+0530] {logging_mixin.py:137} INFO - End = 2019-08-16 00:00:00
+[2023-01-05T23:46:51.776+0530] {logging_mixin.py:137} INFO - Start = 2019-08-02 00:00:00
+[2023-01-05T23:46:51.776+0530] {logging_mixin.py:137} INFO - End = 2019-08-09 00:00:00
+[2023-01-05T23:46:54.111+0530] {logging_mixin.py:137} INFO - Start = 2019-07-26 00:00:00
+[2023-01-05T23:46:54.111+0530] {logging_mixin.py:137} INFO - End = 2019-08-02 00:00:00
+[2023-01-05T23:46:56.044+0530] {logging_mixin.py:137} INFO - Start = 2019-07-19 00:00:00
+[2023-01-05T23:46:56.044+0530] {logging_mixin.py:137} INFO - End = 2019-07-26 00:00:00
+[2023-01-05T23:46:58.366+0530] {logging_mixin.py:137} INFO - Start = 2019-07-12 00:00:00
+[2023-01-05T23:46:58.369+0530] {logging_mixin.py:137} INFO - End = 2019-07-19 00:00:00
+[2023-01-05T23:47:00.300+0530] {logging_mixin.py:137} INFO - Start = 2019-06-21 00:00:00
+[2023-01-05T23:47:00.300+0530] {logging_mixin.py:137} INFO - End = 2019-06-28 00:00:00
+[2023-01-05T23:47:02.820+0530] {logging_mixin.py:137} INFO - Start = 2019-06-14 00:00:00
+[2023-01-05T23:47:02.820+0530] {logging_mixin.py:137} INFO - End = 2019-06-21 00:00:00
+[2023-01-05T23:47:05.140+0530] {logging_mixin.py:137} INFO - Start = 2019-06-07 00:00:00
+[2023-01-05T23:47:05.141+0530] {logging_mixin.py:137} INFO - End = 2019-06-14 00:00:00
+[2023-01-05T23:47:07.294+0530] {logging_mixin.py:137} INFO - Start = 2019-05-31 00:00:00
+[2023-01-05T23:47:07.294+0530] {logging_mixin.py:137} INFO - End = 2019-06-07 00:00:00
+[2023-01-05T23:47:09.642+0530] {logging_mixin.py:137} INFO - Start = 2019-05-24 00:00:00
+[2023-01-05T23:47:09.642+0530] {logging_mixin.py:137} INFO - End = 2019-05-31 00:00:00
+[2023-01-05T23:47:12.345+0530] {logging_mixin.py:137} INFO - Start = 2019-05-17 00:00:00
+[2023-01-05T23:47:12.345+0530] {logging_mixin.py:137} INFO - End = 2019-05-24 00:00:00
+[2023-01-05T23:47:14.548+0530] {logging_mixin.py:137} INFO - Start = 2019-05-10 00:00:00
+[2023-01-05T23:47:14.549+0530] {logging_mixin.py:137} INFO - End = 2019-05-17 00:00:00
+[2023-01-05T23:47:17.150+0530] {logging_mixin.py:137} INFO - Start = 2019-05-03 00:00:00
+[2023-01-05T23:47:17.150+0530] {logging_mixin.py:137} INFO - End = 2019-05-10 00:00:00
+[2023-01-05T23:47:19.325+0530] {logging_mixin.py:137} INFO - Start = 2019-04-26 00:00:00
+[2023-01-05T23:47:19.327+0530] {logging_mixin.py:137} INFO - End = 2019-05-03 00:00:00
+[2023-01-05T23:47:21.542+0530] {logging_mixin.py:137} INFO - Start = 2019-04-19 00:00:00
+[2023-01-05T23:47:21.545+0530] {logging_mixin.py:137} INFO - End = 2019-04-26 00:00:00
+[2023-01-05T23:47:23.637+0530] {logging_mixin.py:137} INFO - Start = 2019-04-05 00:00:00
+[2023-01-05T23:47:23.637+0530] {logging_mixin.py:137} INFO - End = 2019-04-12 00:00:00
+[2023-01-05T23:47:25.709+0530] {logging_mixin.py:137} INFO - Start = 2019-03-29 00:00:00
+[2023-01-05T23:47:25.709+0530] {logging_mixin.py:137} INFO - End = 2019-04-05 00:00:00
+[2023-01-05T23:47:27.959+0530] {logging_mixin.py:137} INFO - Start = 2019-03-22 00:00:00
+[2023-01-05T23:47:27.959+0530] {logging_mixin.py:137} INFO - End = 2019-03-29 00:00:00
+[2023-01-05T23:47:30.064+0530] {logging_mixin.py:137} INFO - Start = 2019-03-15 00:00:00
+[2023-01-05T23:47:30.065+0530] {logging_mixin.py:137} INFO - End = 2019-03-22 00:00:00
+[2023-01-05T23:47:32.090+0530] {logging_mixin.py:137} INFO - Start = 2019-03-08 00:00:00
+[2023-01-05T23:47:32.090+0530] {logging_mixin.py:137} INFO - End = 2019-03-15 00:00:00
+[2023-01-05T23:47:34.154+0530] {logging_mixin.py:137} INFO - Start = 2019-03-01 00:00:00
+[2023-01-05T23:47:34.154+0530] {logging_mixin.py:137} INFO - End = 2019-03-08 00:00:00
+[2023-01-05T23:47:36.487+0530] {logging_mixin.py:137} INFO - Start = 2019-02-22 00:00:00
+[2023-01-05T23:47:36.488+0530] {logging_mixin.py:137} INFO - End = 2019-03-01 00:00:00
+[2023-01-05T23:47:38.498+0530] {logging_mixin.py:137} INFO - Start = 2019-02-15 00:00:00
+[2023-01-05T23:47:38.498+0530] {logging_mixin.py:137} INFO - End = 2019-02-22 00:00:00
+[2023-01-05T23:47:40.636+0530] {logging_mixin.py:137} INFO - Start = 2019-02-08 00:00:00
+[2023-01-05T23:47:40.636+0530] {logging_mixin.py:137} INFO - End = 2019-02-15 00:00:00
+[2023-01-05T23:47:43.174+0530] {logging_mixin.py:137} INFO - Start = 2019-02-01 00:00:00
+[2023-01-05T23:47:43.175+0530] {logging_mixin.py:137} INFO - End = 2019-02-08 00:00:00
+[2023-01-05T23:47:44.935+0530] {logging_mixin.py:137} INFO - Start = 2019-01-25 00:00:00
+[2023-01-05T23:47:44.935+0530] {logging_mixin.py:137} INFO - End = 2019-02-01 00:00:00
+[2023-01-05T23:47:47.233+0530] {logging_mixin.py:137} INFO - Start = 2019-01-18 00:00:00
+[2023-01-05T23:47:47.234+0530] {logging_mixin.py:137} INFO - End = 2019-01-25 00:00:00
+[2023-01-05T23:47:49.610+0530] {logging_mixin.py:137} INFO - Start = 2019-01-11 00:00:00
+[2023-01-05T23:47:49.610+0530] {logging_mixin.py:137} INFO - End = 2019-01-18 00:00:00
+[2023-01-05T23:47:51.798+0530] {logging_mixin.py:137} INFO - Start = 2019-01-04 00:00:00
+[2023-01-05T23:47:51.799+0530] {logging_mixin.py:137} INFO - End = 2019-01-11 00:00:00
+[2023-01-05T23:47:54.077+0530] {logging_mixin.py:137} INFO - Start = 2018-12-28 00:00:00
+[2023-01-05T23:47:54.078+0530] {logging_mixin.py:137} INFO - End = 2019-01-04 00:00:00
+[2023-01-05T23:47:56.280+0530] {logging_mixin.py:137} INFO - Start = 2018-12-21 00:00:00
+[2023-01-05T23:47:56.281+0530] {logging_mixin.py:137} INFO - End = 2018-12-28 00:00:00
+[2023-01-05T23:47:58.513+0530] {logging_mixin.py:137} INFO - Start = 2018-12-14 00:00:00
+[2023-01-05T23:47:58.513+0530] {logging_mixin.py:137} INFO - End = 2018-12-21 00:00:00
+[2023-01-05T23:48:00.622+0530] {logging_mixin.py:137} INFO - Start = 2018-12-07 00:00:00
+[2023-01-05T23:48:00.622+0530] {logging_mixin.py:137} INFO - End = 2018-12-14 00:00:00
+[2023-01-05T23:48:02.952+0530] {logging_mixin.py:137} INFO - Start = 2018-11-30 00:00:00
+[2023-01-05T23:48:02.952+0530] {logging_mixin.py:137} INFO - End = 2018-12-07 00:00:00
+[2023-01-05T23:48:04.908+0530] {logging_mixin.py:137} INFO - Start = 2018-11-23 00:00:00
+[2023-01-05T23:48:04.909+0530] {logging_mixin.py:137} INFO - End = 2018-11-30 00:00:00
+[2023-01-05T23:48:07.354+0530] {logging_mixin.py:137} INFO - Start = 2018-11-16 00:00:00
+[2023-01-05T23:48:07.355+0530] {logging_mixin.py:137} INFO - End = 2018-11-23 00:00:00
+[2023-01-05T23:48:09.606+0530] {logging_mixin.py:137} INFO - Start = 2018-11-09 00:00:00
+[2023-01-05T23:48:09.606+0530] {logging_mixin.py:137} INFO - End = 2018-11-16 00:00:00
+[2023-01-05T23:48:11.725+0530] {logging_mixin.py:137} INFO - Start = 2018-11-02 00:00:00
+[2023-01-05T23:48:11.725+0530] {logging_mixin.py:137} INFO - End = 2018-11-09 00:00:00
+[2023-01-05T23:48:13.746+0530] {logging_mixin.py:137} INFO - Start = 2018-10-26 00:00:00
+[2023-01-05T23:48:13.747+0530] {logging_mixin.py:137} INFO - End = 2018-11-02 00:00:00
+[2023-01-05T23:48:16.077+0530] {logging_mixin.py:137} INFO - Start = 2018-10-19 00:00:00
+[2023-01-05T23:48:16.077+0530] {logging_mixin.py:137} INFO - End = 2018-10-26 00:00:00
+[2023-01-05T23:48:18.540+0530] {logging_mixin.py:137} INFO - Start = 2018-10-12 00:00:00
+[2023-01-05T23:48:18.541+0530] {logging_mixin.py:137} INFO - End = 2018-10-19 00:00:00
+[2023-01-05T23:48:20.643+0530] {logging_mixin.py:137} INFO - Start = 2018-10-05 00:00:00
+[2023-01-05T23:48:20.643+0530] {logging_mixin.py:137} INFO - End = 2018-10-12 00:00:00
+[2023-01-05T23:48:22.977+0530] {logging_mixin.py:137} INFO - Start = 2018-09-28 00:00:00
+[2023-01-05T23:48:22.977+0530] {logging_mixin.py:137} INFO - End = 2018-10-05 00:00:00
+[2023-01-05T23:48:24.867+0530] {logging_mixin.py:137} INFO - Start = 2018-09-21 00:00:00
+[2023-01-05T23:48:24.867+0530] {logging_mixin.py:137} INFO - End = 2018-09-28 00:00:00
+[2023-01-05T23:48:27.272+0530] {logging_mixin.py:137} INFO - Start = 2018-09-14 00:00:00
+[2023-01-05T23:48:27.272+0530] {logging_mixin.py:137} INFO - End = 2018-09-21 00:00:00
+[2023-01-05T23:48:29.219+0530] {logging_mixin.py:137} INFO - Start = 2018-09-07 00:00:00
+[2023-01-05T23:48:29.219+0530] {logging_mixin.py:137} INFO - End = 2018-09-14 00:00:00
+[2023-01-05T23:48:31.622+0530] {logging_mixin.py:137} INFO - Start = 2018-08-31 00:00:00
+[2023-01-05T23:48:31.622+0530] {logging_mixin.py:137} INFO - End = 2018-09-07 00:00:00
+[2023-01-05T23:48:33.728+0530] {logging_mixin.py:137} INFO - Start = 2018-08-24 00:00:00
+[2023-01-05T23:48:33.728+0530] {logging_mixin.py:137} INFO - End = 2018-08-31 00:00:00
+[2023-01-05T23:48:35.535+0530] {logging_mixin.py:137} INFO - Start = 2018-08-17 00:00:00
+[2023-01-05T23:48:35.536+0530] {logging_mixin.py:137} INFO - End = 2018-08-24 00:00:00
+[2023-01-05T23:48:37.679+0530] {logging_mixin.py:137} INFO - Start = 2018-08-10 00:00:00
+[2023-01-05T23:48:37.679+0530] {logging_mixin.py:137} INFO - End = 2018-08-17 00:00:00
+[2023-01-05T23:48:39.902+0530] {logging_mixin.py:137} INFO - Start = 2018-08-03 00:00:00
+[2023-01-05T23:48:39.903+0530] {logging_mixin.py:137} INFO - End = 2018-08-10 00:00:00
+[2023-01-05T23:48:41.931+0530] {logging_mixin.py:137} INFO - Start = 2018-07-27 00:00:00
+[2023-01-05T23:48:41.932+0530] {logging_mixin.py:137} INFO - End = 2018-08-03 00:00:00
+[2023-01-05T23:48:44.210+0530] {logging_mixin.py:137} INFO - Start = 2018-07-20 00:00:00
+[2023-01-05T23:48:44.211+0530] {logging_mixin.py:137} INFO - End = 2018-07-27 00:00:00
+[2023-01-05T23:48:46.328+0530] {logging_mixin.py:137} INFO - Start = 2018-07-13 00:00:00
+[2023-01-05T23:48:46.330+0530] {logging_mixin.py:137} INFO - End = 2018-07-20 00:00:00
+[2023-01-05T23:48:48.393+0530] {logging_mixin.py:137} INFO - Start = 2018-07-06 00:00:00
+[2023-01-05T23:48:48.394+0530] {logging_mixin.py:137} INFO - End = 2018-07-13 00:00:00
+[2023-01-05T23:48:50.595+0530] {logging_mixin.py:137} INFO - Start = 2018-06-29 00:00:00
+[2023-01-05T23:48:50.597+0530] {logging_mixin.py:137} INFO - End = 2018-07-06 00:00:00
+[2023-01-05T23:48:53.006+0530] {logging_mixin.py:137} INFO - Start = 2018-06-22 00:00:00
+[2023-01-05T23:48:53.006+0530] {logging_mixin.py:137} INFO - End = 2018-06-29 00:00:00
+[2023-01-05T23:48:55.011+0530] {logging_mixin.py:137} INFO - Start = 2018-06-08 00:00:00
+[2023-01-05T23:48:55.011+0530] {logging_mixin.py:137} INFO - End = 2018-06-15 00:00:00
+[2023-01-05T23:48:57.363+0530] {logging_mixin.py:137} INFO - Start = 2018-06-01 00:00:00
+[2023-01-05T23:48:57.364+0530] {logging_mixin.py:137} INFO - End = 2018-06-08 00:00:00
+[2023-01-05T23:48:59.437+0530] {logging_mixin.py:137} INFO - Start = 2018-05-25 00:00:00
+[2023-01-05T23:48:59.438+0530] {logging_mixin.py:137} INFO - End = 2018-06-01 00:00:00
+[2023-01-05T23:49:01.514+0530] {logging_mixin.py:137} INFO - Start = 2018-05-11 00:00:00
+[2023-01-05T23:49:01.514+0530] {logging_mixin.py:137} INFO - End = 2018-05-18 00:00:00
+[2023-01-05T23:49:03.549+0530] {logging_mixin.py:137} INFO - Start = 2018-04-27 00:00:00
+[2023-01-05T23:49:03.549+0530] {logging_mixin.py:137} INFO - End = 2018-05-04 00:00:00
+[2023-01-05T23:49:05.765+0530] {logging_mixin.py:137} INFO - Start = 2018-04-13 00:00:00
+[2023-01-05T23:49:05.766+0530] {logging_mixin.py:137} INFO - End = 2018-04-20 00:00:00
+[2023-01-05T23:49:08.370+0530] {logging_mixin.py:137} INFO - Start = 2018-03-30 00:00:00
+[2023-01-05T23:49:08.371+0530] {logging_mixin.py:137} INFO - End = 2018-04-06 00:00:00
+[2023-01-05T23:49:10.601+0530] {logging_mixin.py:137} INFO - Start = 2018-03-23 00:00:00
+[2023-01-05T23:49:10.601+0530] {logging_mixin.py:137} INFO - End = 2018-03-30 00:00:00
+[2023-01-05T23:49:13.327+0530] {logging_mixin.py:137} INFO - Start = 2018-03-16 00:00:00
+[2023-01-05T23:49:13.327+0530] {logging_mixin.py:137} INFO - End = 2018-03-23 00:00:00
+[2023-01-05T23:49:15.298+0530] {logging_mixin.py:137} INFO - Start = 2018-03-09 00:00:00
+[2023-01-05T23:49:15.298+0530] {logging_mixin.py:137} INFO - End = 2018-03-16 00:00:00
+[2023-01-05T23:49:17.680+0530] {logging_mixin.py:137} INFO - Start = 2018-03-02 00:00:00
+[2023-01-05T23:49:17.681+0530] {logging_mixin.py:137} INFO - End = 2018-03-09 00:00:00
+[2023-01-05T23:49:19.630+0530] {logging_mixin.py:137} INFO - Start = 2018-02-23 00:00:00
+[2023-01-05T23:49:19.631+0530] {logging_mixin.py:137} INFO - End = 2018-03-02 00:00:00
+[2023-01-05T23:49:22.305+0530] {logging_mixin.py:137} INFO - Start = 2018-02-16 00:00:00
+[2023-01-05T23:49:22.306+0530] {logging_mixin.py:137} INFO - End = 2018-02-23 00:00:00
+[2023-01-05T23:49:25.180+0530] {logging_mixin.py:137} INFO - Start = 2018-02-02 00:00:00
+[2023-01-05T23:49:25.180+0530] {logging_mixin.py:137} INFO - End = 2018-02-09 00:00:00
+[2023-01-05T23:49:28.984+0530] {logging_mixin.py:137} INFO - Start = 2018-01-26 00:00:00
+[2023-01-05T23:49:28.985+0530] {logging_mixin.py:137} INFO - End = 2018-02-02 00:00:00
+[2023-01-05T23:49:30.822+0530] {logging_mixin.py:137} INFO - Start = 2018-01-19 00:00:00
+[2023-01-05T23:49:30.822+0530] {logging_mixin.py:137} INFO - End = 2018-01-26 00:00:00
+[2023-01-05T23:49:33.426+0530] {logging_mixin.py:137} INFO - Start = 2018-01-12 00:00:00
+[2023-01-05T23:49:33.426+0530] {logging_mixin.py:137} INFO - End = 2018-01-19 00:00:00
+[2023-01-05T23:49:35.579+0530] {logging_mixin.py:137} INFO - Start = 2018-01-05 00:00:00
+[2023-01-05T23:49:35.579+0530] {logging_mixin.py:137} INFO - End = 2018-01-12 00:00:00
+[2023-01-05T23:49:38.051+0530] {logging_mixin.py:137} INFO - Start = 2017-12-22 00:00:00
+[2023-01-05T23:49:38.052+0530] {logging_mixin.py:137} INFO - End = 2017-12-29 00:00:00
+[2023-01-05T23:49:39.954+0530] {logging_mixin.py:137} INFO - Start = 2017-12-15 00:00:00
+[2023-01-05T23:49:39.954+0530] {logging_mixin.py:137} INFO - End = 2017-12-22 00:00:00
+[2023-01-05T23:49:42.089+0530] {logging_mixin.py:137} INFO - Start = 2017-12-08 00:00:00
+[2023-01-05T23:49:42.090+0530] {logging_mixin.py:137} INFO - End = 2017-12-15 00:00:00
+[2023-01-05T23:49:44.389+0530] {logging_mixin.py:137} INFO - Start = 2017-12-01 00:00:00
+[2023-01-05T23:49:44.389+0530] {logging_mixin.py:137} INFO - End = 2017-12-08 00:00:00
+[2023-01-05T23:49:47.408+0530] {logging_mixin.py:137} INFO - Start = 2017-11-24 00:00:00
+[2023-01-05T23:49:47.409+0530] {logging_mixin.py:137} INFO - End = 2017-12-01 00:00:00
+[2023-01-05T23:49:49.493+0530] {logging_mixin.py:137} INFO - Start = 2017-11-17 00:00:00
+[2023-01-05T23:49:49.493+0530] {logging_mixin.py:137} INFO - End = 2017-11-24 00:00:00
+[2023-01-05T23:49:51.847+0530] {logging_mixin.py:137} INFO - Start = 2017-11-10 00:00:00
+[2023-01-05T23:49:51.847+0530] {logging_mixin.py:137} INFO - End = 2017-11-17 00:00:00
+[2023-01-05T23:49:53.882+0530] {logging_mixin.py:137} INFO - Start = 2017-11-03 00:00:00
+[2023-01-05T23:49:53.883+0530] {logging_mixin.py:137} INFO - End = 2017-11-10 00:00:00
+[2023-01-05T23:49:55.982+0530] {logging_mixin.py:137} INFO - Start = 2017-10-27 00:00:00
+[2023-01-05T23:49:55.982+0530] {logging_mixin.py:137} INFO - End = 2017-11-03 00:00:00
+[2023-01-05T23:49:58.113+0530] {logging_mixin.py:137} INFO - Start = 2017-10-20 00:00:00
+[2023-01-05T23:49:58.114+0530] {logging_mixin.py:137} INFO - End = 2017-10-27 00:00:00
+[2023-01-05T23:50:00.508+0530] {logging_mixin.py:137} INFO - Start = 2017-10-13 00:00:00
+[2023-01-05T23:50:00.509+0530] {logging_mixin.py:137} INFO - End = 2017-10-20 00:00:00
+[2023-01-05T23:50:02.702+0530] {logging_mixin.py:137} INFO - Start = 2017-10-06 00:00:00
+[2023-01-05T23:50:02.702+0530] {logging_mixin.py:137} INFO - End = 2017-10-13 00:00:00
+[2023-01-05T23:50:04.858+0530] {logging_mixin.py:137} INFO - Start = 2017-09-29 00:00:00
+[2023-01-05T23:50:04.858+0530] {logging_mixin.py:137} INFO - End = 2017-10-06 00:00:00
+[2023-01-05T23:50:07.218+0530] {logging_mixin.py:137} INFO - Start = 2017-09-22 00:00:00
+[2023-01-05T23:50:07.218+0530] {logging_mixin.py:137} INFO - End = 2017-09-29 00:00:00
+[2023-01-05T23:50:09.316+0530] {logging_mixin.py:137} INFO - Start = 2017-09-15 00:00:00
+[2023-01-05T23:50:09.316+0530] {logging_mixin.py:137} INFO - End = 2017-09-22 00:00:00
+[2023-01-05T23:50:11.687+0530] {logging_mixin.py:137} INFO - Start = 2017-09-08 00:00:00
+[2023-01-05T23:50:11.687+0530] {logging_mixin.py:137} INFO - End = 2017-09-15 00:00:00
+[2023-01-05T23:50:13.678+0530] {logging_mixin.py:137} INFO - Start = 2017-09-01 00:00:00
+[2023-01-05T23:50:13.678+0530] {logging_mixin.py:137} INFO - End = 2017-09-08 00:00:00
+[2023-01-05T23:50:15.836+0530] {logging_mixin.py:137} INFO - Start = 2017-08-25 00:00:00
+[2023-01-05T23:50:15.836+0530] {logging_mixin.py:137} INFO - End = 2017-09-01 00:00:00
+[2023-01-05T23:50:18.017+0530] {logging_mixin.py:137} INFO - Start = 2017-08-18 00:00:00
+[2023-01-05T23:50:18.018+0530] {logging_mixin.py:137} INFO - End = 2017-08-25 00:00:00
+[2023-01-05T23:50:19.830+0530] {logging_mixin.py:137} INFO - Start = 2017-08-11 00:00:00
+[2023-01-05T23:50:19.831+0530] {logging_mixin.py:137} INFO - End = 2017-08-18 00:00:00
+[2023-01-05T23:50:21.934+0530] {logging_mixin.py:137} INFO - Start = 2017-08-04 00:00:00
+[2023-01-05T23:50:21.935+0530] {logging_mixin.py:137} INFO - End = 2017-08-11 00:00:00
+[2023-01-05T23:50:24.224+0530] {logging_mixin.py:137} INFO - Start = 2017-07-28 00:00:00
+[2023-01-05T23:50:24.224+0530] {logging_mixin.py:137} INFO - End = 2017-08-04 00:00:00
+[2023-01-05T23:50:26.354+0530] {logging_mixin.py:137} INFO - Start = 2017-07-21 00:00:00
+[2023-01-05T23:50:26.355+0530] {logging_mixin.py:137} INFO - End = 2017-07-28 00:00:00
+[2023-01-05T23:50:28.709+0530] {logging_mixin.py:137} INFO - Start = 2017-07-14 00:00:00
+[2023-01-05T23:50:28.709+0530] {logging_mixin.py:137} INFO - End = 2017-07-21 00:00:00
+[2023-01-05T23:50:30.616+0530] {logging_mixin.py:137} INFO - Start = 2017-07-07 00:00:00
+[2023-01-05T23:50:30.617+0530] {logging_mixin.py:137} INFO - End = 2017-07-14 00:00:00
+[2023-01-05T23:50:32.896+0530] {logging_mixin.py:137} INFO - Start = 2017-06-30 00:00:00
+[2023-01-05T23:50:32.896+0530] {logging_mixin.py:137} INFO - End = 2017-07-07 00:00:00
+[2023-01-05T23:50:34.933+0530] {logging_mixin.py:137} INFO - Start = 2017-06-23 00:00:00
+[2023-01-05T23:50:34.933+0530] {logging_mixin.py:137} INFO - End = 2017-06-30 00:00:00
+[2023-01-05T23:50:37.092+0530] {logging_mixin.py:137} INFO - Start = 2017-06-16 00:00:00
+[2023-01-05T23:50:37.093+0530] {logging_mixin.py:137} INFO - End = 2017-06-23 00:00:00
+[2023-01-05T23:50:39.069+0530] {logging_mixin.py:137} INFO - Start = 2017-06-09 00:00:00
+[2023-01-05T23:50:39.069+0530] {logging_mixin.py:137} INFO - End = 2017-06-16 00:00:00
+[2023-01-05T23:50:41.346+0530] {logging_mixin.py:137} INFO - Start = 2017-06-02 00:00:00
+[2023-01-05T23:50:41.346+0530] {logging_mixin.py:137} INFO - End = 2017-06-09 00:00:00
+[2023-01-05T23:50:43.480+0530] {logging_mixin.py:137} INFO - Start = 2017-05-26 00:00:00
+[2023-01-05T23:50:43.480+0530] {logging_mixin.py:137} INFO - End = 2017-06-02 00:00:00
+[2023-01-05T23:50:45.252+0530] {logging_mixin.py:137} INFO - Start = 2017-05-19 00:00:00
+[2023-01-05T23:50:45.252+0530] {logging_mixin.py:137} INFO - End = 2017-05-26 00:00:00
+[2023-01-05T23:50:47.417+0530] {logging_mixin.py:137} INFO - Start = 2017-05-12 00:00:00
+[2023-01-05T23:50:47.419+0530] {logging_mixin.py:137} INFO - End = 2017-05-19 00:00:00
+[2023-01-05T23:50:49.821+0530] {logging_mixin.py:137} INFO - Start = 2017-05-05 00:00:00
+[2023-01-05T23:50:49.821+0530] {logging_mixin.py:137} INFO - End = 2017-05-12 00:00:00
+[2023-01-05T23:50:51.927+0530] {logging_mixin.py:137} INFO - Start = 2017-04-28 00:00:00
+[2023-01-05T23:50:51.928+0530] {logging_mixin.py:137} INFO - End = 2017-05-05 00:00:00
+[2023-01-05T23:50:54.252+0530] {logging_mixin.py:137} INFO - Start = 2017-04-21 00:00:00
+[2023-01-05T23:50:54.253+0530] {logging_mixin.py:137} INFO - End = 2017-04-28 00:00:00
+[2023-01-05T23:50:56.759+0530] {logging_mixin.py:137} INFO - Start = 2017-04-14 00:00:00
+[2023-01-05T23:50:56.759+0530] {logging_mixin.py:137} INFO - End = 2017-04-21 00:00:00
+[2023-01-05T23:50:59.040+0530] {logging_mixin.py:137} INFO - Start = 2017-04-07 00:00:00
+[2023-01-05T23:50:59.040+0530] {logging_mixin.py:137} INFO - End = 2017-04-14 00:00:00
+[2023-01-05T23:51:01.790+0530] {logging_mixin.py:137} INFO - Start = 2017-03-31 00:00:00
+[2023-01-05T23:51:01.790+0530] {logging_mixin.py:137} INFO - End = 2017-04-07 00:00:00
+[2023-01-05T23:51:04.698+0530] {logging_mixin.py:137} INFO - Start = 2017-03-24 00:00:00
+[2023-01-05T23:51:04.699+0530] {logging_mixin.py:137} INFO - End = 2017-03-31 00:00:00
+[2023-01-05T23:51:07.723+0530] {logging_mixin.py:137} INFO - Start = 2017-03-17 00:00:00
+[2023-01-05T23:51:07.723+0530] {logging_mixin.py:137} INFO - End = 2017-03-24 00:00:00
+[2023-01-05T23:51:10.098+0530] {logging_mixin.py:137} INFO - Start = 2017-03-10 00:00:00
+[2023-01-05T23:51:10.098+0530] {logging_mixin.py:137} INFO - End = 2017-03-17 00:00:00
+[2023-01-05T23:51:12.202+0530] {logging_mixin.py:137} INFO - Start = 2017-03-03 00:00:00
+[2023-01-05T23:51:12.203+0530] {logging_mixin.py:137} INFO - End = 2017-03-10 00:00:00
+[2023-01-05T23:51:14.167+0530] {logging_mixin.py:137} INFO - Start = 2017-02-24 00:00:00
+[2023-01-05T23:51:14.168+0530] {logging_mixin.py:137} INFO - End = 2017-03-03 00:00:00
+[2023-01-05T23:51:16.798+0530] {logging_mixin.py:137} INFO - Start = 2017-02-17 00:00:00
+[2023-01-05T23:51:16.798+0530] {logging_mixin.py:137} INFO - End = 2017-02-24 00:00:00
+[2023-01-05T23:51:18.799+0530] {logging_mixin.py:137} INFO - Start = 2017-02-10 00:00:00
+[2023-01-05T23:51:18.799+0530] {logging_mixin.py:137} INFO - End = 2017-02-17 00:00:00
+[2023-01-05T23:51:21.312+0530] {logging_mixin.py:137} INFO - Start = 2017-02-03 00:00:00
+[2023-01-05T23:51:21.312+0530] {logging_mixin.py:137} INFO - End = 2017-02-10 00:00:00
+[2023-01-05T23:51:23.603+0530] {logging_mixin.py:137} INFO - Start = 2017-01-27 00:00:00
+[2023-01-05T23:51:23.603+0530] {logging_mixin.py:137} INFO - End = 2017-02-03 00:00:00
+[2023-01-05T23:51:25.565+0530] {logging_mixin.py:137} INFO - Start = 2017-01-20 00:00:00
+[2023-01-05T23:51:25.565+0530] {logging_mixin.py:137} INFO - End = 2017-01-27 00:00:00
+[2023-01-05T23:51:28.120+0530] {logging_mixin.py:137} INFO - Start = 2017-01-13 00:00:00
+[2023-01-05T23:51:28.121+0530] {logging_mixin.py:137} INFO - End = 2017-01-20 00:00:00
+[2023-01-05T23:51:29.915+0530] {logging_mixin.py:137} INFO - Start = 2017-01-06 00:00:00
+[2023-01-05T23:51:29.915+0530] {logging_mixin.py:137} INFO - End = 2017-01-13 00:00:00
+[2023-01-05T23:51:32.422+0530] {logging_mixin.py:137} INFO - Start = 2016-12-30 00:00:00
+[2023-01-05T23:51:32.422+0530] {logging_mixin.py:137} INFO - End = 2017-01-06 00:00:00
+[2023-01-05T23:51:34.641+0530] {logging_mixin.py:137} INFO - Start = 2016-12-23 00:00:00
+[2023-01-05T23:51:34.641+0530] {logging_mixin.py:137} INFO - End = 2016-12-30 00:00:00
+[2023-01-05T23:51:36.840+0530] {logging_mixin.py:137} INFO - Start = 2016-12-16 00:00:00
+[2023-01-05T23:51:36.840+0530] {logging_mixin.py:137} INFO - End = 2016-12-23 00:00:00
+[2023-01-05T23:51:38.871+0530] {logging_mixin.py:137} INFO - Start = 2016-12-09 00:00:00
+[2023-01-05T23:51:38.871+0530] {logging_mixin.py:137} INFO - End = 2016-12-16 00:00:00
+[2023-01-05T23:51:40.629+0530] {logging_mixin.py:137} INFO - Start = 2016-12-02 00:00:00
+[2023-01-05T23:51:40.629+0530] {logging_mixin.py:137} INFO - End = 2016-12-09 00:00:00
+[2023-01-05T23:51:43.171+0530] {logging_mixin.py:137} INFO - Start = 2016-11-25 00:00:00
+[2023-01-05T23:51:43.172+0530] {logging_mixin.py:137} INFO - End = 2016-12-02 00:00:00
+[2023-01-05T23:51:45.126+0530] {logging_mixin.py:137} INFO - Start = 2016-11-18 00:00:00
+[2023-01-05T23:51:45.126+0530] {logging_mixin.py:137} INFO - End = 2016-11-25 00:00:00
+[2023-01-05T23:51:47.529+0530] {logging_mixin.py:137} INFO - Start = 2016-11-11 00:00:00
+[2023-01-05T23:51:47.529+0530] {logging_mixin.py:137} INFO - End = 2016-11-18 00:00:00
+[2023-01-05T23:51:49.626+0530] {logging_mixin.py:137} INFO - Start = 2016-11-04 00:00:00
+[2023-01-05T23:51:49.627+0530] {logging_mixin.py:137} INFO - End = 2016-11-11 00:00:00
+[2023-01-05T23:51:51.774+0530] {logging_mixin.py:137} INFO - Start = 2016-10-28 00:00:00
+[2023-01-05T23:51:51.774+0530] {logging_mixin.py:137} INFO - End = 2016-11-04 00:00:00
+[2023-01-05T23:51:54.117+0530] {logging_mixin.py:137} INFO - Start = 2016-10-21 00:00:00
+[2023-01-05T23:51:54.117+0530] {logging_mixin.py:137} INFO - End = 2016-10-28 00:00:00
+[2023-01-05T23:51:56.107+0530] {logging_mixin.py:137} INFO - Start = 2016-10-14 00:00:00
+[2023-01-05T23:51:56.108+0530] {logging_mixin.py:137} INFO - End = 2016-10-21 00:00:00
+[2023-01-05T23:51:58.836+0530] {logging_mixin.py:137} INFO - Start = 2016-10-07 00:00:00
+[2023-01-05T23:51:58.836+0530] {logging_mixin.py:137} INFO - End = 2016-10-14 00:00:00
+[2023-01-05T23:52:00.886+0530] {logging_mixin.py:137} INFO - Start = 2016-09-30 00:00:00
+[2023-01-05T23:52:00.887+0530] {logging_mixin.py:137} INFO - End = 2016-10-07 00:00:00
+[2023-01-05T23:52:03.095+0530] {logging_mixin.py:137} INFO - Start = 2016-09-23 00:00:00
+[2023-01-05T23:52:03.095+0530] {logging_mixin.py:137} INFO - End = 2016-09-30 00:00:00
+[2023-01-05T23:52:04.935+0530] {logging_mixin.py:137} INFO - Start = 2016-09-16 00:00:00
+[2023-01-05T23:52:04.935+0530] {logging_mixin.py:137} INFO - End = 2016-09-23 00:00:00
+[2023-01-05T23:52:07.475+0530] {logging_mixin.py:137} INFO - Start = 2016-09-09 00:00:00
+[2023-01-05T23:52:07.475+0530] {logging_mixin.py:137} INFO - End = 2016-09-16 00:00:00
+[2023-01-05T23:52:09.466+0530] {logging_mixin.py:137} INFO - Start = 2016-09-02 00:00:00
+[2023-01-05T23:52:09.467+0530] {logging_mixin.py:137} INFO - End = 2016-09-09 00:00:00
+[2023-01-05T23:52:11.739+0530] {logging_mixin.py:137} INFO - Start = 2016-08-26 00:00:00
+[2023-01-05T23:52:11.740+0530] {logging_mixin.py:137} INFO - End = 2016-09-02 00:00:00
+[2023-01-05T23:52:13.749+0530] {logging_mixin.py:137} INFO - Start = 2016-08-19 00:00:00
+[2023-01-05T23:52:13.750+0530] {logging_mixin.py:137} INFO - End = 2016-08-26 00:00:00
+[2023-01-05T23:52:15.743+0530] {logging_mixin.py:137} INFO - Start = 2016-08-12 00:00:00
+[2023-01-05T23:52:15.743+0530] {logging_mixin.py:137} INFO - End = 2016-08-19 00:00:00
+[2023-01-05T23:52:18.154+0530] {logging_mixin.py:137} INFO - Start = 2016-08-05 00:00:00
+[2023-01-05T23:52:18.154+0530] {logging_mixin.py:137} INFO - End = 2016-08-12 00:00:00
+[2023-01-05T23:52:20.052+0530] {logging_mixin.py:137} INFO - Start = 2016-06-24 00:00:00
+[2023-01-05T23:52:20.053+0530] {logging_mixin.py:137} INFO - End = 2016-07-01 00:00:00
+[2023-01-05T23:52:22.188+0530] {logging_mixin.py:137} INFO - Start = 2016-06-17 00:00:00
+[2023-01-05T23:52:22.188+0530] {logging_mixin.py:137} INFO - End = 2016-06-24 00:00:00
+[2023-01-05T23:52:24.393+0530] {logging_mixin.py:137} INFO - Start = 2016-06-10 00:00:00
+[2023-01-05T23:52:24.393+0530] {logging_mixin.py:137} INFO - End = 2016-06-17 00:00:00
+[2023-01-05T23:52:26.873+0530] {logging_mixin.py:137} INFO - Start = 2016-05-27 00:00:00
+[2023-01-05T23:52:26.874+0530] {logging_mixin.py:137} INFO - End = 2016-06-03 00:00:00
+[2023-01-05T23:52:29.058+0530] {logging_mixin.py:137} INFO - Start = 2016-05-20 00:00:00
+[2023-01-05T23:52:29.058+0530] {logging_mixin.py:137} INFO - End = 2016-05-27 00:00:00
+[2023-01-05T23:52:30.946+0530] {logging_mixin.py:137} INFO - Start = 2016-05-13 00:00:00
+[2023-01-05T23:52:30.946+0530] {logging_mixin.py:137} INFO - End = 2016-05-20 00:00:00
+[2023-01-05T23:52:33.348+0530] {logging_mixin.py:137} INFO - Start = 2016-05-06 00:00:00
+[2023-01-05T23:52:33.349+0530] {logging_mixin.py:137} INFO - End = 2016-05-13 00:00:00
+[2023-01-05T23:52:35.368+0530] {logging_mixin.py:137} INFO - Start = 2016-04-29 00:00:00
+[2023-01-05T23:52:35.368+0530] {logging_mixin.py:137} INFO - End = 2016-05-06 00:00:00
+[2023-01-05T23:52:37.778+0530] {logging_mixin.py:137} INFO - Start = 2016-04-22 00:00:00
+[2023-01-05T23:52:37.778+0530] {logging_mixin.py:137} INFO - End = 2016-04-29 00:00:00
+[2023-01-05T23:52:39.696+0530] {logging_mixin.py:137} INFO - Start = 2016-04-15 00:00:00
+[2023-01-05T23:52:39.697+0530] {logging_mixin.py:137} INFO - End = 2016-04-22 00:00:00
+[2023-01-05T23:52:41.894+0530] {logging_mixin.py:137} INFO - Start = 2016-04-08 00:00:00
+[2023-01-05T23:52:41.895+0530] {logging_mixin.py:137} INFO - End = 2016-04-15 00:00:00
+[2023-01-05T23:52:44.194+0530] {logging_mixin.py:137} INFO - Start = 2016-04-01 00:00:00
+[2023-01-05T23:52:44.195+0530] {logging_mixin.py:137} INFO - End = 2016-04-08 00:00:00
+[2023-01-05T23:52:46.780+0530] {logging_mixin.py:137} INFO - Start = 2016-03-18 00:00:00
+[2023-01-05T23:52:46.781+0530] {logging_mixin.py:137} INFO - End = 2016-03-25 00:00:00
+[2023-01-05T23:52:49.436+0530] {logging_mixin.py:137} INFO - Start = 2016-02-26 00:00:00
+[2023-01-05T23:52:49.436+0530] {logging_mixin.py:137} INFO - End = 2016-03-04 00:00:00
+[2023-01-05T23:52:51.579+0530] {logging_mixin.py:137} INFO - Start = 2016-02-19 00:00:00
+[2023-01-05T23:52:51.583+0530] {logging_mixin.py:137} INFO - End = 2016-02-26 00:00:00
+[2023-01-05T23:52:53.718+0530] {logging_mixin.py:137} INFO - Start = 2016-02-12 00:00:00
+[2023-01-05T23:52:53.718+0530] {logging_mixin.py:137} INFO - End = 2016-02-19 00:00:00
+[2023-01-05T23:52:55.640+0530] {logging_mixin.py:137} INFO - Start = 2016-02-05 00:00:00
+[2023-01-05T23:52:55.640+0530] {logging_mixin.py:137} INFO - End = 2016-02-12 00:00:00
+[2023-01-05T23:52:58.451+0530] {logging_mixin.py:137} INFO - Start = 2016-01-29 00:00:00
+[2023-01-05T23:52:58.451+0530] {logging_mixin.py:137} INFO - End = 2016-02-05 00:00:00
+[2023-01-05T23:53:00.453+0530] {logging_mixin.py:137} INFO - Start = 2016-01-22 00:00:00
+[2023-01-05T23:53:00.454+0530] {logging_mixin.py:137} INFO - End = 2016-01-29 00:00:00
+[2023-01-05T23:53:02.837+0530] {logging_mixin.py:137} INFO - Start = 2016-01-15 00:00:00
+[2023-01-05T23:53:02.838+0530] {logging_mixin.py:137} INFO - End = 2016-01-22 00:00:00
+[2023-01-05T23:53:04.894+0530] {logging_mixin.py:137} INFO - Start = 2016-01-08 00:00:00
+[2023-01-05T23:53:04.895+0530] {logging_mixin.py:137} INFO - End = 2016-01-15 00:00:00
+[2023-01-05T23:53:07.099+0530] {logging_mixin.py:137} INFO - Start = 2016-01-01 00:00:00
+[2023-01-05T23:53:07.099+0530] {logging_mixin.py:137} INFO - End = 2016-01-08 00:00:00
+[2023-01-05T23:53:09.415+0530] {logging_mixin.py:137} INFO - Start = 2015-12-18 00:00:00
+[2023-01-05T23:53:09.415+0530] {logging_mixin.py:137} INFO - End = 2015-12-25 00:00:00
+[2023-01-05T23:53:11.786+0530] {logging_mixin.py:137} INFO - Start = 2015-12-11 00:00:00
+[2023-01-05T23:53:11.787+0530] {logging_mixin.py:137} INFO - End = 2015-12-18 00:00:00
+[2023-01-05T23:53:13.728+0530] {logging_mixin.py:137} INFO - Start = 2015-12-04 00:00:00
+[2023-01-05T23:53:13.729+0530] {logging_mixin.py:137} INFO - End = 2015-12-11 00:00:00
+[2023-01-05T23:53:15.904+0530] {logging_mixin.py:137} INFO - Start = 2015-11-27 00:00:00
+[2023-01-05T23:53:15.904+0530] {logging_mixin.py:137} INFO - End = 2015-12-04 00:00:00
+[2023-01-05T23:53:18.438+0530] {logging_mixin.py:137} INFO - Start = 2015-11-13 00:00:00
+[2023-01-05T23:53:18.438+0530] {logging_mixin.py:137} INFO - End = 2015-11-20 00:00:00
+[2023-01-05T23:53:20.180+0530] {logging_mixin.py:137} INFO - Start = 2015-10-30 00:00:00
+[2023-01-05T23:53:20.181+0530] {logging_mixin.py:137} INFO - End = 2015-11-06 00:00:00
+[2023-01-05T23:53:22.273+0530] {logging_mixin.py:137} INFO - Start = 2015-10-16 00:00:00
+[2023-01-05T23:53:22.273+0530] {logging_mixin.py:137} INFO - End = 2015-10-23 00:00:00
+[2023-01-05T23:53:24.549+0530] {logging_mixin.py:137} INFO - Start = 2015-10-09 00:00:00
+[2023-01-05T23:53:24.549+0530] {logging_mixin.py:137} INFO - End = 2015-10-16 00:00:00
+[2023-01-05T23:53:26.630+0530] {logging_mixin.py:137} INFO - Start = 2015-10-02 00:00:00
+[2023-01-05T23:53:26.630+0530] {logging_mixin.py:137} INFO - End = 2015-10-09 00:00:00
+[2023-01-05T23:53:28.929+0530] {logging_mixin.py:137} INFO - Start = 2015-09-25 00:00:00
+[2023-01-05T23:53:28.932+0530] {logging_mixin.py:137} INFO - End = 2015-10-02 00:00:00
+[2023-01-05T23:53:31.098+0530] {logging_mixin.py:137} INFO - Start = 2015-09-18 00:00:00
+[2023-01-05T23:53:31.099+0530] {logging_mixin.py:137} INFO - End = 2015-09-25 00:00:00
+[2023-01-05T23:53:33.219+0530] {logging_mixin.py:137} INFO - Start = 2015-09-11 00:00:00
+[2023-01-05T23:53:33.219+0530] {logging_mixin.py:137} INFO - End = 2015-09-18 00:00:00
+[2023-01-05T23:53:35.353+0530] {logging_mixin.py:137} INFO - Start = 2015-09-04 00:00:00
+[2023-01-05T23:53:35.354+0530] {logging_mixin.py:137} INFO - End = 2015-09-11 00:00:00
+[2023-01-05T23:53:37.422+0530] {logging_mixin.py:137} INFO - Start = 2015-08-28 00:00:00
+[2023-01-05T23:53:37.423+0530] {logging_mixin.py:137} INFO - End = 2015-09-04 00:00:00
+[2023-01-05T23:53:39.588+0530] {logging_mixin.py:137} INFO - Start = 2015-08-14 00:00:00
+[2023-01-05T23:53:39.588+0530] {logging_mixin.py:137} INFO - End = 2015-08-21 00:00:00
+[2023-01-05T23:53:41.612+0530] {logging_mixin.py:137} INFO - Start = 2015-08-07 00:00:00
+[2023-01-05T23:53:41.612+0530] {logging_mixin.py:137} INFO - End = 2015-08-14 00:00:00
+[2023-01-05T23:53:43.636+0530] {logging_mixin.py:137} INFO - Start = 2015-07-31 00:00:00
+[2023-01-05T23:53:43.637+0530] {logging_mixin.py:137} INFO - End = 2015-08-07 00:00:00
+[2023-01-05T23:53:45.459+0530] {logging_mixin.py:137} INFO - Start = 2015-07-24 00:00:00
+[2023-01-05T23:53:45.460+0530] {logging_mixin.py:137} INFO - End = 2015-07-31 00:00:00
+[2023-01-05T23:53:48.187+0530] {logging_mixin.py:137} INFO - Start = 2015-07-17 00:00:00
+[2023-01-05T23:53:48.187+0530] {logging_mixin.py:137} INFO - End = 2015-07-24 00:00:00
+[2023-01-05T23:53:50.178+0530] {logging_mixin.py:137} INFO - Start = 2015-07-10 00:00:00
+[2023-01-05T23:53:50.178+0530] {logging_mixin.py:137} INFO - End = 2015-07-17 00:00:00
+[2023-01-05T23:53:52.865+0530] {logging_mixin.py:137} INFO - Start = 2015-07-03 00:00:00
+[2023-01-05T23:53:52.866+0530] {logging_mixin.py:137} INFO - End = 2015-07-10 00:00:00
+[2023-01-05T23:53:54.686+0530] {logging_mixin.py:137} INFO - Start = 2015-06-26 00:00:00
+[2023-01-05T23:53:54.687+0530] {logging_mixin.py:137} INFO - End = 2015-07-03 00:00:00
+[2023-01-05T23:53:56.878+0530] {logging_mixin.py:137} INFO - Start = 2015-06-19 00:00:00
+[2023-01-05T23:53:56.878+0530] {logging_mixin.py:137} INFO - End = 2015-06-26 00:00:00
+[2023-01-05T23:53:59.303+0530] {logging_mixin.py:137} INFO - Start = 2015-06-12 00:00:00
+[2023-01-05T23:53:59.304+0530] {logging_mixin.py:137} INFO - End = 2015-06-19 00:00:00
+[2023-01-05T23:54:01.965+0530] {logging_mixin.py:137} INFO - Start = 2015-05-29 00:00:00
+[2023-01-05T23:54:01.965+0530] {logging_mixin.py:137} INFO - End = 2015-06-05 00:00:00
+[2023-01-05T23:54:04.022+0530] {logging_mixin.py:137} INFO - Start = 2015-05-22 00:00:00
+[2023-01-05T23:54:04.023+0530] {logging_mixin.py:137} INFO - End = 2015-05-29 00:00:00
+[2023-01-05T23:54:06.543+0530] {logging_mixin.py:137} INFO - Start = 2022-12-16 00:00:00
+[2023-01-05T23:54:06.544+0530] {logging_mixin.py:137} INFO - End = 2022-12-23 00:00:00
+[2023-01-05T23:54:06.544+0530] {logging_mixin.py:137} INFO - Current =16-12-2022
+[2023-01-05T23:54:06.552+0530] {logging_mixin.py:137} INFO - Current =17-12-2022
+[2023-01-05T23:54:06.558+0530] {logging_mixin.py:137} INFO - Current =18-12-2022
+[2023-01-05T23:54:06.564+0530] {logging_mixin.py:137} INFO - 18-12-2022
+[2023-01-05T23:54:06.564+0530] {logging_mixin.py:137} INFO - 563.499
+[2023-01-05T23:54:06.564+0530] {logging_mixin.py:137} INFO - 499.624
+[2023-01-05T23:54:06.564+0530] {logging_mixin.py:137} INFO - 40.579
+[2023-01-05T23:54:06.565+0530] {logging_mixin.py:137} INFO - Current =19-12-2022
+[2023-01-05T23:54:06.571+0530] {logging_mixin.py:137} INFO - Current =20-12-2022
+[2023-01-05T23:54:06.580+0530] {logging_mixin.py:137} INFO - Current =21-12-2022
+[2023-01-05T23:54:06.587+0530] {logging_mixin.py:137} INFO - Current =22-12-2022
+[2023-01-05T23:54:06.599+0530] {logging_mixin.py:137} INFO - Current =23-12-2022
+[2023-01-05T23:54:09.048+0530] {logging_mixin.py:137} INFO - Start = 2022-12-23 00:00:00
+[2023-01-05T23:54:09.048+0530] {logging_mixin.py:137} INFO - End = 2022-12-30 00:00:00
+[2023-01-05T23:54:09.048+0530] {logging_mixin.py:137} INFO - Current =23-12-2022
+[2023-01-05T23:54:09.054+0530] {logging_mixin.py:137} INFO - Current =24-12-2022
+[2023-01-05T23:54:09.058+0530] {logging_mixin.py:137} INFO - 24-12-2022
+[2023-01-05T23:54:09.059+0530] {logging_mixin.py:137} INFO - 562.808
+[2023-01-05T23:54:09.059+0530] {logging_mixin.py:137} INFO - 498.49
+[2023-01-05T23:54:09.059+0530] {logging_mixin.py:137} INFO - 40.969
+[2023-01-05T23:54:09.059+0530] {logging_mixin.py:137} INFO - Current =25-12-2022
+[2023-01-05T23:54:09.067+0530] {logging_mixin.py:137} INFO - Current =26-12-2022
+[2023-01-05T23:54:09.072+0530] {logging_mixin.py:137} INFO - Current =27-12-2022
+[2023-01-05T23:54:09.082+0530] {logging_mixin.py:137} INFO - Current =28-12-2022
+[2023-01-05T23:54:09.088+0530] {logging_mixin.py:137} INFO - Current =29-12-2022
+[2023-01-05T23:54:09.096+0530] {logging_mixin.py:137} INFO - Current =30-12-2022
+[2023-01-05T23:54:09.739+0530] {python.py:177} INFO - Done. Returned value was: None
+[2023-01-05T23:54:09.757+0530] {taskinstance.py:1322} INFO - Marking task as SUCCESS. dag_id=FX_Reserves, task_id=load_data, execution_date=20230104T000000, start_date=20230105T181059, end_date=20230105T182409
+[2023-01-05T23:54:09.823+0530] {local_task_job.py:159} INFO - Task exited with return code 0
+[2023-01-05T23:54:09.925+0530] {taskinstance.py:2582} INFO - 1 downstream tasks scheduled from follow-on schedule check

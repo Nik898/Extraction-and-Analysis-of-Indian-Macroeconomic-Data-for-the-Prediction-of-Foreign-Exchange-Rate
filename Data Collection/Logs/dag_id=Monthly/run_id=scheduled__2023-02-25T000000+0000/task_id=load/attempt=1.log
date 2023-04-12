@@ -1,0 +1,24 @@
+[2023-03-17T02:06:47.731+0530] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Monthly.load scheduled__2023-02-25T00:00:00+00:00 [queued]>
+[2023-03-17T02:06:47.743+0530] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Monthly.load scheduled__2023-02-25T00:00:00+00:00 [queued]>
+[2023-03-17T02:06:47.744+0530] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-17T02:06:47.744+0530] {taskinstance.py:1284} INFO - Starting attempt 1 of 4
+[2023-03-17T02:06:47.744+0530] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-17T02:06:47.761+0530] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): load> on 2023-02-25 00:00:00+00:00
+[2023-03-17T02:06:47.768+0530] {standard_task_runner.py:55} INFO - Started process 1948 to run task
+[2023-03-17T02:06:47.772+0530] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'Monthly', 'load', 'scheduled__2023-02-25T00:00:00+00:00', '--job-id', '4799', '--raw', '--subdir', 'DAGS_FOLDER/Monthly.py', '--cfg-path', '/tmp/tmpu249u66r']
+[2023-03-17T02:06:47.773+0530] {standard_task_runner.py:83} INFO - Job 4799: Subtask load
+[2023-03-17T02:06:47.829+0530] {task_command.py:389} INFO - Running <TaskInstance: Monthly.load scheduled__2023-02-25T00:00:00+00:00 [running]> on host DESKTOP-SQIOQPD.
+[2023-03-17T02:06:47.919+0530] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=nikheleshbhattacharyya@gmail.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Monthly
+AIRFLOW_CTX_TASK_ID=load
+AIRFLOW_CTX_EXECUTION_DATE=2023-02-25T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-02-25T00:00:00+00:00
+[2023-03-17T02:07:10.573+0530] {python.py:177} INFO - Done. Returned value was: None
+[2023-03-17T02:07:10.579+0530] {taskinstance.py:1322} INFO - Marking task as SUCCESS. dag_id=Monthly, task_id=load, execution_date=20230225T000000, start_date=20230316T203647, end_date=20230316T203710
+[2023-03-17T02:07:10.618+0530] {local_task_job.py:159} INFO - Task exited with return code 0
+[2023-03-17T02:07:10.642+0530] {taskinstance.py:2582} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,2 @@
+[2022-12-26T12:45:18.453+0530] {taskinstance.py:1077} INFO - Dependencies not met for <TaskInstance: Money__Market.transform_link scheduled__2022-12-25T02:00:00+00:00 [success]>, dependency 'Task Instance State' FAILED: Task is in the 'success' state.
+[2022-12-26T12:45:18.454+0530] {local_task_job.py:98} INFO - Task is not able to be run

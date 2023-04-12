@@ -1,0 +1,101 @@
+[2023-02-03T13:29:19.186+0530] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Monthly.extract manual__2023-02-03T07:49:44.011326+00:00 [queued]>
+[2023-02-03T13:29:19.201+0530] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Monthly.extract manual__2023-02-03T07:49:44.011326+00:00 [queued]>
+[2023-02-03T13:29:19.201+0530] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-02-03T13:29:19.201+0530] {taskinstance.py:1284} INFO - Starting attempt 3 of 4
+[2023-02-03T13:29:19.201+0530] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-02-03T13:29:19.223+0530] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): extract> on 2023-02-03 07:49:44.011326+00:00
+[2023-02-03T13:29:19.229+0530] {standard_task_runner.py:55} INFO - Started process 27866 to run task
+[2023-02-03T13:29:19.232+0530] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'Monthly', 'extract', 'manual__2023-02-03T07:49:44.011326+00:00', '--job-id', '3961', '--raw', '--subdir', 'DAGS_FOLDER/Monthly.py', '--cfg-path', '/tmp/tmpqud275pa']
+[2023-02-03T13:29:19.233+0530] {standard_task_runner.py:83} INFO - Job 3961: Subtask extract
+[2023-02-03T13:29:19.293+0530] {task_command.py:389} INFO - Running <TaskInstance: Monthly.extract manual__2023-02-03T07:49:44.011326+00:00 [running]> on host DESKTOP-SQIOQPD.
+[2023-02-03T13:29:19.748+0530] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=nikheleshbhattacharyya@gmail.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Monthly
+AIRFLOW_CTX_TASK_ID=extract
+AIRFLOW_CTX_EXECUTION_DATE=2023-02-03T07:49:44.011326+00:00
+AIRFLOW_CTX_TRY_NUMBER=3
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-02-03T07:49:44.011326+00:00
+[2023-02-03T13:29:35.549+0530] {logging_mixin.py:137} INFO - document.getElementById('20201').click()
+[2023-02-03T13:30:03.424+0530] {logging_mixin.py:137} INFO - document.getElementById('20202').click()
+[2023-02-03T13:30:40.972+0530] {logging_mixin.py:137} INFO - document.getElementById('20203').click()
+[2023-02-03T13:32:07.775+0530] {logging_mixin.py:137} INFO - document.getElementById('20204').click()
+[2023-02-03T13:34:40.377+0530] {logging_mixin.py:137} INFO - document.getElementById('20205').click()
+[2023-02-03T13:38:39.092+0530] {logging_mixin.py:137} INFO - document.getElementById('20206').click()
+[2023-02-03T13:43:43.926+0530] {taskinstance.py:1772} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/root/airflow/dags/Monthly.py", line 478, in extract
+    driver.execute_script(i)
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/remote/webdriver.py", line 500, in execute_script
+    return self.execute(command, {"script": script, "args": converted_args})["value"]
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: headless chrome=109.0.5414.119)
+Stacktrace:
+#0 0x5582b5771303 <unknown>
+#1 0x5582b5545d37 <unknown>
+#2 0x5582b5530549 <unknown>
+#3 0x5582b5530285 <unknown>
+#4 0x5582b552ec77 <unknown>
+#5 0x5582b552f408 <unknown>
+#6 0x5582b553c67f <unknown>
+#7 0x5582b553d2d2 <unknown>
+#8 0x5582b554dfd0 <unknown>
+#9 0x5582b555234b <unknown>
+#10 0x5582b552f9c5 <unknown>
+#11 0x5582b554dd7f <unknown>
+#12 0x5582b55baaa0 <unknown>
+#13 0x5582b55a2753 <unknown>
+#14 0x5582b5575a14 <unknown>
+#15 0x5582b5576b7e <unknown>
+#16 0x5582b57c032e <unknown>
+#17 0x5582b57c3c0e <unknown>
+#18 0x5582b57a6610 <unknown>
+#19 0x5582b57c4c23 <unknown>
+#20 0x5582b5798545 <unknown>
+#21 0x5582b57e56a8 <unknown>
+#22 0x5582b57e5836 <unknown>
+#23 0x5582b5800d13 <unknown>
+#24 0x7fc4d910c609 start_thread
+
+[2023-02-03T13:43:44.944+0530] {taskinstance.py:1322} INFO - Marking task as UP_FOR_RETRY. dag_id=Monthly, task_id=extract, execution_date=20230203T074944, start_date=20230203T075919, end_date=20230203T081344
+[2023-02-03T13:43:45.341+0530] {standard_task_runner.py:100} ERROR - Failed to execute job 3961 for task extract (Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: headless chrome=109.0.5414.119)
+Stacktrace:
+#0 0x5582b5771303 <unknown>
+#1 0x5582b5545d37 <unknown>
+#2 0x5582b5530549 <unknown>
+#3 0x5582b5530285 <unknown>
+#4 0x5582b552ec77 <unknown>
+#5 0x5582b552f408 <unknown>
+#6 0x5582b553c67f <unknown>
+#7 0x5582b553d2d2 <unknown>
+#8 0x5582b554dfd0 <unknown>
+#9 0x5582b555234b <unknown>
+#10 0x5582b552f9c5 <unknown>
+#11 0x5582b554dd7f <unknown>
+#12 0x5582b55baaa0 <unknown>
+#13 0x5582b55a2753 <unknown>
+#14 0x5582b5575a14 <unknown>
+#15 0x5582b5576b7e <unknown>
+#16 0x5582b57c032e <unknown>
+#17 0x5582b57c3c0e <unknown>
+#18 0x5582b57a6610 <unknown>
+#19 0x5582b57c4c23 <unknown>
+#20 0x5582b5798545 <unknown>
+#21 0x5582b57e56a8 <unknown>
+#22 0x5582b57e5836 <unknown>
+#23 0x5582b5800d13 <unknown>
+#24 0x7fc4d910c609 start_thread
+; 27866)
+[2023-02-03T13:43:45.538+0530] {local_task_job.py:159} INFO - Task exited with return code 1
+[2023-02-03T13:43:46.065+0530] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

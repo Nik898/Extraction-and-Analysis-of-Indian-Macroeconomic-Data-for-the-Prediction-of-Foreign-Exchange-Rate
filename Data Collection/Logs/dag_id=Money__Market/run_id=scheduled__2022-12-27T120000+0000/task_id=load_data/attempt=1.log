@@ -1,0 +1,24 @@
+[2022-12-27T19:46:39.826+0530] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Money__Market.load_data scheduled__2022-12-27T12:00:00+00:00 [queued]>
+[2022-12-27T19:46:39.837+0530] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Money__Market.load_data scheduled__2022-12-27T12:00:00+00:00 [queued]>
+[2022-12-27T19:46:39.837+0530] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-27T19:46:39.837+0530] {taskinstance.py:1284} INFO - Starting attempt 1 of 4
+[2022-12-27T19:46:39.837+0530] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-27T19:46:39.857+0530] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): load_data> on 2022-12-27 12:00:00+00:00
+[2022-12-27T19:46:39.864+0530] {standard_task_runner.py:55} INFO - Started process 18544 to run task
+[2022-12-27T19:46:39.867+0530] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'Money__Market', 'load_data', 'scheduled__2022-12-27T12:00:00+00:00', '--job-id', '1317', '--raw', '--subdir', 'DAGS_FOLDER/Money_Market.py', '--cfg-path', '/tmp/tmp_u8xno5j']
+[2022-12-27T19:46:39.869+0530] {standard_task_runner.py:83} INFO - Job 1317: Subtask load_data
+[2022-12-27T19:46:40.038+0530] {task_command.py:389} INFO - Running <TaskInstance: Money__Market.load_data scheduled__2022-12-27T12:00:00+00:00 [running]> on host DESKTOP-SQIOQPD.
+[2022-12-27T19:46:40.213+0530] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=nikheleshbhattacharyya@gmail.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Money__Market
+AIRFLOW_CTX_TASK_ID=load_data
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-27T12:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-27T12:00:00+00:00
+[2022-12-27T19:46:40.587+0530] {python.py:177} INFO - Done. Returned value was: None
+[2022-12-27T19:46:40.606+0530] {taskinstance.py:1322} INFO - Marking task as SUCCESS. dag_id=Money__Market, task_id=load_data, execution_date=20221227T120000, start_date=20221227T141639, end_date=20221227T141640
+[2022-12-27T19:46:40.657+0530] {local_task_job.py:159} INFO - Task exited with return code 0
+[2022-12-27T19:46:40.684+0530] {taskinstance.py:2582} INFO - 1 downstream tasks scheduled from follow-on schedule check

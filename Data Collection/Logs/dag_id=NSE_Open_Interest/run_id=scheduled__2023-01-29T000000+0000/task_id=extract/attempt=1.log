@@ -1,0 +1,37 @@
+[2023-02-02T05:21:34.772+0530] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: NSE_Open_Interest.extract scheduled__2023-01-29T00:00:00+00:00 [queued]>
+[2023-02-02T05:21:34.779+0530] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: NSE_Open_Interest.extract scheduled__2023-01-29T00:00:00+00:00 [queued]>
+[2023-02-02T05:21:34.780+0530] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-02-02T05:21:34.780+0530] {taskinstance.py:1284} INFO - Starting attempt 1 of 4
+[2023-02-02T05:21:34.780+0530] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-02-02T05:21:34.798+0530] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): extract> on 2023-01-29 00:00:00+00:00
+[2023-02-02T05:21:34.805+0530] {standard_task_runner.py:55} INFO - Started process 5974 to run task
+[2023-02-02T05:21:34.807+0530] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'NSE_Open_Interest', 'extract', 'scheduled__2023-01-29T00:00:00+00:00', '--job-id', '3563', '--raw', '--subdir', 'DAGS_FOLDER/NSE_Open_Interest.py', '--cfg-path', '/tmp/tmphsnxali1']
+[2023-02-02T05:21:34.808+0530] {standard_task_runner.py:83} INFO - Job 3563: Subtask extract
+[2023-02-02T05:21:34.860+0530] {task_command.py:389} INFO - Running <TaskInstance: NSE_Open_Interest.extract scheduled__2023-01-29T00:00:00+00:00 [running]> on host DESKTOP-SQIOQPD.
+[2023-02-02T05:21:34.962+0530] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=nikheleshbhattacharyya@gmail.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=NSE_Open_Interest
+AIRFLOW_CTX_TASK_ID=extract
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-29T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-01-29T00:00:00+00:00
+[2023-02-02T05:21:34.967+0530] {logging_mixin.py:137} INFO - 2020-02-14 00:00:00
+[2023-02-02T05:21:35.058+0530] {logging_mixin.py:137} INFO - 2020-02-15 00:00:00
+[2023-02-02T05:21:35.090+0530] {logging_mixin.py:137} INFO - 2020-02-16 00:00:00
+[2023-02-02T05:21:35.122+0530] {logging_mixin.py:137} INFO - 2020-02-17 00:00:00
+[2023-02-02T05:21:35.268+0530] {taskinstance.py:1772} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/root/airflow/dags/NSE_Open_Interest.py", line 83, in extract
+    dd,values = get_data(date)
+TypeError: cannot unpack non-iterable int object
+[2023-02-02T05:21:35.272+0530] {taskinstance.py:1322} INFO - Marking task as UP_FOR_RETRY. dag_id=NSE_Open_Interest, task_id=extract, execution_date=20230129T000000, start_date=20230201T235134, end_date=20230201T235135
+[2023-02-02T05:21:35.286+0530] {standard_task_runner.py:100} ERROR - Failed to execute job 3563 for task extract (cannot unpack non-iterable int object; 5974)
+[2023-02-02T05:21:35.302+0530] {local_task_job.py:159} INFO - Task exited with return code 1
+[2023-02-02T05:21:35.322+0530] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

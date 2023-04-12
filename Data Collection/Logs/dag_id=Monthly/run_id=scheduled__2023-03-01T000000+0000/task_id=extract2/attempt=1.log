@@ -1,0 +1,86 @@
+[2023-03-17T14:29:34.710+0530] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Monthly.extract2 scheduled__2023-03-01T00:00:00+00:00 [queued]>
+[2023-03-17T14:29:34.722+0530] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Monthly.extract2 scheduled__2023-03-01T00:00:00+00:00 [queued]>
+[2023-03-17T14:29:34.722+0530] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-17T14:29:34.722+0530] {taskinstance.py:1284} INFO - Starting attempt 1 of 4
+[2023-03-17T14:29:34.722+0530] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-17T14:29:34.740+0530] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): extract2> on 2023-03-01 00:00:00+00:00
+[2023-03-17T14:29:34.748+0530] {standard_task_runner.py:55} INFO - Started process 1063 to run task
+[2023-03-17T14:29:34.752+0530] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'Monthly', 'extract2', 'scheduled__2023-03-01T00:00:00+00:00', '--job-id', '4932', '--raw', '--subdir', 'DAGS_FOLDER/Monthly.py', '--cfg-path', '/tmp/tmpjfysi2o3']
+[2023-03-17T14:29:34.753+0530] {standard_task_runner.py:83} INFO - Job 4932: Subtask extract2
+[2023-03-17T14:29:34.862+0530] {task_command.py:389} INFO - Running <TaskInstance: Monthly.extract2 scheduled__2023-03-01T00:00:00+00:00 [running]> on host DESKTOP-SQIOQPD.
+[2023-03-17T14:29:35.034+0530] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=nikheleshbhattacharyya@gmail.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Monthly
+AIRFLOW_CTX_TASK_ID=extract2
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-03-01T00:00:00+00:00
+[2023-03-17T14:29:36.314+0530] {logging_mixin.py:137} INFO - document.getElementById('2020').click()
+[2023-03-17T14:29:36.329+0530] {taskinstance.py:1772} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/root/airflow/dags/Monthly.py", line 524, in extract2
+    driver.execute_script(k)
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/remote/webdriver.py", line 500, in execute_script
+    return self.execute(command, {"script": script, "args": converted_args})["value"]
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.JavascriptException: Message: javascript error: Cannot read properties of null (reading 'click')
+  (Session info: headless chrome=109.0.5414.119)
+Stacktrace:
+#0 0x55fe13c4f303 <unknown>
+#1 0x55fe13a23d37 <unknown>
+#2 0x55fe13a27608 <unknown>
+#3 0x55fe13a273d2 <unknown>
+#4 0x55fe13a2803c <unknown>
+#5 0x55fe13a993ae <unknown>
+#6 0x55fe13a80982 <unknown>
+#7 0x55fe13a9888c <unknown>
+#8 0x55fe13a80753 <unknown>
+#9 0x55fe13a53a14 <unknown>
+#10 0x55fe13a54b7e <unknown>
+#11 0x55fe13c9e32e <unknown>
+#12 0x55fe13ca1c0e <unknown>
+#13 0x55fe13c84610 <unknown>
+#14 0x55fe13ca2c23 <unknown>
+#15 0x55fe13c76545 <unknown>
+#16 0x55fe13cc36a8 <unknown>
+#17 0x55fe13cc3836 <unknown>
+#18 0x55fe13cded13 <unknown>
+#19 0x7fbce0b64609 start_thread
+
+[2023-03-17T14:29:36.340+0530] {taskinstance.py:1322} INFO - Marking task as UP_FOR_RETRY. dag_id=Monthly, task_id=extract2, execution_date=20230301T000000, start_date=20230317T085934, end_date=20230317T085936
+[2023-03-17T14:29:36.359+0530] {standard_task_runner.py:100} ERROR - Failed to execute job 4932 for task extract2 (Message: javascript error: Cannot read properties of null (reading 'click')
+  (Session info: headless chrome=109.0.5414.119)
+Stacktrace:
+#0 0x55fe13c4f303 <unknown>
+#1 0x55fe13a23d37 <unknown>
+#2 0x55fe13a27608 <unknown>
+#3 0x55fe13a273d2 <unknown>
+#4 0x55fe13a2803c <unknown>
+#5 0x55fe13a993ae <unknown>
+#6 0x55fe13a80982 <unknown>
+#7 0x55fe13a9888c <unknown>
+#8 0x55fe13a80753 <unknown>
+#9 0x55fe13a53a14 <unknown>
+#10 0x55fe13a54b7e <unknown>
+#11 0x55fe13c9e32e <unknown>
+#12 0x55fe13ca1c0e <unknown>
+#13 0x55fe13c84610 <unknown>
+#14 0x55fe13ca2c23 <unknown>
+#15 0x55fe13c76545 <unknown>
+#16 0x55fe13cc36a8 <unknown>
+#17 0x55fe13cc3836 <unknown>
+#18 0x55fe13cded13 <unknown>
+#19 0x7fbce0b64609 start_thread
+; 1063)
+[2023-03-17T14:29:36.371+0530] {local_task_job.py:159} INFO - Task exited with return code 1
+[2023-03-17T14:29:36.391+0530] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

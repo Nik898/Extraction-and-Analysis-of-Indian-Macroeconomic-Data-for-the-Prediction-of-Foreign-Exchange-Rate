@@ -1,0 +1,121 @@
+[2023-02-03T13:19:57.959+0530] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Monthly.extract manual__2023-02-03T07:49:44.011326+00:00 [queued]>
+[2023-02-03T13:19:57.970+0530] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Monthly.extract manual__2023-02-03T07:49:44.011326+00:00 [queued]>
+[2023-02-03T13:19:57.970+0530] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-02-03T13:19:57.970+0530] {taskinstance.py:1284} INFO - Starting attempt 1 of 4
+[2023-02-03T13:19:57.970+0530] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-02-03T13:19:57.986+0530] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): extract> on 2023-02-03 07:49:44.011326+00:00
+[2023-02-03T13:19:57.991+0530] {standard_task_runner.py:55} INFO - Started process 27545 to run task
+[2023-02-03T13:19:57.994+0530] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'Monthly', 'extract', 'manual__2023-02-03T07:49:44.011326+00:00', '--job-id', '3959', '--raw', '--subdir', 'DAGS_FOLDER/Monthly.py', '--cfg-path', '/tmp/tmpu366yoj2']
+[2023-02-03T13:19:57.996+0530] {standard_task_runner.py:83} INFO - Job 3959: Subtask extract
+[2023-02-03T13:19:58.051+0530] {task_command.py:389} INFO - Running <TaskInstance: Monthly.extract manual__2023-02-03T07:49:44.011326+00:00 [running]> on host DESKTOP-SQIOQPD.
+[2023-02-03T13:19:58.140+0530] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=nikheleshbhattacharyya@gmail.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Monthly
+AIRFLOW_CTX_TASK_ID=extract
+AIRFLOW_CTX_EXECUTION_DATE=2023-02-03T07:49:44.011326+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-02-03T07:49:44.011326+00:00
+[2023-02-03T13:20:05.758+0530] {logging_mixin.py:137} INFO - document.getElementById('20201').click()
+[2023-02-03T13:20:07.621+0530] {logging_mixin.py:137} INFO - document.getElementById('20202').click()
+[2023-02-03T13:20:09.040+0530] {logging_mixin.py:137} INFO - document.getElementById('20203').click()
+[2023-02-03T13:20:10.698+0530] {logging_mixin.py:137} INFO - document.getElementById('20204').click()
+[2023-02-03T13:20:12.217+0530] {logging_mixin.py:137} INFO - document.getElementById('20205').click()
+[2023-02-03T13:20:13.763+0530] {logging_mixin.py:137} INFO - document.getElementById('20206').click()
+[2023-02-03T13:20:15.598+0530] {logging_mixin.py:137} INFO - document.getElementById('20207').click()
+[2023-02-03T13:20:17.345+0530] {logging_mixin.py:137} INFO - document.getElementById('20208').click()
+[2023-02-03T13:20:19.133+0530] {logging_mixin.py:137} INFO - document.getElementById('20209').click()
+[2023-02-03T13:20:21.431+0530] {logging_mixin.py:137} INFO - document.getElementById('202010').click()
+[2023-02-03T13:20:23.236+0530] {logging_mixin.py:137} INFO - document.getElementById('202011').click()
+[2023-02-03T13:20:25.786+0530] {logging_mixin.py:137} INFO - document.getElementById('202012').click()
+[2023-02-03T13:20:27.803+0530] {logging_mixin.py:137} INFO - document.getElementById('20211').click()
+[2023-02-03T13:20:29.446+0530] {logging_mixin.py:137} INFO - document.getElementById('20212').click()
+[2023-02-03T13:20:31.555+0530] {logging_mixin.py:137} INFO - document.getElementById('20213').click()
+[2023-02-03T13:20:33.200+0530] {logging_mixin.py:137} INFO - document.getElementById('20214').click()
+[2023-02-03T13:20:35.344+0530] {logging_mixin.py:137} INFO - document.getElementById('20215').click()
+[2023-02-03T13:20:37.203+0530] {logging_mixin.py:137} INFO - document.getElementById('20216').click()
+[2023-02-03T13:20:38.902+0530] {logging_mixin.py:137} INFO - document.getElementById('20217').click()
+[2023-02-03T13:20:40.860+0530] {logging_mixin.py:137} INFO - document.getElementById('20218').click()
+[2023-02-03T13:20:42.876+0530] {logging_mixin.py:137} INFO - document.getElementById('20219').click()
+[2023-02-03T13:20:44.612+0530] {logging_mixin.py:137} INFO - document.getElementById('202110').click()
+[2023-02-03T13:20:46.726+0530] {logging_mixin.py:137} INFO - document.getElementById('202111').click()
+[2023-02-03T13:20:48.467+0530] {logging_mixin.py:137} INFO - document.getElementById('202112').click()
+[2023-02-03T13:20:50.828+0530] {logging_mixin.py:137} INFO - document.getElementById('20221').click()
+[2023-02-03T13:20:53.220+0530] {logging_mixin.py:137} INFO - document.getElementById('20222').click()
+[2023-02-03T13:20:55.189+0530] {logging_mixin.py:137} INFO - document.getElementById('20223').click()
+[2023-02-03T13:20:57.109+0530] {logging_mixin.py:137} INFO - document.getElementById('20224').click()
+[2023-02-03T13:20:59.095+0530] {logging_mixin.py:137} INFO - document.getElementById('20225').click()
+[2023-02-03T13:21:02.217+0530] {logging_mixin.py:137} INFO - document.getElementById('20226').click()
+[2023-02-03T13:21:04.940+0530] {logging_mixin.py:137} INFO - document.getElementById('20227').click()
+[2023-02-03T13:21:07.278+0530] {logging_mixin.py:137} INFO - document.getElementById('20228').click()
+[2023-02-03T13:21:10.691+0530] {logging_mixin.py:137} INFO - document.getElementById('20229').click()
+[2023-02-03T13:21:13.035+0530] {logging_mixin.py:137} INFO - document.getElementById('202210').click()
+[2023-02-03T13:21:15.189+0530] {logging_mixin.py:137} INFO - document.getElementById('202211').click()
+[2023-02-03T13:21:17.755+0530] {logging_mixin.py:137} INFO - document.getElementById('202212').click()
+[2023-02-03T13:21:20.814+0530] {logging_mixin.py:137} INFO - document.getElementById('20231').click()
+[2023-02-03T13:21:22.774+0530] {logging_mixin.py:137} INFO - document.getElementById('20232').click()
+[2023-02-03T13:21:53.813+0530] {taskinstance.py:1772} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/root/airflow/dags/Monthly.py", line 479, in extract
+    elem = driver.find_element(By.CLASS_NAME,"tablebg")
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/remote/webdriver.py", line 830, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".tablebg"}
+  (Session info: headless chrome=109.0.5414.119)
+Stacktrace:
+#0 0x55b40166a303 <unknown>
+#1 0x55b40143ed37 <unknown>
+#2 0x55b40147b5b2 <unknown>
+#3 0x55b40147b6c1 <unknown>
+#4 0x55b4014b5b34 <unknown>
+#5 0x55b40149b9ad <unknown>
+#6 0x55b4014b388c <unknown>
+#7 0x55b40149b753 <unknown>
+#8 0x55b40146ea14 <unknown>
+#9 0x55b40146fb7e <unknown>
+#10 0x55b4016b932e <unknown>
+#11 0x55b4016bcc0e <unknown>
+#12 0x55b40169f610 <unknown>
+#13 0x55b4016bdc23 <unknown>
+#14 0x55b401691545 <unknown>
+#15 0x55b4016de6a8 <unknown>
+#16 0x55b4016de836 <unknown>
+#17 0x55b4016f9d13 <unknown>
+#18 0x7fc8ace68609 start_thread
+
+[2023-02-03T13:21:53.888+0530] {taskinstance.py:1322} INFO - Marking task as UP_FOR_RETRY. dag_id=Monthly, task_id=extract, execution_date=20230203T074944, start_date=20230203T074957, end_date=20230203T075153
+[2023-02-03T13:21:53.948+0530] {standard_task_runner.py:100} ERROR - Failed to execute job 3959 for task extract (Message: no such element: Unable to locate element: {"method":"css selector","selector":".tablebg"}
+  (Session info: headless chrome=109.0.5414.119)
+Stacktrace:
+#0 0x55b40166a303 <unknown>
+#1 0x55b40143ed37 <unknown>
+#2 0x55b40147b5b2 <unknown>
+#3 0x55b40147b6c1 <unknown>
+#4 0x55b4014b5b34 <unknown>
+#5 0x55b40149b9ad <unknown>
+#6 0x55b4014b388c <unknown>
+#7 0x55b40149b753 <unknown>
+#8 0x55b40146ea14 <unknown>
+#9 0x55b40146fb7e <unknown>
+#10 0x55b4016b932e <unknown>
+#11 0x55b4016bcc0e <unknown>
+#12 0x55b40169f610 <unknown>
+#13 0x55b4016bdc23 <unknown>
+#14 0x55b401691545 <unknown>
+#15 0x55b4016de6a8 <unknown>
+#16 0x55b4016de836 <unknown>
+#17 0x55b4016f9d13 <unknown>
+#18 0x7fc8ace68609 start_thread
+; 27545)
+[2023-02-03T13:21:53.970+0530] {local_task_job.py:159} INFO - Task exited with return code 1
+[2023-02-03T13:21:54.032+0530] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

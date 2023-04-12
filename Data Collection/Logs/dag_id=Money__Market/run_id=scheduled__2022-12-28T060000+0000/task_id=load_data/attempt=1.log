@@ -1,0 +1,81 @@
+[2022-12-29T23:28:58.917+0530] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Money__Market.load_data scheduled__2022-12-28T06:00:00+00:00 [queued]>
+[2022-12-29T23:28:58.927+0530] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Money__Market.load_data scheduled__2022-12-28T06:00:00+00:00 [queued]>
+[2022-12-29T23:28:58.927+0530] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-29T23:28:58.927+0530] {taskinstance.py:1284} INFO - Starting attempt 1 of 4
+[2022-12-29T23:28:58.927+0530] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-29T23:28:58.941+0530] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): load_data> on 2022-12-28 06:00:00+00:00
+[2022-12-29T23:28:58.947+0530] {standard_task_runner.py:55} INFO - Started process 9194 to run task
+[2022-12-29T23:28:58.949+0530] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'Money__Market', 'load_data', 'scheduled__2022-12-28T06:00:00+00:00', '--job-id', '1817', '--raw', '--subdir', 'DAGS_FOLDER/Money_Market.py', '--cfg-path', '/tmp/tmpel1t3t8a']
+[2022-12-29T23:28:58.951+0530] {standard_task_runner.py:83} INFO - Job 1817: Subtask load_data
+[2022-12-29T23:28:58.997+0530] {task_command.py:389} INFO - Running <TaskInstance: Money__Market.load_data scheduled__2022-12-28T06:00:00+00:00 [running]> on host DESKTOP-SQIOQPD.
+[2022-12-29T23:28:59.074+0530] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=nikheleshbhattacharyya@gmail.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Money__Market
+AIRFLOW_CTX_TASK_ID=load_data
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-28T06:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-28T06:00:00+00:00
+[2022-12-29T23:28:59.228+0530] {logging_mixin.py:137} INFO - 1
+[2022-12-29T23:28:59.230+0530] {logging_mixin.py:137} INFO - 2
+[2022-12-29T23:28:59.231+0530] {logging_mixin.py:137} INFO - 3
+[2022-12-29T23:28:59.232+0530] {logging_mixin.py:137} INFO - 4
+[2022-12-29T23:28:59.233+0530] {logging_mixin.py:137} INFO - 5
+[2022-12-29T23:28:59.233+0530] {logging_mixin.py:137} INFO - 6
+[2022-12-29T23:28:59.235+0530] {logging_mixin.py:137} INFO - 7
+[2022-12-29T23:28:59.236+0530] {logging_mixin.py:137} INFO - 8
+[2022-12-29T23:28:59.237+0530] {logging_mixin.py:137} INFO - 9
+[2022-12-29T23:28:59.238+0530] {logging_mixin.py:137} INFO - 10
+[2022-12-29T23:28:59.239+0530] {logging_mixin.py:137} INFO - 11
+[2022-12-29T23:28:59.239+0530] {logging_mixin.py:137} INFO - 12
+[2022-12-29T23:28:59.240+0530] {logging_mixin.py:137} INFO - 13
+[2022-12-29T23:28:59.241+0530] {logging_mixin.py:137} INFO - 14
+[2022-12-29T23:28:59.242+0530] {logging_mixin.py:137} INFO - 15
+[2022-12-29T23:28:59.243+0530] {logging_mixin.py:137} INFO - 16
+[2022-12-29T23:28:59.244+0530] {logging_mixin.py:137} INFO - 17
+[2022-12-29T23:28:59.245+0530] {logging_mixin.py:137} INFO - 18
+[2022-12-29T23:28:59.246+0530] {logging_mixin.py:137} INFO - 19
+[2022-12-29T23:28:59.247+0530] {logging_mixin.py:137} INFO - 20
+[2022-12-29T23:28:59.247+0530] {logging_mixin.py:137} INFO - 21
+[2022-12-29T23:28:59.248+0530] {logging_mixin.py:137} INFO - 22
+[2022-12-29T23:28:59.249+0530] {logging_mixin.py:137} INFO - 23
+[2022-12-29T23:28:59.250+0530] {logging_mixin.py:137} INFO - 24
+[2022-12-29T23:28:59.252+0530] {logging_mixin.py:137} INFO - 25
+[2022-12-29T23:28:59.253+0530] {logging_mixin.py:137} INFO - 26
+[2022-12-29T23:28:59.254+0530] {logging_mixin.py:137} INFO - 27
+[2022-12-29T23:28:59.255+0530] {logging_mixin.py:137} INFO - 28
+[2022-12-29T23:28:59.255+0530] {logging_mixin.py:137} INFO - 29
+[2022-12-29T23:28:59.256+0530] {logging_mixin.py:137} INFO - 30
+[2022-12-29T23:28:59.262+0530] {logging_mixin.py:137} INFO - 31
+[2022-12-29T23:28:59.263+0530] {logging_mixin.py:137} INFO - 32
+[2022-12-29T23:28:59.263+0530] {logging_mixin.py:137} INFO - 33
+[2022-12-29T23:28:59.264+0530] {logging_mixin.py:137} INFO - 34
+[2022-12-29T23:28:59.265+0530] {logging_mixin.py:137} INFO - 35
+[2022-12-29T23:28:59.266+0530] {logging_mixin.py:137} INFO - 36
+[2022-12-29T23:28:59.268+0530] {logging_mixin.py:137} INFO - 37
+[2022-12-29T23:28:59.270+0530] {logging_mixin.py:137} INFO - 38
+[2022-12-29T23:28:59.271+0530] {logging_mixin.py:137} INFO - 39
+[2022-12-29T23:28:59.272+0530] {logging_mixin.py:137} INFO - 40
+[2022-12-29T23:28:59.273+0530] {logging_mixin.py:137} INFO - 41
+[2022-12-29T23:28:59.274+0530] {logging_mixin.py:137} INFO - 42
+[2022-12-29T23:28:59.274+0530] {logging_mixin.py:137} INFO - 43
+[2022-12-29T23:28:59.275+0530] {logging_mixin.py:137} INFO - 44
+[2022-12-29T23:28:59.276+0530] {logging_mixin.py:137} INFO - 45
+[2022-12-29T23:28:59.277+0530] {logging_mixin.py:137} INFO - 46
+[2022-12-29T23:28:59.278+0530] {logging_mixin.py:137} INFO - 47
+[2022-12-29T23:28:59.279+0530] {logging_mixin.py:137} INFO - 48
+[2022-12-29T23:28:59.280+0530] {logging_mixin.py:137} INFO - 49
+[2022-12-29T23:28:59.281+0530] {logging_mixin.py:137} INFO - 50
+[2022-12-29T23:28:59.282+0530] {logging_mixin.py:137} INFO - 51
+[2022-12-29T23:28:59.283+0530] {logging_mixin.py:137} INFO - 52
+[2022-12-29T23:28:59.284+0530] {logging_mixin.py:137} INFO - 53
+[2022-12-29T23:28:59.285+0530] {logging_mixin.py:137} INFO - 54
+[2022-12-29T23:28:59.287+0530] {logging_mixin.py:137} INFO - 55
+[2022-12-29T23:28:59.288+0530] {logging_mixin.py:137} INFO - 56
+[2022-12-29T23:28:59.289+0530] {logging_mixin.py:137} INFO - 57
+[2022-12-29T23:28:59.389+0530] {python.py:177} INFO - Done. Returned value was: None
+[2022-12-29T23:28:59.397+0530] {taskinstance.py:1322} INFO - Marking task as SUCCESS. dag_id=Money__Market, task_id=load_data, execution_date=20221228T060000, start_date=20221229T175858, end_date=20221229T175859
+[2022-12-29T23:28:59.725+0530] {local_task_job.py:159} INFO - Task exited with return code 0
+[2022-12-29T23:28:59.764+0530] {taskinstance.py:2582} INFO - 1 downstream tasks scheduled from follow-on schedule check

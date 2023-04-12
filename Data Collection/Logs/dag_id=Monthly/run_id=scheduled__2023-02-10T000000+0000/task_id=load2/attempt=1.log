@@ -1,0 +1,81 @@
+[2023-02-14T11:00:32.269+0530] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Monthly.load2 scheduled__2023-02-10T00:00:00+00:00 [queued]>
+[2023-02-14T11:00:32.307+0530] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Monthly.load2 scheduled__2023-02-10T00:00:00+00:00 [queued]>
+[2023-02-14T11:00:32.308+0530] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-02-14T11:00:32.308+0530] {taskinstance.py:1284} INFO - Starting attempt 1 of 4
+[2023-02-14T11:00:32.308+0530] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-02-14T11:00:32.352+0530] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): load2> on 2023-02-10 00:00:00+00:00
+[2023-02-14T11:00:32.363+0530] {standard_task_runner.py:55} INFO - Started process 8382 to run task
+[2023-02-14T11:00:32.372+0530] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'Monthly', 'load2', 'scheduled__2023-02-10T00:00:00+00:00', '--job-id', '4252', '--raw', '--subdir', 'DAGS_FOLDER/Monthly.py', '--cfg-path', '/tmp/tmp8d3p87uk']
+[2023-02-14T11:00:32.375+0530] {standard_task_runner.py:83} INFO - Job 4252: Subtask load2
+[2023-02-14T11:00:32.502+0530] {task_command.py:389} INFO - Running <TaskInstance: Monthly.load2 scheduled__2023-02-10T00:00:00+00:00 [running]> on host DESKTOP-SQIOQPD.
+[2023-02-14T11:00:33.011+0530] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=nikheleshbhattacharyya@gmail.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Monthly
+AIRFLOW_CTX_TASK_ID=load2
+AIRFLOW_CTX_EXECUTION_DATE=2023-02-10T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-02-10T00:00:00+00:00
+[2023-02-14T11:00:33.059+0530] {logging_mixin.py:137} INFO - https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=50805
+[2023-02-14T11:00:43.090+0530] {taskinstance.py:1772} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/urllib3/connection.py", line 169, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/local/lib/python3.8/dist-packages/urllib3/util/connection.py", line 73, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/local/lib/python3.8/dist-packages/urllib3/connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/lib/python3.8/dist-packages/urllib3/connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "/usr/local/lib/python3.8/dist-packages/urllib3/connection.py", line 353, in connect
+    conn = self._new_conn()
+  File "/usr/local/lib/python3.8/dist-packages/urllib3/connection.py", line 181, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f31c99ec490>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/local/lib/python3.8/dist-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.8/dist-packages/urllib3/util/retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='rbi.org.in', port=443): Max retries exceeded with url: /Scripts/BS_PressReleaseDisplay.aspx?prid=50805 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f31c99ec490>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/root/airflow/dags/Monthly.py", line 548, in load2
+    results = requests.get(url, headers=headers)
+  File "/usr/local/lib/python3.8/dist-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='rbi.org.in', port=443): Max retries exceeded with url: /Scripts/BS_PressReleaseDisplay.aspx?prid=50805 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f31c99ec490>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+[2023-02-14T11:00:43.117+0530] {taskinstance.py:1322} INFO - Marking task as UP_FOR_RETRY. dag_id=Monthly, task_id=load2, execution_date=20230210T000000, start_date=20230214T053032, end_date=20230214T053043
+[2023-02-14T11:00:43.162+0530] {standard_task_runner.py:100} ERROR - Failed to execute job 4252 for task load2 (HTTPSConnectionPool(host='rbi.org.in', port=443): Max retries exceeded with url: /Scripts/BS_PressReleaseDisplay.aspx?prid=50805 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f31c99ec490>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')); 8382)
+[2023-02-14T11:00:43.221+0530] {local_task_job.py:159} INFO - Task exited with return code 1
+[2023-02-14T11:00:43.277+0530] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

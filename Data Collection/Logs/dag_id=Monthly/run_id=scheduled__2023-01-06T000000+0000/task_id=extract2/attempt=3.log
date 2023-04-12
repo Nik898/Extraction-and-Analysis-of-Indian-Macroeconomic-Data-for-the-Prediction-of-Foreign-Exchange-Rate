@@ -1,0 +1,97 @@
+[2023-01-07T11:11:44.877+0530] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Monthly.extract2 scheduled__2023-01-06T00:00:00+00:00 [queued]>
+[2023-01-07T11:11:44.906+0530] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Monthly.extract2 scheduled__2023-01-06T00:00:00+00:00 [queued]>
+[2023-01-07T11:11:44.906+0530] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-07T11:11:44.907+0530] {taskinstance.py:1284} INFO - Starting attempt 3 of 4
+[2023-01-07T11:11:44.907+0530] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-07T11:11:44.934+0530] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): extract2> on 2023-01-06 00:00:00+00:00
+[2023-01-07T11:11:44.949+0530] {standard_task_runner.py:55} INFO - Started process 5220 to run task
+[2023-01-07T11:11:44.973+0530] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'Monthly', 'extract2', 'scheduled__2023-01-06T00:00:00+00:00', '--job-id', '2941', '--raw', '--subdir', 'DAGS_FOLDER/Monthly.py', '--cfg-path', '/tmp/tmpwt3rnhwe']
+[2023-01-07T11:11:44.999+0530] {standard_task_runner.py:83} INFO - Job 2941: Subtask extract2
+[2023-01-07T11:11:45.196+0530] {task_command.py:389} INFO - Running <TaskInstance: Monthly.extract2 scheduled__2023-01-06T00:00:00+00:00 [running]> on host DESKTOP-SQIOQPD.
+[2023-01-07T11:11:45.392+0530] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=nikheleshbhattacharyya@gmail.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Monthly
+AIRFLOW_CTX_TASK_ID=extract2
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-06T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=3
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-01-06T00:00:00+00:00
+[2023-01-07T11:11:58.884+0530] {taskinstance.py:1772} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/root/airflow/dags/Monthly.py", line 463, in extract2
+    driver.get(url)
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/remote/webdriver.py", line 455, in get
+    self.execute(Command.GET, {"url": url})
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/remote/webdriver.py", line 444, in execute
+    self.error_handler.check_response(response)
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/remote/errorhandler.py", line 249, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: headless chrome=108.0.5359.124)
+Stacktrace:
+#0 0x55cb4f3ff2a3 <unknown>
+#1 0x55cb4f1bdf77 <unknown>
+#2 0x55cb4f1b5e35 <unknown>
+#3 0x55cb4f1a8f27 <unknown>
+#4 0x55cb4f1aa2d9 <unknown>
+#5 0x55cb4f1a929e <unknown>
+#6 0x55cb4f1a83d2 <unknown>
+#7 0x55cb4f1a8225 <unknown>
+#8 0x55cb4f1a6dc6 <unknown>
+#9 0x55cb4f1a7244 <unknown>
+#10 0x55cb4f1bfe88 <unknown>
+#11 0x55cb4f232b05 <unknown>
+#12 0x55cb4f21ab32 <unknown>
+#13 0x55cb4f23247c <unknown>
+#14 0x55cb4f21a903 <unknown>
+#15 0x55cb4f1edece <unknown>
+#16 0x55cb4f1eefde <unknown>
+#17 0x55cb4f44f63e <unknown>
+#18 0x55cb4f452b79 <unknown>
+#19 0x55cb4f43589e <unknown>
+#20 0x55cb4f453a83 <unknown>
+#21 0x55cb4f428505 <unknown>
+#22 0x55cb4f474ca8 <unknown>
+#23 0x55cb4f474e36 <unknown>
+#24 0x55cb4f490333 <unknown>
+#25 0x7fd5c0024609 start_thread
+
+[2023-01-07T11:11:58.936+0530] {taskinstance.py:1322} INFO - Marking task as UP_FOR_RETRY. dag_id=Monthly, task_id=extract2, execution_date=20230106T000000, start_date=20230107T054144, end_date=20230107T054158
+[2023-01-07T11:11:58.968+0530] {standard_task_runner.py:100} ERROR - Failed to execute job 2941 for task extract2 (Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: headless chrome=108.0.5359.124)
+Stacktrace:
+#0 0x55cb4f3ff2a3 <unknown>
+#1 0x55cb4f1bdf77 <unknown>
+#2 0x55cb4f1b5e35 <unknown>
+#3 0x55cb4f1a8f27 <unknown>
+#4 0x55cb4f1aa2d9 <unknown>
+#5 0x55cb4f1a929e <unknown>
+#6 0x55cb4f1a83d2 <unknown>
+#7 0x55cb4f1a8225 <unknown>
+#8 0x55cb4f1a6dc6 <unknown>
+#9 0x55cb4f1a7244 <unknown>
+#10 0x55cb4f1bfe88 <unknown>
+#11 0x55cb4f232b05 <unknown>
+#12 0x55cb4f21ab32 <unknown>
+#13 0x55cb4f23247c <unknown>
+#14 0x55cb4f21a903 <unknown>
+#15 0x55cb4f1edece <unknown>
+#16 0x55cb4f1eefde <unknown>
+#17 0x55cb4f44f63e <unknown>
+#18 0x55cb4f452b79 <unknown>
+#19 0x55cb4f43589e <unknown>
+#20 0x55cb4f453a83 <unknown>
+#21 0x55cb4f428505 <unknown>
+#22 0x55cb4f474ca8 <unknown>
+#23 0x55cb4f474e36 <unknown>
+#24 0x55cb4f490333 <unknown>
+#25 0x7fd5c0024609 start_thread
+; 5220)
+[2023-01-07T11:11:59.008+0530] {local_task_job.py:159} INFO - Task exited with return code 1
+[2023-01-07T11:11:59.027+0530] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

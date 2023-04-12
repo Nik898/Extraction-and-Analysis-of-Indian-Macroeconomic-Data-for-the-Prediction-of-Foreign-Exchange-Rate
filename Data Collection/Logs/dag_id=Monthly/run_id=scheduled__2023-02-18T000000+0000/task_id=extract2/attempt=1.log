@@ -1,0 +1,28 @@
+[2023-02-23T15:05:18.035+0530] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Monthly.extract2 scheduled__2023-02-18T00:00:00+00:00 [queued]>
+[2023-02-23T15:05:18.046+0530] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Monthly.extract2 scheduled__2023-02-18T00:00:00+00:00 [queued]>
+[2023-02-23T15:05:18.046+0530] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-02-23T15:05:18.047+0530] {taskinstance.py:1284} INFO - Starting attempt 1 of 4
+[2023-02-23T15:05:18.047+0530] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-02-23T15:05:18.069+0530] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): extract2> on 2023-02-18 00:00:00+00:00
+[2023-02-23T15:05:18.078+0530] {standard_task_runner.py:55} INFO - Started process 2924 to run task
+[2023-02-23T15:05:18.082+0530] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'Monthly', 'extract2', 'scheduled__2023-02-18T00:00:00+00:00', '--job-id', '4536', '--raw', '--subdir', 'DAGS_FOLDER/Monthly.py', '--cfg-path', '/tmp/tmpt6an2yvt']
+[2023-02-23T15:05:18.083+0530] {standard_task_runner.py:83} INFO - Job 4536: Subtask extract2
+[2023-02-23T15:05:18.139+0530] {task_command.py:389} INFO - Running <TaskInstance: Monthly.extract2 scheduled__2023-02-18T00:00:00+00:00 [running]> on host DESKTOP-SQIOQPD.
+[2023-02-23T15:05:18.274+0530] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=nikheleshbhattacharyya@gmail.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Monthly
+AIRFLOW_CTX_TASK_ID=extract2
+AIRFLOW_CTX_EXECUTION_DATE=2023-02-18T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-02-18T00:00:00+00:00
+[2023-02-23T15:05:30.459+0530] {logging_mixin.py:137} INFO - document.getElementById('2020').click()
+[2023-02-23T15:05:30.944+0530] {logging_mixin.py:137} INFO - document.getElementById('2021').click()
+[2023-02-23T15:05:31.304+0530] {logging_mixin.py:137} INFO - document.getElementById('2022').click()
+[2023-02-23T15:05:31.651+0530] {logging_mixin.py:137} INFO - document.getElementById('2023').click()
+[2023-02-23T15:05:39.261+0530] {python.py:177} INFO - Done. Returned value was: ['https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=50805', 'https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=50659', 'https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=50516', 'https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=50361', 'https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=50221', 'https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=50088', 'https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=49951', 'https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=49820', 'https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=49675', 'https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=49513', 'https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=49405', 'https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=49152', 'https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=52657', 'https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=52497', 'https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=52341', 'https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=52159', 'https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=51992', 'https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=51831', 'https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=51663', 'https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=51575', 'https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=51425', 'https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=51271', 'https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=51133', 'https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=50984', 'https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=54789', 'https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=54629', 'https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=54483', 'https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=54299', 'https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=54130', 'https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=53960', 'https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=53792', 'https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=53644', 'https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=53502', 'https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=53357', 'https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=53207', 'https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=53047', 'https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=55148', 'https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=54980']
+[2023-02-23T15:05:39.285+0530] {taskinstance.py:1322} INFO - Marking task as SUCCESS. dag_id=Monthly, task_id=extract2, execution_date=20230218T000000, start_date=20230223T093518, end_date=20230223T093539
+[2023-02-23T15:05:40.019+0530] {local_task_job.py:159} INFO - Task exited with return code 0
+[2023-02-23T15:05:40.053+0530] {taskinstance.py:2582} INFO - 1 downstream tasks scheduled from follow-on schedule check
