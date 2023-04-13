@@ -1,0 +1,72 @@
+[2023-03-17T14:28:26.806+0530] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Monthly.extract scheduled__2023-03-03T00:00:00+00:00 [queued]>
+[2023-03-17T14:28:26.817+0530] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Monthly.extract scheduled__2023-03-03T00:00:00+00:00 [queued]>
+[2023-03-17T14:28:26.817+0530] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-17T14:28:26.817+0530] {taskinstance.py:1284} INFO - Starting attempt 1 of 4
+[2023-03-17T14:28:26.817+0530] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-17T14:28:26.844+0530] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): extract> on 2023-03-03 00:00:00+00:00
+[2023-03-17T14:28:26.857+0530] {standard_task_runner.py:55} INFO - Started process 862 to run task
+[2023-03-17T14:28:26.857+0530] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'Monthly', 'extract', 'scheduled__2023-03-03T00:00:00+00:00', '--job-id', '4927', '--raw', '--subdir', 'DAGS_FOLDER/Monthly.py', '--cfg-path', '/tmp/tmpp399fenn']
+[2023-03-17T14:28:26.859+0530] {standard_task_runner.py:83} INFO - Job 4927: Subtask extract
+[2023-03-17T14:28:27.069+0530] {task_command.py:389} INFO - Running <TaskInstance: Monthly.extract scheduled__2023-03-03T00:00:00+00:00 [running]> on host DESKTOP-SQIOQPD.
+[2023-03-17T14:28:27.233+0530] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=nikheleshbhattacharyya@gmail.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Monthly
+AIRFLOW_CTX_TASK_ID=extract
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-03-03T00:00:00+00:00
+[2023-03-17T14:28:28.697+0530] {logging_mixin.py:137} INFO - document.getElementById('20201').click()
+[2023-03-17T14:28:28.717+0530] {logging_mixin.py:137} INFO - document.getElementById('20202').click()
+[2023-03-17T14:28:28.734+0530] {logging_mixin.py:137} INFO - document.getElementById('20203').click()
+[2023-03-17T14:28:28.753+0530] {logging_mixin.py:137} INFO - document.getElementById('20204').click()
+[2023-03-17T14:28:28.775+0530] {logging_mixin.py:137} INFO - document.getElementById('20205').click()
+[2023-03-17T14:28:28.791+0530] {logging_mixin.py:137} INFO - document.getElementById('20206').click()
+[2023-03-17T14:28:28.807+0530] {logging_mixin.py:137} INFO - document.getElementById('20207').click()
+[2023-03-17T14:28:28.819+0530] {logging_mixin.py:137} INFO - document.getElementById('20208').click()
+[2023-03-17T14:28:28.834+0530] {logging_mixin.py:137} INFO - document.getElementById('20209').click()
+[2023-03-17T14:28:28.850+0530] {logging_mixin.py:137} INFO - document.getElementById('202010').click()
+[2023-03-17T14:28:28.865+0530] {logging_mixin.py:137} INFO - document.getElementById('202011').click()
+[2023-03-17T14:28:28.880+0530] {logging_mixin.py:137} INFO - document.getElementById('202012').click()
+[2023-03-17T14:28:28.894+0530] {logging_mixin.py:137} INFO - document.getElementById('20211').click()
+[2023-03-17T14:28:28.906+0530] {logging_mixin.py:137} INFO - document.getElementById('20212').click()
+[2023-03-17T14:28:28.919+0530] {logging_mixin.py:137} INFO - document.getElementById('20213').click()
+[2023-03-17T14:28:28.932+0530] {logging_mixin.py:137} INFO - document.getElementById('20214').click()
+[2023-03-17T14:28:28.945+0530] {logging_mixin.py:137} INFO - document.getElementById('20215').click()
+[2023-03-17T14:28:28.958+0530] {logging_mixin.py:137} INFO - document.getElementById('20216').click()
+[2023-03-17T14:28:28.968+0530] {logging_mixin.py:137} INFO - document.getElementById('20217').click()
+[2023-03-17T14:28:28.980+0530] {logging_mixin.py:137} INFO - document.getElementById('20218').click()
+[2023-03-17T14:28:28.995+0530] {logging_mixin.py:137} INFO - document.getElementById('20219').click()
+[2023-03-17T14:28:29.010+0530] {logging_mixin.py:137} INFO - document.getElementById('202110').click()
+[2023-03-17T14:28:29.025+0530] {logging_mixin.py:137} INFO - document.getElementById('202111').click()
+[2023-03-17T14:28:29.042+0530] {logging_mixin.py:137} INFO - document.getElementById('202112').click()
+[2023-03-17T14:28:29.056+0530] {logging_mixin.py:137} INFO - document.getElementById('20221').click()
+[2023-03-17T14:28:29.068+0530] {logging_mixin.py:137} INFO - document.getElementById('20222').click()
+[2023-03-17T14:28:29.082+0530] {logging_mixin.py:137} INFO - document.getElementById('20223').click()
+[2023-03-17T14:28:29.101+0530] {logging_mixin.py:137} INFO - document.getElementById('20224').click()
+[2023-03-17T14:28:29.117+0530] {logging_mixin.py:137} INFO - document.getElementById('20225').click()
+[2023-03-17T14:28:29.144+0530] {logging_mixin.py:137} INFO - document.getElementById('20226').click()
+[2023-03-17T14:28:29.157+0530] {logging_mixin.py:137} INFO - document.getElementById('20227').click()
+[2023-03-17T14:28:29.174+0530] {logging_mixin.py:137} INFO - document.getElementById('20228').click()
+[2023-03-17T14:28:29.189+0530] {logging_mixin.py:137} INFO - document.getElementById('20229').click()
+[2023-03-17T14:28:29.229+0530] {logging_mixin.py:137} INFO - document.getElementById('202210').click()
+[2023-03-17T14:28:29.251+0530] {logging_mixin.py:137} INFO - document.getElementById('202211').click()
+[2023-03-17T14:28:29.281+0530] {logging_mixin.py:137} INFO - document.getElementById('202212').click()
+[2023-03-17T14:28:29.307+0530] {logging_mixin.py:137} INFO - document.getElementById('20231').click()
+[2023-03-17T14:28:29.344+0530] {logging_mixin.py:137} INFO - document.getElementById('20232').click()
+[2023-03-17T14:28:29.358+0530] {logging_mixin.py:137} INFO - document.getElementById('20233').click()
+[2023-03-17T14:28:29.369+0530] {logging_mixin.py:137} INFO - document.getElementById('20234').click()
+[2023-03-17T14:28:29.380+0530] {logging_mixin.py:137} INFO - document.getElementById('20235').click()
+[2023-03-17T14:28:29.394+0530] {logging_mixin.py:137} INFO - document.getElementById('20236').click()
+[2023-03-17T14:28:29.406+0530] {logging_mixin.py:137} INFO - document.getElementById('20237').click()
+[2023-03-17T14:28:29.419+0530] {logging_mixin.py:137} INFO - document.getElementById('20238').click()
+[2023-03-17T14:28:29.431+0530] {logging_mixin.py:137} INFO - document.getElementById('20239').click()
+[2023-03-17T14:28:29.444+0530] {logging_mixin.py:137} INFO - document.getElementById('202310').click()
+[2023-03-17T14:28:29.456+0530] {logging_mixin.py:137} INFO - document.getElementById('202311').click()
+[2023-03-17T14:28:29.471+0530] {logging_mixin.py:137} INFO - document.getElementById('202312').click()
+[2023-03-17T14:28:29.545+0530] {python.py:177} INFO - Done. Returned value was: ([], [], [], [], [], [], [])
+[2023-03-17T14:28:29.575+0530] {taskinstance.py:1322} INFO - Marking task as SUCCESS. dag_id=Monthly, task_id=extract, execution_date=20230303T000000, start_date=20230317T085826, end_date=20230317T085829
+[2023-03-17T14:28:29.624+0530] {local_task_job.py:159} INFO - Task exited with return code 0
+[2023-03-17T14:28:29.661+0530] {taskinstance.py:2582} INFO - 1 downstream tasks scheduled from follow-on schedule check

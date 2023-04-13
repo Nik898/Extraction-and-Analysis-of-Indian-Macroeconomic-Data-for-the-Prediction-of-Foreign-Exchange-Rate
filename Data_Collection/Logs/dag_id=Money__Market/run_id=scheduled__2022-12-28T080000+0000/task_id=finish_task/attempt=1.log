@@ -1,0 +1,29 @@
+[2022-12-29T23:30:13.411+0530] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Money__Market.finish_task scheduled__2022-12-28T08:00:00+00:00 [queued]>
+[2022-12-29T23:30:13.427+0530] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Money__Market.finish_task scheduled__2022-12-28T08:00:00+00:00 [queued]>
+[2022-12-29T23:30:13.427+0530] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-29T23:30:13.427+0530] {taskinstance.py:1284} INFO - Starting attempt 1 of 4
+[2022-12-29T23:30:13.427+0530] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-29T23:30:13.457+0530] {taskinstance.py:1304} INFO - Executing <Task(BashOperator): finish_task> on 2022-12-28 08:00:00+00:00
+[2022-12-29T23:30:13.464+0530] {standard_task_runner.py:55} INFO - Started process 9361 to run task
+[2022-12-29T23:30:13.468+0530] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'Money__Market', 'finish_task', 'scheduled__2022-12-28T08:00:00+00:00', '--job-id', '1830', '--raw', '--subdir', 'DAGS_FOLDER/Money_Market.py', '--cfg-path', '/tmp/tmpjezg4nqm']
+[2022-12-29T23:30:13.470+0530] {standard_task_runner.py:83} INFO - Job 1830: Subtask finish_task
+[2022-12-29T23:30:13.551+0530] {task_command.py:389} INFO - Running <TaskInstance: Money__Market.finish_task scheduled__2022-12-28T08:00:00+00:00 [running]> on host DESKTOP-SQIOQPD.
+[2022-12-29T23:30:13.661+0530] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=nikheleshbhattacharyya@gmail.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Money__Market
+AIRFLOW_CTX_TASK_ID=finish_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-28T08:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-28T08:00:00+00:00
+[2022-12-29T23:30:13.663+0530] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-12-29T23:30:13.664+0530] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'echo finish']
+[2022-12-29T23:30:13.680+0530] {subprocess.py:86} INFO - Output:
+[2022-12-29T23:30:13.681+0530] {subprocess.py:93} INFO - finish
+[2022-12-29T23:30:13.682+0530] {subprocess.py:97} INFO - Command exited with return code 0
+[2022-12-29T23:30:13.718+0530] {taskinstance.py:1322} INFO - Marking task as SUCCESS. dag_id=Money__Market, task_id=finish_task, execution_date=20221228T080000, start_date=20221229T180013, end_date=20221229T180013
+[2022-12-29T23:30:13.762+0530] {local_task_job.py:159} INFO - Task exited with return code 0
+[2022-12-29T23:30:13.788+0530] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

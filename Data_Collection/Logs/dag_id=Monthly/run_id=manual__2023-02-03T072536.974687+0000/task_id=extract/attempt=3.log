@@ -1,0 +1,34 @@
+[2023-02-03T13:04:08.461+0530] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Monthly.extract manual__2023-02-03T07:25:36.974687+00:00 [queued]>
+[2023-02-03T13:04:08.478+0530] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Monthly.extract manual__2023-02-03T07:25:36.974687+00:00 [queued]>
+[2023-02-03T13:04:08.478+0530] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-02-03T13:04:08.478+0530] {taskinstance.py:1284} INFO - Starting attempt 3 of 4
+[2023-02-03T13:04:08.478+0530] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-02-03T13:04:08.510+0530] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): extract> on 2023-02-03 07:25:36.974687+00:00
+[2023-02-03T13:04:08.523+0530] {standard_task_runner.py:55} INFO - Started process 26800 to run task
+[2023-02-03T13:04:08.572+0530] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'Monthly', 'extract', 'manual__2023-02-03T07:25:36.974687+00:00', '--job-id', '3957', '--raw', '--subdir', 'DAGS_FOLDER/Monthly.py', '--cfg-path', '/tmp/tmposxmyxh_']
+[2023-02-03T13:04:08.585+0530] {standard_task_runner.py:83} INFO - Job 3957: Subtask extract
+[2023-02-03T13:04:08.904+0530] {task_command.py:389} INFO - Running <TaskInstance: Monthly.extract manual__2023-02-03T07:25:36.974687+00:00 [running]> on host DESKTOP-SQIOQPD.
+[2023-02-03T13:04:09.260+0530] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=nikheleshbhattacharyya@gmail.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Monthly
+AIRFLOW_CTX_TASK_ID=extract
+AIRFLOW_CTX_EXECUTION_DATE=2023-02-03T07:25:36.974687+00:00
+AIRFLOW_CTX_TRY_NUMBER=3
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-02-03T07:25:36.974687+00:00
+[2023-02-03T13:05:29.780+0530] {local_task_job.py:223} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2023-02-03T13:05:29.809+0530] {process_utils.py:129} INFO - Sending Signals.SIGTERM to group 26800. PIDs of all processes in the group: [26801, 26807, 26811, 26812, 26818, 26819, 26834, 26856, 26832, 26800]
+[2023-02-03T13:05:29.810+0530] {process_utils.py:84} INFO - Sending the signal Signals.SIGTERM to group 26800
+[2023-02-03T13:05:29.859+0530] {process_utils.py:79} INFO - Process psutil.Process(pid=26811, status='terminated', started='13:04:09') (26811) terminated with exit code None
+[2023-02-03T13:05:29.856+0530] {taskinstance.py:1483} ERROR - Received SIGTERM. Terminating subprocesses.
+[2023-02-03T13:05:29.954+0530] {process_utils.py:79} INFO - Process psutil.Process(pid=26801, status='terminated', started='13:04:09') (26801) terminated with exit code None
+[2023-02-03T13:05:29.954+0530] {process_utils.py:79} INFO - Process psutil.Process(pid=26807, status='terminated', started='13:04:09') (26807) terminated with exit code None
+[2023-02-03T13:05:29.954+0530] {process_utils.py:79} INFO - Process psutil.Process(pid=26812, status='terminated', started='13:04:09') (26812) terminated with exit code None
+[2023-02-03T13:05:29.969+0530] {process_utils.py:79} INFO - Process psutil.Process(pid=26800, status='terminated', exitcode=0, started='13:04:08') (26800) terminated with exit code 0
+[2023-02-03T13:05:29.969+0530] {process_utils.py:79} INFO - Process psutil.Process(pid=26818, status='terminated', started='13:04:10') (26818) terminated with exit code None
+[2023-02-03T13:05:29.970+0530] {process_utils.py:79} INFO - Process psutil.Process(pid=26856, status='terminated', started='13:04:10') (26856) terminated with exit code None
+[2023-02-03T13:05:29.970+0530] {process_utils.py:79} INFO - Process psutil.Process(pid=26819, status='terminated', started='13:04:10') (26819) terminated with exit code None
+[2023-02-03T13:05:29.971+0530] {process_utils.py:79} INFO - Process psutil.Process(pid=26832, status='terminated', started='13:04:10') (26832) terminated with exit code None
+[2023-02-03T13:05:29.971+0530] {process_utils.py:79} INFO - Process psutil.Process(pid=26834, status='terminated', started='13:04:10') (26834) terminated with exit code None

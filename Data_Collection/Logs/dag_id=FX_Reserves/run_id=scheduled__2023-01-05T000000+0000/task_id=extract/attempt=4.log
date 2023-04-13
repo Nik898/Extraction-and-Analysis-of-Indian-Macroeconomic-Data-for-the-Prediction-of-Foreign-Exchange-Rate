@@ -1,0 +1,199 @@
+[2023-01-06T11:25:11.734+0530] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: FX_Reserves.extract scheduled__2023-01-05T00:00:00+00:00 [queued]>
+[2023-01-06T11:25:11.767+0530] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: FX_Reserves.extract scheduled__2023-01-05T00:00:00+00:00 [queued]>
+[2023-01-06T11:25:11.767+0530] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-06T11:25:11.768+0530] {taskinstance.py:1284} INFO - Starting attempt 4 of 4
+[2023-01-06T11:25:11.768+0530] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-06T11:25:11.805+0530] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): extract> on 2023-01-05 00:00:00+00:00
+[2023-01-06T11:25:11.815+0530] {standard_task_runner.py:55} INFO - Started process 1426 to run task
+[2023-01-06T11:25:11.827+0530] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'FX_Reserves', 'extract', 'scheduled__2023-01-05T00:00:00+00:00', '--job-id', '2912', '--raw', '--subdir', 'DAGS_FOLDER/FX_Reserves_Data.py', '--cfg-path', '/tmp/tmpnzq7gi_x']
+[2023-01-06T11:25:11.830+0530] {standard_task_runner.py:83} INFO - Job 2912: Subtask extract
+[2023-01-06T11:25:12.041+0530] {task_command.py:389} INFO - Running <TaskInstance: FX_Reserves.extract scheduled__2023-01-05T00:00:00+00:00 [running]> on host DESKTOP-SQIOQPD.
+[2023-01-06T11:25:12.153+0530] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=nikheleshbhattacharyya@gmail.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=FX_Reserves
+AIRFLOW_CTX_TASK_ID=extract
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-05T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=4
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-01-05T00:00:00+00:00
+[2023-01-06T11:25:22.173+0530] {taskinstance.py:1772} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/urllib3/connection.py", line 169, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/local/lib/python3.8/dist-packages/urllib3/util/connection.py", line 73, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/local/lib/python3.8/dist-packages/urllib3/connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/lib/python3.8/dist-packages/urllib3/connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "/usr/local/lib/python3.8/dist-packages/urllib3/connection.py", line 353, in connect
+    conn = self._new_conn()
+  File "/usr/local/lib/python3.8/dist-packages/urllib3/connection.py", line 181, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7fcc1a178160>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/local/lib/python3.8/dist-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.8/dist-packages/urllib3/util/retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.rbi.org.in', port=443): Max retries exceeded with url: /Scripts/WSSViewDetail.aspx?TYPE=Section&PARAM1=2 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fcc1a178160>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/root/airflow/dags/FX_Reserves_Data.py", line 40, in extract_fxres
+    results1 = requests.get(url1, headers=headers, verify=False)
+  File "/usr/local/lib/python3.8/dist-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.rbi.org.in', port=443): Max retries exceeded with url: /Scripts/WSSViewDetail.aspx?TYPE=Section&PARAM1=2 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fcc1a178160>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+[2023-01-06T11:25:22.255+0530] {taskinstance.py:1322} INFO - Marking task as FAILED. dag_id=FX_Reserves, task_id=extract, execution_date=20230105T000000, start_date=20230106T055511, end_date=20230106T055522
+[2023-01-06T11:25:22.357+0530] {logging_mixin.py:137} WARNING - /usr/local/lib/python3.8/dist-packages/airflow/utils/email.py:120 RemovedInAirflow3Warning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+[2023-01-06T11:25:22.357+0530] {configuration.py:635} WARNING - section/key [smtp/smtp_user] not found in config
+[2023-01-06T11:25:22.358+0530] {email.py:229} INFO - Email alerting: attempt 1
+[2023-01-06T11:25:22.370+0530] {configuration.py:635} WARNING - section/key [smtp/smtp_user] not found in config
+[2023-01-06T11:25:22.371+0530] {email.py:229} INFO - Email alerting: attempt 1
+[2023-01-06T11:25:22.371+0530] {taskinstance.py:1835} ERROR - Failed to send email to: ['nikheleshbhattacharyya@gmail.com']
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/urllib3/connection.py", line 169, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/local/lib/python3.8/dist-packages/urllib3/util/connection.py", line 73, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/local/lib/python3.8/dist-packages/urllib3/connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/lib/python3.8/dist-packages/urllib3/connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "/usr/local/lib/python3.8/dist-packages/urllib3/connection.py", line 353, in connect
+    conn = self._new_conn()
+  File "/usr/local/lib/python3.8/dist-packages/urllib3/connection.py", line 181, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7fcc1a178160>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/local/lib/python3.8/dist-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.8/dist-packages/urllib3/util/retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.rbi.org.in', port=443): Max retries exceeded with url: /Scripts/WSSViewDetail.aspx?TYPE=Section&PARAM1=2 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fcc1a178160>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/taskinstance.py", line 1378, in _run_raw_task
+    self._execute_task_with_callbacks(context, test_mode)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/taskinstance.py", line 1524, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/taskinstance.py", line 1585, in _execute_task
+    result = execute_callable(context=context)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/root/airflow/dags/FX_Reserves_Data.py", line 40, in extract_fxres
+    results1 = requests.get(url1, headers=headers, verify=False)
+  File "/usr/local/lib/python3.8/dist-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.rbi.org.in', port=443): Max retries exceeded with url: /Scripts/WSSViewDetail.aspx?TYPE=Section&PARAM1=2 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fcc1a178160>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/taskinstance.py", line 2235, in email_alert
+    send_email(task.email, subject, html_content)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/utils/email.py", line 59, in send_email
+    return backend(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/utils/email.py", line 120, in send_email_smtp
+    send_mime_email(e_from=mail_from, e_to=recipients, mime_msg=msg, conn_id=conn_id, dryrun=dryrun)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/utils/email.py", line 231, in send_mime_email
+    smtp_conn = _get_smtp_connection(smtp_host, smtp_port, smtp_timeout, smtp_ssl)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/utils/email.py", line 265, in _get_smtp_connection
+    else smtplib.SMTP(host=host, port=port, timeout=timeout)
+  File "/usr/lib/python3.8/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib/python3.8/smtplib.py", line 339, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/lib/python3.8/smtplib.py", line 310, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "/usr/lib/python3.8/socket.py", line 808, in create_connection
+    raise err
+  File "/usr/lib/python3.8/socket.py", line 796, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/taskinstance.py", line 1833, in handle_failure
+    self.email_alert(error, task)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/taskinstance.py", line 2237, in email_alert
+    send_email(task.email, subject, html_content_err)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/utils/email.py", line 59, in send_email
+    return backend(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/utils/email.py", line 120, in send_email_smtp
+    send_mime_email(e_from=mail_from, e_to=recipients, mime_msg=msg, conn_id=conn_id, dryrun=dryrun)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/utils/email.py", line 231, in send_mime_email
+    smtp_conn = _get_smtp_connection(smtp_host, smtp_port, smtp_timeout, smtp_ssl)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/utils/email.py", line 265, in _get_smtp_connection
+    else smtplib.SMTP(host=host, port=port, timeout=timeout)
+  File "/usr/lib/python3.8/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib/python3.8/smtplib.py", line 339, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/lib/python3.8/smtplib.py", line 310, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "/usr/lib/python3.8/socket.py", line 808, in create_connection
+    raise err
+  File "/usr/lib/python3.8/socket.py", line 796, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+[2023-01-06T11:25:22.417+0530] {standard_task_runner.py:100} ERROR - Failed to execute job 2912 for task extract (HTTPSConnectionPool(host='www.rbi.org.in', port=443): Max retries exceeded with url: /Scripts/WSSViewDetail.aspx?TYPE=Section&PARAM1=2 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fcc1a178160>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')); 1426)
+[2023-01-06T11:25:22.454+0530] {local_task_job.py:159} INFO - Task exited with return code 1
+[2023-01-06T11:25:22.497+0530] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

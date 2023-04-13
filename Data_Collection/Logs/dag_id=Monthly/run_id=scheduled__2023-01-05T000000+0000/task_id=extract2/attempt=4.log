@@ -1,0 +1,204 @@
+[2023-01-06T11:24:06.586+0530] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Monthly.extract2 scheduled__2023-01-05T00:00:00+00:00 [queued]>
+[2023-01-06T11:24:06.627+0530] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Monthly.extract2 scheduled__2023-01-05T00:00:00+00:00 [queued]>
+[2023-01-06T11:24:06.628+0530] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-06T11:24:06.628+0530] {taskinstance.py:1284} INFO - Starting attempt 4 of 4
+[2023-01-06T11:24:06.628+0530] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-06T11:24:06.691+0530] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): extract2> on 2023-01-05 00:00:00+00:00
+[2023-01-06T11:24:06.714+0530] {standard_task_runner.py:55} INFO - Started process 1132 to run task
+[2023-01-06T11:24:06.721+0530] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'Monthly', 'extract2', 'scheduled__2023-01-05T00:00:00+00:00', '--job-id', '2909', '--raw', '--subdir', 'DAGS_FOLDER/Monthly.py', '--cfg-path', '/tmp/tmpi38fk406']
+[2023-01-06T11:24:06.734+0530] {standard_task_runner.py:83} INFO - Job 2909: Subtask extract2
+[2023-01-06T11:24:06.956+0530] {task_command.py:389} INFO - Running <TaskInstance: Monthly.extract2 scheduled__2023-01-05T00:00:00+00:00 [running]> on host DESKTOP-SQIOQPD.
+[2023-01-06T11:24:07.179+0530] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=nikheleshbhattacharyya@gmail.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Monthly
+AIRFLOW_CTX_TASK_ID=extract2
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-05T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=4
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-01-05T00:00:00+00:00
+[2023-01-06T11:24:19.889+0530] {taskinstance.py:1772} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/root/airflow/dags/Monthly.py", line 463, in extract2
+    driver.get(url)
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/remote/webdriver.py", line 455, in get
+    self.execute(Command.GET, {"url": url})
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/remote/webdriver.py", line 444, in execute
+    self.error_handler.check_response(response)
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/remote/errorhandler.py", line 249, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: headless chrome=108.0.5359.124)
+Stacktrace:
+#0 0x563a393b52a3 <unknown>
+#1 0x563a39173f77 <unknown>
+#2 0x563a3916be35 <unknown>
+#3 0x563a3915ef27 <unknown>
+#4 0x563a391602d9 <unknown>
+#5 0x563a3915f29e <unknown>
+#6 0x563a3915e3d2 <unknown>
+#7 0x563a3915e225 <unknown>
+#8 0x563a3915cdc6 <unknown>
+#9 0x563a3915d244 <unknown>
+#10 0x563a39175e88 <unknown>
+#11 0x563a391e8b05 <unknown>
+#12 0x563a391d0b32 <unknown>
+#13 0x563a391e847c <unknown>
+#14 0x563a391d0903 <unknown>
+#15 0x563a391a3ece <unknown>
+#16 0x563a391a4fde <unknown>
+#17 0x563a3940563e <unknown>
+#18 0x563a39408b79 <unknown>
+#19 0x563a393eb89e <unknown>
+#20 0x563a39409a83 <unknown>
+#21 0x563a393de505 <unknown>
+#22 0x563a3942aca8 <unknown>
+#23 0x563a3942ae36 <unknown>
+#24 0x563a39446333 <unknown>
+#25 0x7f600bc46609 start_thread
+
+[2023-01-06T11:24:19.909+0530] {taskinstance.py:1322} INFO - Marking task as FAILED. dag_id=Monthly, task_id=extract2, execution_date=20230105T000000, start_date=20230106T055406, end_date=20230106T055419
+[2023-01-06T11:24:19.978+0530] {logging_mixin.py:137} WARNING - /usr/local/lib/python3.8/dist-packages/airflow/utils/email.py:120 RemovedInAirflow3Warning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+[2023-01-06T11:24:19.979+0530] {configuration.py:635} WARNING - section/key [smtp/smtp_user] not found in config
+[2023-01-06T11:24:19.979+0530] {email.py:229} INFO - Email alerting: attempt 1
+[2023-01-06T11:24:19.989+0530] {configuration.py:635} WARNING - section/key [smtp/smtp_user] not found in config
+[2023-01-06T11:24:19.990+0530] {email.py:229} INFO - Email alerting: attempt 1
+[2023-01-06T11:24:19.990+0530] {taskinstance.py:1835} ERROR - Failed to send email to: ['nikheleshbhattacharyya@gmail.com']
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/taskinstance.py", line 1378, in _run_raw_task
+    self._execute_task_with_callbacks(context, test_mode)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/taskinstance.py", line 1524, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/taskinstance.py", line 1585, in _execute_task
+    result = execute_callable(context=context)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/root/airflow/dags/Monthly.py", line 463, in extract2
+    driver.get(url)
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/remote/webdriver.py", line 455, in get
+    self.execute(Command.GET, {"url": url})
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/remote/webdriver.py", line 444, in execute
+    self.error_handler.check_response(response)
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/remote/errorhandler.py", line 249, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: headless chrome=108.0.5359.124)
+Stacktrace:
+#0 0x563a393b52a3 <unknown>
+#1 0x563a39173f77 <unknown>
+#2 0x563a3916be35 <unknown>
+#3 0x563a3915ef27 <unknown>
+#4 0x563a391602d9 <unknown>
+#5 0x563a3915f29e <unknown>
+#6 0x563a3915e3d2 <unknown>
+#7 0x563a3915e225 <unknown>
+#8 0x563a3915cdc6 <unknown>
+#9 0x563a3915d244 <unknown>
+#10 0x563a39175e88 <unknown>
+#11 0x563a391e8b05 <unknown>
+#12 0x563a391d0b32 <unknown>
+#13 0x563a391e847c <unknown>
+#14 0x563a391d0903 <unknown>
+#15 0x563a391a3ece <unknown>
+#16 0x563a391a4fde <unknown>
+#17 0x563a3940563e <unknown>
+#18 0x563a39408b79 <unknown>
+#19 0x563a393eb89e <unknown>
+#20 0x563a39409a83 <unknown>
+#21 0x563a393de505 <unknown>
+#22 0x563a3942aca8 <unknown>
+#23 0x563a3942ae36 <unknown>
+#24 0x563a39446333 <unknown>
+#25 0x7f600bc46609 start_thread
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/taskinstance.py", line 2235, in email_alert
+    send_email(task.email, subject, html_content)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/utils/email.py", line 59, in send_email
+    return backend(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/utils/email.py", line 120, in send_email_smtp
+    send_mime_email(e_from=mail_from, e_to=recipients, mime_msg=msg, conn_id=conn_id, dryrun=dryrun)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/utils/email.py", line 231, in send_mime_email
+    smtp_conn = _get_smtp_connection(smtp_host, smtp_port, smtp_timeout, smtp_ssl)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/utils/email.py", line 265, in _get_smtp_connection
+    else smtplib.SMTP(host=host, port=port, timeout=timeout)
+  File "/usr/lib/python3.8/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib/python3.8/smtplib.py", line 339, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/lib/python3.8/smtplib.py", line 310, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "/usr/lib/python3.8/socket.py", line 808, in create_connection
+    raise err
+  File "/usr/lib/python3.8/socket.py", line 796, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/taskinstance.py", line 1833, in handle_failure
+    self.email_alert(error, task)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/taskinstance.py", line 2237, in email_alert
+    send_email(task.email, subject, html_content_err)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/utils/email.py", line 59, in send_email
+    return backend(
+  File "/usr/local/lib/python3.8/dist-packages/airflow/utils/email.py", line 120, in send_email_smtp
+    send_mime_email(e_from=mail_from, e_to=recipients, mime_msg=msg, conn_id=conn_id, dryrun=dryrun)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/utils/email.py", line 231, in send_mime_email
+    smtp_conn = _get_smtp_connection(smtp_host, smtp_port, smtp_timeout, smtp_ssl)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/utils/email.py", line 265, in _get_smtp_connection
+    else smtplib.SMTP(host=host, port=port, timeout=timeout)
+  File "/usr/lib/python3.8/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib/python3.8/smtplib.py", line 339, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/lib/python3.8/smtplib.py", line 310, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "/usr/lib/python3.8/socket.py", line 808, in create_connection
+    raise err
+  File "/usr/lib/python3.8/socket.py", line 796, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+[2023-01-06T11:24:20.024+0530] {standard_task_runner.py:100} ERROR - Failed to execute job 2909 for task extract2 (Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: headless chrome=108.0.5359.124)
+Stacktrace:
+#0 0x563a393b52a3 <unknown>
+#1 0x563a39173f77 <unknown>
+#2 0x563a3916be35 <unknown>
+#3 0x563a3915ef27 <unknown>
+#4 0x563a391602d9 <unknown>
+#5 0x563a3915f29e <unknown>
+#6 0x563a3915e3d2 <unknown>
+#7 0x563a3915e225 <unknown>
+#8 0x563a3915cdc6 <unknown>
+#9 0x563a3915d244 <unknown>
+#10 0x563a39175e88 <unknown>
+#11 0x563a391e8b05 <unknown>
+#12 0x563a391d0b32 <unknown>
+#13 0x563a391e847c <unknown>
+#14 0x563a391d0903 <unknown>
+#15 0x563a391a3ece <unknown>
+#16 0x563a391a4fde <unknown>
+#17 0x563a3940563e <unknown>
+#18 0x563a39408b79 <unknown>
+#19 0x563a393eb89e <unknown>
+#20 0x563a39409a83 <unknown>
+#21 0x563a393de505 <unknown>
+#22 0x563a3942aca8 <unknown>
+#23 0x563a3942ae36 <unknown>
+#24 0x563a39446333 <unknown>
+#25 0x7f600bc46609 start_thread
+; 1132)
+[2023-01-06T11:24:20.043+0530] {local_task_job.py:159} INFO - Task exited with return code 1
+[2023-01-06T11:24:20.061+0530] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check
